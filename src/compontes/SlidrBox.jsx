@@ -1,0 +1,456 @@
+"use client";
+import { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import SpotlightButton from "./SpotlightButton";
+
+const slides = [
+  {
+    image: "/images/cabSlide01.png",
+    title: "BOOK TAXI FOR YOUR RIDE",
+  },
+  
+  {
+    image: "/images/cabSlide02.png",
+    title: "SAFE & FAST TAXI SERVICE",
+  },
+  {
+    image: "/images/cabSlide03.png",
+    title: "24/7 TAXI AVAILABLE",
+  },
+];
+
+const SlidrBox = () => {
+  const [current, setCurrent] = useState(0);
+  const [open, setOpen] = useState(false);
+const [openDropdown, setOpenDropdown] = useState(null);
+
+const [selectedCab, setSelectedCab] = useState("Choose Cab");
+const [selectedAge, setSelectedAge] = useState("Choose Age");
+const [selectedModel, setSelectedModel] = useState("Choose Model");
+
+const dropdownWrapperRef = useRef(null);
+
+
+useEffect(() => {
+  const handleClickOutside = (e) => {
+    if (
+      dropdownWrapperRef.current &&
+      !dropdownWrapperRef.current.contains(e.target)
+    ) {
+      setOpenDropdown(null);
+    }
+  };
+
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => document.removeEventListener("mousedown", handleClickOutside);
+}, []);
+
+
+
+  const headingRef = useRef(null);
+  const contentRef = useRef(null);
+
+
+  // AUTO SLIDE
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
+
+  // GSAP TEXT + CONTENT ANIMATION
+  useEffect(() => {
+    // Reset
+    gsap.set(contentRef.current.children, { opacity: 0, y: 40 });
+
+    // POP animation
+    gsap.to(contentRef.current.children, {
+      opacity: 1,
+      y: 0,
+      duration: 0.9,
+      stagger: 0.15,
+      ease: "power3.out",
+    });
+
+    // Typing Effect
+    const text = slides[current].title;
+    let index = 0;
+    headingRef.current.innerHTML = "";
+
+    const typing = setInterval(() => {
+      headingRef.current.innerHTML +=
+        text[index] === "T"
+          ? `<span class="text-yellow-400">T</span>`
+          : text[index];
+      index++;
+      if (index >= text.length) clearInterval(typing);
+    }, 70);
+
+    return () => clearInterval(typing);
+  }, [current]);
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
+const [pickup, setPickup] = useState("");
+const [drop, setDrop] = useState("");
+const [passengers, setPassengers] = useState("");
+const [date, setDate] = useState("");
+const [time, setTime] = useState("");
+const [errors, setErrors] = useState({});
+const handleBookTaxi = () => {
+  const newErrors = {};
+
+  if (!pickup) newErrors.pickup = "Pick up location is required";
+  if (!drop) newErrors.drop = "Drop off location is required";
+  if (!passengers) newErrors.passengers = "Passengers required";
+  if (selectedCab === "Choose Cab") newErrors.cab = "Please select cab type";
+  if (!date) newErrors.date = "Please select date";
+  if (!time) newErrors.time = "Please select time";
+  if (selectedAge === "Choose Age") newErrors.age = "Please select age group";
+  if (selectedModel === "Choose Model") newErrors.model = "Please select model";
+
+  setErrors(newErrors);
+
+  if (Object.keys(newErrors).length === 0) {
+    console.log("✅ Form Submitted");
+    // API call / next step here
+  }
+};
+
+useEffect(() => {
+  const now = new Date();
+
+  // YYYY-MM-DD
+  const today = now.toISOString().split("T")[0];
+
+  // HH:MM
+  const currentTime = now.toTimeString().slice(0, 5);
+
+  setDate(today);
+  setTime(currentTime);
+}, []);
+
+  return (
+    <section
+      className="relative w-full min-h-[90vh] bg-cover bg-center transition-all duration-700"
+      style={{ backgroundImage: `url(${slides[current].image})` }}
+    >
+      <div className="absolute inset-0 bg-black/70"></div>
+
+      {/* Content */}
+      <div
+        ref={contentRef}
+        className="relative z-10 max-w-7xl mx-auto px-4 pt-32 pb-24 text-center text-white"
+      >
+        <p className="text-yellow-400 tracking-widest font-semibold mb-4">
+          WELCOME TO TAXICA!
+        </p>
+
+        <h1
+          ref={headingRef}
+          className="text-4xl md:text-6xl font-extrabold leading-tight min-h-20"
+        ></h1>
+
+        <p className="max-w-3xl mx-auto text-gray-300 mt-6">
+          Premium taxi service with professional drivers and 24/7 availability.
+        </p>
+
+      <div className="flex justify-center gap-4 mt-10">
+
+     <SpotlightButton
+  text="ABOUT MORE →"
+  //  icon={Car}
+  href="/book"
+  bgColor="bg-[#EFA701]"
+  hoverBgColor="hover:bg-black"
+  textColor="text-black"
+  hoverTextColor="hover:text-white"
+/>
+     <SpotlightButton
+  text="LEARN MORE →"
+  //  icon={Car}
+  href="/book"
+  bgColor="bg-white"
+  hoverBgColor="hover:bg-[#EFA701]"
+  textColor="text-black"
+  hoverTextColor="hover:text-white"
+/>
+
+
+  {/* <button ref={btn2Ref} className="spotlight-btn gray">
+    <span className="spotlight"></span>
+    <span className="relative z-10 text-white">LEARN MORE →</span>
+  </button> */}
+</div>
+
+      </div>
+
+      {/* Arrows */}
+     <button
+  onClick={prevSlide}
+  className="slider-arrow left-6"
+>
+  ←
+</button>
+
+<button
+  onClick={nextSlide}
+  className="slider-arrow right-6"
+>
+  →
+</button>
+
+
+{/* Booking Form */}
+{/* Booking Form */}
+<div className="relative z-20 max-w-6xl mx-auto -mt-20 px-4 top-40">
+  <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8">
+    <h3 className="text-xl font-bold mb-6">Book Your Ride</h3>
+
+    <div
+      ref={dropdownWrapperRef}
+      className="grid grid-cols-1 md:grid-cols-4 gap-4"
+    >
+<input
+  value={pickup}
+  onChange={(e) => {
+    setPickup(e.target.value);
+    setErrors({ ...errors, pickup: "" });
+  }}
+  placeholder="Pick Up Location"
+  className={`input ${
+    errors.pickup
+      ? "border-red-500 ring-1 ring-red-500"
+      : pickup
+      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+      : ""
+  }`}
+/>
+
+
+<input
+  value={drop}
+  onChange={(e) => {
+    setDrop(e.target.value);
+    setErrors({ ...errors, drop: "" });
+  }}
+  placeholder="Drop Off Location"
+  className={`input ${
+    errors.drop
+      ? "border-red-500 ring-1 ring-red-500"
+      : drop
+      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+      : ""
+  }`}
+/>
+
+
+<input
+  value={passengers}
+  onChange={(e) => {
+    setPassengers(e.target.value);
+    setErrors({ ...errors, passengers: "" });
+  }}
+  placeholder="Passengers"
+  className={`input ${
+    errors.passengers
+      ? "border-red-500 ring-1 ring-red-500"
+      : passengers
+      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+      : ""
+  }`}
+/>
+
+
+
+      {/* ===== CHOOSE CAB ===== */}
+      <div className="relative">
+        <button
+          onClick={() =>
+            setOpenDropdown(openDropdown === "cab" ? null : "cab")
+          }
+          className={`select-trigger ${
+    errors.cab
+      ? "border-red-500 ring-1 ring-red-500"
+      : selectedCab !== "Choose Cab"
+      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+      : ""
+  }`}
+        >
+          {selectedCab}
+          <span className={`arrow ${openDropdown === "cab" ? "rotate" : ""}`}>
+            ⌃
+          </span>
+        </button>
+
+        {openDropdown === "cab" && (
+          <div className="cab-options open">
+            {["Mini", "Sedan", "SUV", "Luxury"].map((item) => (
+              <div
+                key={item}
+                className={`cab-option ${
+                  selectedCab === item ? "active" : ""
+                }`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setSelectedCab(item);
+                  setOpenDropdown(null);
+                }}
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+<input
+  type="date"
+  value={date}
+  onChange={(e) => {
+    setDate(e.target.value);
+    setErrors({ ...errors, date: "" });
+  }}
+  className={`input ${
+    errors.date
+      ? "border-red-500 ring-1 ring-red-500"
+      : date
+      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+      : ""
+  }`}
+/>
+
+
+
+
+<input
+  type="time"
+  value={time}
+  onChange={(e) => {
+    setTime(e.target.value);
+    setErrors({ ...errors, time: "" });
+  }}
+  className={`input ${
+    errors.time
+      ? "border-red-500 ring-1 ring-red-500"
+      : time
+      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+      : ""
+  }`}
+/>
+
+
+
+
+      {/* ===== CHOOSE AGE ===== */}
+      <div className="relative">
+        <button
+          onClick={() =>
+            setOpenDropdown(openDropdown === "age" ? null : "age")
+          }
+           className={`select-trigger ${
+    errors.cab
+      ? "border-red-500 ring-1 ring-red-500"
+      :selectedAge !== "Choose Age" ? "selected" : "" 
+      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+      : ""
+  }`}
+        >
+          {selectedAge}
+          <span className={`arrow ${openDropdown === "age" ? "rotate" : ""}`}>
+            ⌃
+          </span>
+        </button>
+
+        {openDropdown === "age" && (
+          <div className="glass-options open">
+            {["18–25", "26–40", "41–60", "60+"].map((item) => (
+              <div
+                key={item}
+                className={`glass-option ${
+                  selectedAge === item ? "active" : ""
+                }`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setSelectedAge(item);
+                  setOpenDropdown(null);
+                }}
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* ===== CHOOSE MODEL ===== */}
+      <div className="relative">
+        <button
+          onClick={() =>
+            setOpenDropdown(openDropdown === "model" ? null : "model")
+          }
+           className={`select-trigger ${
+    errors.cab
+      ? "border-red-500 ring-1 ring-red-500"
+      : selectedModel !== "Choose Model" ? "selected" : ""
+      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+      : ""
+  }`}
+        >
+          {selectedModel}
+          <span className={`arrow ${openDropdown === "model" ? "rotate" : ""}`}>
+            ⌃
+          </span>
+        </button>
+
+        {openDropdown === "model" && (
+          <div className="glass-options open">
+            {["2021", "2022", "2023", "2024"].map((item) => (
+              <div
+                key={item}
+                className={`glass-option ${
+                  selectedModel === item ? "active" : ""
+                }`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setSelectedModel(item);
+                  setOpenDropdown(null);
+                }}
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+
+    <div className="flex justify-end mt-6">
+      <button onClick={handleBookTaxi}>
+      <SpotlightButton
+        text="BOOK TAXI →"
+        // href="/book"
+        bgColor="bg-[#EFA701]"
+        hoverBgColor="hover:bg-black"
+        textColor="text-black"
+        hoverTextColor="hover:text-white"
+      />
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+    </section>
+  );
+};
+
+export default SlidrBox;
