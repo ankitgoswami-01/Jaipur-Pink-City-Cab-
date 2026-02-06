@@ -3,22 +3,55 @@
 import SpotlightButton from "./SpotlightButton";
 
 const plans = [
-  { title: "Basic Package", price: "$2.30" },
-  { title: "Standard Package", price: "$2.30" },
-  { title: "Premium Package", price: "$2.30" },
+  {
+    title: "Basic Package",
+    price: "$2.30",
+    image: "/images/toyota-innova-taxi-service-jaipur.png",
+    details: [
+      { label: "Base Charge", value: "$2.30" },
+      { label: "Distance Allowance", value: "3000m" },
+      { label: "Up To 30kms", value: "$1.10/km" },
+      { label: "Booking Fee", value: "$0.50" },
+      { label: "Extra Passengers", value: "$0.30" },
+    ],
+  },
+  {
+    title: "Standard Package",
+    price: "$3.50",
+    image: "/images/hyundai-venue-taxi-jaipur-pink-city-cab.png",
+    details: [
+      { label: "Base Charge", value: "$3.50" },
+      { label: "Distance Allowance", value: "5000m" },
+      { label: "Up To 50kms", value: "$1.38/km" },
+      { label: "Booking Fee", value: "$0.99" },
+      { label: "Extra Passengers", value: "$0.45" },
+    ],
+  },
+  {
+    title: "Premium Package",
+    price: "$5.00",
+    image: "/images/jaipur-ertiga-taxi.png",
+    details: [
+      { label: "Base Charge", value: "$5.00" },
+      { label: "Distance Allowance", value: "8000m" },
+      { label: "Up To 80kms", value: "$1.80/km" },
+      { label: "Booking Fee", value: "$1.50" },
+      { label: "Extra Passengers", value: "$0.70" },
+    ],
+  },
 ];
 
 export default function TaxiRate() {
   return (
-    <section className="py-24 bg-white">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6">
 
         {/* Heading */}
-        <div className="text-center mb-16">
-          <p className="text-yellow-500 font-semibold uppercase tracking-widest">
+        <div className="text-center mb-14">
+          <p className="text-yellow-500 font-semibold uppercase tracking-widest text-sm">
             Taxi Rate
           </p>
-          <h2 className="text-4xl font-bold text-gray-900 mt-2">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">
             Our Taxi Rate For You
           </h2>
           <div className="flex justify-center mt-4">
@@ -27,81 +60,64 @@ export default function TaxiRate() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
             <div
               key={index}
- className="
-    bg-[#ece5e545]
-    rounded-2xl
-    shadow-md
-    p-6
-    text-center
-    transform
-    transition-all
-    duration-500
-    ease-out
-    hover:-translate-y-4
-    hover:shadow-2xl
-  "            >
+              className="
+                bg-[#ece5e545]
+                rounded-2xl
+                shadow-md
+                p-6
+                text-center
+                transition-all
+                duration-500
+                hover:-translate-y-3
+                hover:shadow-2xl
+              "
+            >
               {/* Taxi Image */}
               <img
-                src="/images/rateDriveImg01.png"
-                alt="Taxi"
-                className="mx-auto h-28 object-contain"
+                src={plan.image}
+                alt={plan.title}
+                className="mx-auto h-24 sm:h-28 object-contain"
               />
 
-              <h4 className="mt-4 font-bold text-lg uppercase">
+              <h4 className="mt-4 font-bold text-base sm:text-lg uppercase">
                 {plan.title}
               </h4>
-              <p className="text-sm text-yellow-500">
+              <p className="text-xs sm:text-sm text-yellow-500">
                 One Time Payment
               </p>
 
-              {/* BLACK PRICE BOX */}
-              <div className="relative bg-black text-white rounded-xl mt-6 p-6 overflow-hidden">
+              {/* Price Box */}
+              <div className="relative bg-black text-white rounded-xl mt-6 p-5 sm:p-6 overflow-hidden">
 
                 {/* Background Shape */}
                 <img
                   src="/images/texiRateshape-4.png"
-                  alt="shape"
-                  className="absolute inset-0 w-full h-full object-cover opacity-25"
+                  alt=""
+                  className="absolute inset-0 w-full h-full object-cover opacity-20"
                 />
 
-                {/* Dark Overlay for readability */}
-                <div className="absolute inset-0 "></div>
-
-                {/* Taxi Icon */}
+                {/* Content */}
                 <div className="relative z-10">
-                  <div className="absolute -top-13 left-1/2 -translate-x-1/2 w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-black text-xl shadow-lg">
+
+                  {/* Taxi Icon */}
+                  <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-black text-xl shadow-lg">
                     🚕
                   </div>
 
-                  {/* Content */}
-                  <ul className="text-sm mt-8 space-y-3 relative z-10">
-                    <li className="flex justify-between">
-                      <span className="rate-check">Base Charge</span>
-                      <span>{plan.price}</span>
-                    </li>
-                    <li className="flex justify-between">
-                      <span className="rate-check">Distance Allowance</span>
-                      <span>5000m</span>
-                    </li>
-                    <li className="flex justify-between">
-                      <span className="rate-check">Up To 50kms</span>
-                      <span>$1.38/km</span>
-                    </li>
-                    <li className="flex justify-between">
-                      <span className="rate-check">Booking Fee</span>
-                      <span>$0.99</span>
-                    </li>
-                    <li className="flex justify-between">
-                      <span className="rate-check">Extra Passengers</span>
-                      <span>$0.45</span>
-                    </li>
+                  <ul className="text-sm mt-8 space-y-3">
+                    {plan.details.map((item, i) => (
+                      <li key={i} className="flex justify-between">
+                        <span className="rate-check">{item.label}</span>
+                        <span>{item.value}</span>
+                      </li>
+                    ))}
                   </ul>
 
-                  <div className="pt-6 relative z-10">
+                  <div className="pt-6">
                     <SpotlightButton
                       text="CHOOSE PLAN →"
                       bgColor="bg-[#EFA701]"
@@ -110,8 +126,8 @@ export default function TaxiRate() {
                       hoverTextColor="hover:text-black"
                     />
                   </div>
-                </div>
 
+                </div>
               </div>
             </div>
           ))}

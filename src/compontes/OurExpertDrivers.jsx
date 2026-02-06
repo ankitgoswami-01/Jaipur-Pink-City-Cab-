@@ -2,17 +2,17 @@
 
 const drivers = [
   {
-    name: "Alma Mcelroy",
+    name: "Ashok Prajapat",
     role: "Expert Driver",
-    image: "/images/driver01.jpg",
+    image: "/images/jaipur-pink-city-cab-driver.png",
   },
   {
-    name: "Marie Hooks",
+    name: "Mahendra Prajapat",
     role: "Expert Driver",
-    image: "/images/driver02.jpg",
+    image: "/images/taxi-driver-jaipur-uniform.png",
   },
   {
-    name: "Daniel Nesmith",
+    name: "Raju Prajapat",
     role: "Expert Driver",
     image: "/images/driver03.jpg",
   },

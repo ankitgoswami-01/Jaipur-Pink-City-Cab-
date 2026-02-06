@@ -24,9 +24,10 @@ export default function BookYourCabCTA() {
             </h2>
 
             <p className="text-white/90 mt-6 max-w-xl">
-              It is a long established fact that a reader will be distracted
-              by the readable content of a page when looking at its layout
-              point of using is that it has normal distribution of letters.
+              Booking a cab with Jaipur Pink City Cab is quick and hassle-free. 
+We offer reliable taxi services with professional drivers, clean cars, 
+and transparent pricing. Whether you need a local ride, airport transfer, 
+or outstation travel, we ensure a smooth and comfortable journey every time.
             </p>
           </div>
 

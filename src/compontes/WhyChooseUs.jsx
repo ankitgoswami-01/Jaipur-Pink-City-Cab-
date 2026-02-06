@@ -61,7 +61,7 @@ export default function WhyChooseUs() {
               </p>
 
               <img
-                src="/images/tumvideo02.png"
+                src="/images/jaipur-pink-city-cab-dzire-taxi-service.png"
                 alt="Taxi"
                 className="mt-10 max-w-sm mx-auto lg:mx-0"
               />

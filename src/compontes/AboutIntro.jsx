@@ -11,11 +11,11 @@ const AboutIntro = () => {
         {/* LEFT IMAGE AREA */}
         <div className="relative flex justify-center">
           {/* Badge */}
-          <div className="absolute -top-6 left-4 z-20 bg-black text-white px-5 py-3 rounded-full flex items-center gap-3 shadow-lg">
+          <div className="absolute -top-16 left-4 z-20 bg-black text-white px-5 py-3 rounded-full flex items-center gap-3 shadow-lg">
             <span className="bg-yellow-400 p-2 text-black w-10 h-10 flex items-center justify-center rounded-full font-bold">
               <Image
               src="/Images/taxi-booking.svg"
-              alt="Agrotech Logo"
+              alt="Online Taxi Booking Icon in Jaipur"
               width={30}
               height={30}
               priority
@@ -26,7 +26,7 @@ const AboutIntro = () => {
             /> 
             </span>
             <span className="text-sm font-medium">
-            30+  Years Of <br /> Quality Service
+            15+  Years Of <br /> Quality Service
             </span>
           </div>
 
@@ -40,8 +40,8 @@ const AboutIntro = () => {
             className="relative z-10 w-full max-w-md"
           /> */}
            <Image
-              src="/Images/imageTexi01.png"
-              alt="Agrotech Logo"
+              src="/images/jaipur-cab-booking-dzire.png"
+              alt="Jaipur Pink City Cab Booking – Comfortable Dzire Taxi Service in Jaipur"
               width={300}
               height={100}
               priority
@@ -60,13 +60,11 @@ const AboutIntro = () => {
 
           <h2 className="text-3xl md:text-4xl font-extrabold leading-tight mb-6">
             We Provide Trusted{" "}
-            <span className="text-yellow-400">Cab Service</span> In The World
+            <span className="text-yellow-400">Cab Service</span> in Jaipur
           </h2>
 
           <p className="text-gray-600 mb-6">
-            There are many variations of passages of Lorem Ipsum available,
-            but the majority have suffered alteration in some form, by injected
-            humour.
+            Jaipur Pink City Cab is a trusted name in the travel industry, offering reliable and affordable cab services across Jaipur and nearby destinations. We specialize in Taxi Service in Jaipur, airport transfers, outstation taxi services, and customized travel solutions for tourists, families, and corporate clients. Our goal is to provide safe, comfortable, and timely transportation with complete customer satisfaction.
           </p>
 
           {/* Points */}
@@ -74,21 +72,21 @@ const AboutIntro = () => {
   <li className="flex items-start gap-3">
     <span className="check-icon"></span>
     <span className="text-gray-700">
-      At vero eos et accusamus et iusto odio.
+      Trusted Taxi Service in Jaipur with experienced and verified drivers
     </span>
   </li>
 
   <li className="flex items-start gap-3">
     <span className="check-icon"></span>
     <span className="text-gray-700">
-      Established fact that a reader will be distracted.
+      On-time pickup, transparent pricing, and well-maintained vehicles
     </span>
   </li>
 
   <li className="flex items-start gap-3">
     <span className="check-icon"></span>
     <span className="text-gray-700">
-      Sed ut perspiciatis unde omnis iste natus sit.
+      24/7 customer support for airport, local, and outstation travel
     </span>
   </li>
 </ul>

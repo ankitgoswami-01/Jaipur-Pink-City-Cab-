@@ -15,7 +15,7 @@ const services = {
   "jaipur-to-delhi-one-way-taxi-service": {
     title: "Jaipur to Delhi One Way Taxi Service",
 
-    image: "/images/jaipur-to-delhi-one-way-taxi-service-innova-crysta.png",
+    
 
     intro: (
       <>
@@ -132,7 +132,7 @@ const services = {
   "taxi-service-in-jaipur": {
     title: "Taxi Service in Jaipur",
 
-    image: "/images/jaipur-to-delhi-one-way-taxi-service-innova-crysta.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
 
     intro: (
       <>
@@ -251,7 +251,7 @@ const services = {
   "cab-service-in-jaipur": {
     title: "Cab Service in Jaipur",
 
-    image: "/images/jaipur-to-delhi-one-way-taxi-service-innova-crysta.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
 
     intro: (
       <>
@@ -369,7 +369,7 @@ const services = {
   "car-rental-in-jaipur": {
     title: "Car Rental in Jaipur",
 
-    image: "/images/jaipur-to-delhi-one-way-taxi-service-innova-crysta.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
 
     intro: (
       <>
@@ -487,7 +487,7 @@ const services = {
   "jaipur-to-khatu-shyam-ji-taxi-service": {
     title: "Jaipur To Khatu Shyam Ji Taxi Service",
 
-    image: "/images/jaipur-to-delhi-one-way-taxi-service-innova-crysta.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
 
     intro: (
       <>
@@ -605,7 +605,7 @@ const services = {
   "jaipur-to-jodhpur-taxi-service": {
     title: "Jaipur To Jodhpur Taxi Service",
 
-    image: "/images/jaipur-to-delhi-one-way-taxi-service-innova-crysta.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
 
     intro: (
       <>
@@ -723,7 +723,7 @@ const services = {
   "jaipur-to-udaipur-and-mount-abu-taxi-service": {
     title: "Jaipur To Udaipur And Mount Abu Taxi Service",
 
-    image: "/images/jaipur-to-delhi-one-way-taxi-service-innova-crysta.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
 
     intro: (
       <>
@@ -841,7 +841,7 @@ const services = {
   "jaipur-to-jaisalmer-taxi-service": {
     title: "Jaipur To Jaisalmer Taxi Service",
 
-    image: "/images/jaipur-to-delhi-one-way-taxi-service-innova-crysta.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
 
     intro: (
       <>
@@ -959,7 +959,7 @@ const services = {
   "jaipur-to-sawai-madhopur-taxi-service": {
     title: "Jaipur To Sawai Madhopur Taxi Service",
 
-    image: "/images/jaipur-to-delhi-one-way-taxi-service-innova-crysta.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
 
     intro: (
       <>
@@ -1077,7 +1077,7 @@ const services = {
   "tempo-traveller-service-in-jaipur": {
     title: "Tempo Traveller Service in Jaipur",
 
-    image: "/images/jaipur-to-delhi-one-way-taxi-service-innova-crysta.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
 
     intro: (
       <>
@@ -1195,7 +1195,7 @@ const services = {
   "jaipur-to-agra-one-way-cab-service": {
     title: "Jaipur To Agra One Way Cab Service",
 
-    image: "/images/jaipur-to-delhi-one-way-taxi-service-innova-crysta.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
 
     intro: (
       <>
@@ -1313,7 +1313,7 @@ const services = {
   "golden-triangle-tours-package": {
     title: "Golden Triangle Tours Package",
 
-    image: "/images/jaipur-to-delhi-one-way-taxi-service-innova-crysta.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
 
     intro: (
       <>
@@ -1431,7 +1431,7 @@ const services = {
   "jaipur-to-ayodhya-taxi-service": {
     title: "Jaipur to Ayodhya Taxi Service",
 
-    image: "/images/jaipur-to-delhi-one-way-taxi-service-innova-crysta.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
 
     intro: (
       <>
@@ -1549,7 +1549,7 @@ const services = {
   "jaipur-airport-taxi-service": {
     title: "Jaipur Airport Taxi Service",
 
-    image: "/images/jaipur-to-delhi-one-way-taxi-service-innova-crysta.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
 
     intro: (
       <>
@@ -1813,15 +1813,19 @@ export default function ServiceSlugPage() {
         {/* CONTENT */}
         <article className="lg:col-span-3 bg-white rounded-2xl shadow-lg p-8 space-y-12">
           {/* IMAGE */}
-          <div className="relative w-full h-80">
-            <Image
-              src={service.image}
-              alt={service.title}
-              fill
-              className="object-cover rounded-xl"
-              priority
-            />
-          </div>
+         <div className="relative w-full h-[220px] sm:h-[300px] md:h-[420px] lg:h-[520px] overflow-hidden rounded-xl">
+  <Image
+    src={service.image}
+    alt={service.title}
+    fill
+    priority
+    sizes="(max-width: 640px) 100vw,
+           (max-width: 1024px) 90vw,
+           1200px"
+    className="object-contain"
+  />
+</div>
+
 
           {/* INTRO */}
           <div className="text-gray-700 leading-8">{service.intro}</div>

@@ -26,9 +26,10 @@ const GetInTouch = () => {
           <div>
             <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
             <p className="text-gray-600 mb-8 max-w-xl">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page randomised words slightly when
-              looking at its layout.
+             Contact Jaipur Pink City Cab for reliable taxi services in Jaipur.
+Whether you need a local cab, airport transfer, or outstation taxi,
+our team is here to help you with quick booking and transparent pricing.
+Get in touch today for a safe, comfortable, and affordable cab service.
             </p>
 
             <form className="space-y-6">

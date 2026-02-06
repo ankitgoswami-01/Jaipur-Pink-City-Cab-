@@ -5,24 +5,24 @@ import SpotlightButton from "./SpotlightButton";
 const blogs = [
   {
     id: 1,
-    image: "/images/blog01.jpg",
-    title: "There Are Many Variations Of Passage Available.",
-    author: "Alicia Davis",
-    date: "February 23, 2023",
+    image: "/images/jaipur-pink-city-cab-service.jpg",
+    title: "Jaipur Pink City Cab Service – Affordable & Reliable Taxi in Jaipur",
+    author: "Jaipur Pink City Cab",
+    // date: "February 23, 2023",
   },
   {
     id: 2,
-    image: "/images/blog02.jpg",
-    title: "There Are Many Variations Of Passage Available.",
-    author: "Alicia Davis",
-    date: "February 23, 2023",
+    image: "/images/jaipur-to-delhi-taxi-service.jpg.jpg",
+    title: "Jaipur to Delhi Taxi Service – One Way & Round Trip Cabs",
+   author: "Jaipur Pink City Cab",
+    // date: "February 23, 2023",
   },
   {
     id: 3,
-    image: "/images/blog03.jpg",
-    title: "There Are Many Variations Of Passage Available.",
-    author: "Alicia Davis",
-    date: "February 23, 2023",
+    image: "/images/best-taxi-service-in-jaipur.jpg",
+    title: "Best Taxi Service in Jaipur – 24/7 Safe & Comfortable Rides",
+      author: "Jaipur Pink City Cab",
+    // date: "February 23, 2023",
   },
 ];
 

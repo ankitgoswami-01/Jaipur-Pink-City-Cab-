@@ -32,8 +32,9 @@ const Footer = () => {
           </div>
 
           <p className="text-gray-400 mb-6 text-sm">
-            We are many variations of passages available but the majority have
-            suffered alteration in some form by injected humour words believable.
+            Jaipur Pink City Cab provides reliable and comfortable taxi services with
+professional drivers, clean vehicles, and affordable pricing to ensure a
+smooth and stress-free travel experience.
           </p>
 
           <ul className="space-y-4 text-sm">

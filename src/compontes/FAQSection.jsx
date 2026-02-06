@@ -5,24 +5,24 @@ import Image from "next/image";
 const faqs = [
 
   {
-  question: "How Long Does A Booking Take for Taxi Service in Jaipur?",
+  question: "What services does Jaipur Pink City Cab provide?",
   answer:
-    "Booking a taxi service in Jaipur usually takes less than 2 minutes. Just select your pickup and drop location, choose the car, set the time, and confirm your ride with Jaipur Pink City Cab.",
+    "We offer Taxi Service in Jaipur, airport pickup and drop, outstation taxi services, one-way cabs, sightseeing tours, tempo traveller services, and long-distance routes across Rajasthan and nearby states.",
 },
 {
-  question: "How Can I Become A Member for Cab Service in Jaipur?",
+  question: "How can I book a taxi in Jaipur?",
   answer:
-    "You can become a member easily by signing up on our website using your email and phone number. Membership helps you book cab services in Jaipur faster, including airport taxis and outstation rides.",
+    "You can easily book a cab through our website or by contacting our customer support team for quick confirmation.",
 },
 {
-  question: "Is Jaipur Airport Taxi Service Available 24/7?",
+  question: "Are your prices fixed and transparent?",
   answer:
-    "Yes, our Jaipur Airport Taxi Service is available 24/7. We ensure timely pickups and drops with professional drivers for a smooth airport travel experience.",
+    "Yes, we provide transparent pricing with no hidden charges for all cab services.",
 },
 {
-  question: "How Can I Cancel My Taxi Booking in Jaipur?",
+  question: "Do you offer airport taxi services?",
   answer:
-    "You can cancel your taxi booking in Jaipur anytime from your dashboard before the ride starts. This applies to local rides, Jaipur Airport Taxi Service, and outstation taxi services.",
+    "Yes, we provide reliable Jaipur Airport Taxi Service with on-time pickup and drop.",
 },
 
 
@@ -47,8 +47,7 @@ export default function FAQSection() {
           </h2>
 
           <p className="text-gray-500 mt-4">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form.
+            Here are some commonly asked questions about Jaipur Pink City Cab and our taxi services in Jaipur. These FAQs are designed to help you understand our booking process, pricing, service areas, and travel options. If you need any additional information, our support team is available 24/7 to assist you.
           </p>
 
           <div className="mt-8 rounded-xl overflow-hidden">
