@@ -35,66 +35,83 @@ export default function WhyChooseUs() {
         
       </section> */}
       <div class="choose-area pt-50 text-white  pb-24 overflow-hidden">
-            <div className="container mx-auto px-6">
-   <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+            {/* Left Content */}
+            <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+              <p className="text-yellow-400 uppercase tracking-widest font-semibold">
+                Why Choose Jaipur Pink City Cab
+              </p>
 
-  {/* Left Content */}
-  <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
-    <p className="text-yellow-400 uppercase tracking-widest font-semibold">
-      Why Choose Us
-    </p>
+              <h2 className="text-4xl font-bold mt-4 leading-tight">
+                We Are Dedicated To <br />
+                <span className="text-yellow-400">
+                  Providing Quality Taxi Service in Jaipur
+                </span>
+              </h2>
 
-    <h2 className="text-4xl font-bold mt-4 leading-tight">
-      We Are Dedicated To <br />
-      <span className="text-yellow-400">Provide Quality Service</span>
-    </h2>
+              <p className="text-gray-400 mt-6 max-w-lg">
+                Jaipur Pink City Cab is dedicated to providing quality taxi
+                service in Jaipur with a strong focus on safety, comfort, and
+                customer satisfaction. We offer reliable cab service in Jaipur
+                with professional drivers, clean vehicles, and 24/7
+                availability. Whether you need a local taxi, Jaipur airport taxi
+                service, or outstation cab, we ensure a smooth and hassle-free
+                travel experience.
+              </p>
 
-    <p className="text-gray-400 mt-6 max-w-lg">
-      There are many variations of passages available but the majority
-      have suffered alteration in some form by injected humour.
-    </p>
+              <img
+                src="/images/tumvideo02.png"
+                alt="Taxi"
+                className="mt-10 max-w-sm mx-auto lg:mx-0"
+              />
+            </div>
 
-    <img
-      src="/images/tumvideo02.png"
-      alt="Taxi"
-      className="mt-10 max-w-sm mx-auto lg:mx-0"
-    />
-  </div>
+            {/* Right Cards */}
+            <div className="space-y-6 flex flex-col items-center lg:items-stretch">
+              {[
+                { title: "Best Quality Taxi", num: "01" },
+                { title: "Expert Drivers", num: "02" },
+                { title: "Many Locations", num: "03" },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="bg-white text-black rounded-xl p-6 flex gap-4 shadow-lg w-full max-w-xl"
+                >
+                  <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                    🚕
+                  </div>
 
-  {/* Right Cards */}
-  <div className="space-y-6 flex flex-col items-center lg:items-stretch">
-    {[
-      { title: "Best Quality Taxi", num: "01" },
-      { title: "Expert Drivers", num: "02" },
-      { title: "Many Locations", num: "03" },
-    ].map((item, i) => (
-      <div
-        key={i}
-        className="bg-white text-black rounded-xl p-6 flex gap-4 shadow-lg w-full max-w-xl"
-      >
-        <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
-          🚕
+                  <div>
+                    <h4 className="font-semibold text-lg">{item.title}</h4>
+                    <p className="text-sm text-gray-600 mt-1">
+                      Jaipur Pink City Cab offers best quality taxi service in
+                      Jaipur with clean, comfortable, and well-maintained cars
+                      for local and outstation travel.
+                    </p>
+
+                    <p className="text-sm text-gray-600 mt-1">
+                      Our expert drivers in Jaipur are professionally trained,
+                      experienced, and ensure safe, fast, and reliable cab
+                      service across all routes.
+                    </p>
+
+                    <p className="text-sm text-gray-600 mt-1">
+                      We provide taxi and car rental services in Jaipur for
+                      multiple locations including airport transfers, city
+                      travel, and outstation destinations.
+                    </p>
+                  </div>
+
+                  <span className="ml-auto text-yellow-400 font-bold text-xl">
+                    {item.num}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-
-        <div>
-          <h4 className="font-semibold text-lg">{item.title}</h4>
-          <p className="text-sm text-gray-600 mt-1">
-            There are many variations of passages available but the
-            majority have suffered alteration.
-          </p>
-        </div>
-
-        <span className="ml-auto text-yellow-400 font-bold text-xl">
-          {item.num}
-        </span>
       </div>
-    ))}
-  </div>
-
-</div>
-
-        </div>
-        </div>
 
       {/* Video Modal */}
       {open && (

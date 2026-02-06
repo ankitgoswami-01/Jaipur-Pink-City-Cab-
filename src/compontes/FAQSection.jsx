@@ -3,26 +3,29 @@ import { useState } from "react";
 import Image from "next/image";
 
 const faqs = [
+
   {
-    question: "How Long Does A Booking Take?",
-    answer:
-      "Booking usually takes less than 2 minutes. Just select your pickup, drop location, time, and confirm your ride.",
-  },
-  {
-    question: "How Can I Become A Member?",
-    answer:
-      "You can become a member by signing up on our website using your email and phone number.",
-  },
-  {
-    question: "What Payment Gateway You Support?",
-    answer:
-      "We support Credit/Debit Cards, UPI, Net Banking, and popular wallets.",
-  },
-  {
-    question: "How Can I Cancel My Request?",
-    answer:
-      "You can cancel your booking anytime from your dashboard before the ride starts.",
-  },
+  question: "How Long Does A Booking Take for Taxi Service in Jaipur?",
+  answer:
+    "Booking a taxi service in Jaipur usually takes less than 2 minutes. Just select your pickup and drop location, choose the car, set the time, and confirm your ride with Jaipur Pink City Cab.",
+},
+{
+  question: "How Can I Become A Member for Cab Service in Jaipur?",
+  answer:
+    "You can become a member easily by signing up on our website using your email and phone number. Membership helps you book cab services in Jaipur faster, including airport taxis and outstation rides.",
+},
+{
+  question: "Is Jaipur Airport Taxi Service Available 24/7?",
+  answer:
+    "Yes, our Jaipur Airport Taxi Service is available 24/7. We ensure timely pickups and drops with professional drivers for a smooth airport travel experience.",
+},
+{
+  question: "How Can I Cancel My Taxi Booking in Jaipur?",
+  answer:
+    "You can cancel your taxi booking in Jaipur anytime from your dashboard before the ride starts. This applies to local rides, Jaipur Airport Taxi Service, and outstation taxi services.",
+},
+
+
 ];
 
 export default function FAQSection() {

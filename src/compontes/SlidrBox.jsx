@@ -6,16 +6,16 @@ import SpotlightButton from "./SpotlightButton";
 const slides = [
   {
     image: "/images/cabSlide01.png",
-    title: "BOOK TAXI FOR YOUR RIDE",
+    title: "Book Taxi for Your Ride in Jaipur – Jaipur Pink City Cab",
   },
   
   {
     image: "/images/cabSlide02.png",
-    title: "SAFE & FAST TAXI SERVICE",
+    title: "Safe & Fast Taxi Service in Jaipur | Jaipur Pink City Cab",
   },
   {
     image: "/images/cabSlide03.png",
-    title: "24/7 TAXI AVAILABLE",
+    title: "24/7 Taxi Available in Jaipur | Jaipur Pink City Cab",
   },
 ];
 
@@ -149,7 +149,7 @@ useEffect(() => {
         className="relative z-10 max-w-7xl mx-auto px-4 pt-32 pb-24 text-center text-white"
       >
         <p className="text-yellow-400 tracking-widest font-semibold mb-4">
-          WELCOME TO TAXICA!
+          WELCOME TO  Jaipur Pink City Cab
         </p>
 
         <h1
@@ -158,7 +158,7 @@ useEffect(() => {
         ></h1>
 
         <p className="max-w-3xl mx-auto text-gray-300 mt-6">
-          Premium taxi service with professional drivers and 24/7 availability.
+          Jaipur Pink City Cab | Premium Taxi Service in Jaipur – 24/7 Available
         </p>
 
       <div className="flex justify-center gap-4 mt-10">
