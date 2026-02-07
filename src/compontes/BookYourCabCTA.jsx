@@ -42,9 +42,15 @@ or outstation travel, we ensure a smooth and comfortable journey every time.
               <div className="w-12 h-12 rounded-full border border-white flex items-center justify-center text-xl">
                 🎧
               </div>
-              <span className="text-xl font-semibold tracking-wide">
-                +9660046645
-              </span>
+              <a
+  href="https://wa.me/919660046645"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-xl font-semibold tracking-wide cursor-pointer hover:text-green-500 transition-colors duration-200"
+>
+  +91 9660046645
+</a>
+
             </div>
 
             {/* Button */}

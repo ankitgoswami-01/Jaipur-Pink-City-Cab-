@@ -1,6 +1,9 @@
 "use client";
 
+import { CarTaxiFront } from "lucide-react";
 import { useState } from "react";
+// import { Taxi } from "lucide-react";
+
 
 export default function WhyChooseUs() {
   const [open, setOpen] = useState(false);
@@ -8,7 +11,7 @@ export default function WhyChooseUs() {
   return (
     <>
       {/* Video Wrapper Section */}
-      <section className="relative z-20 overflow-visible">
+      {/* <section className="relative z-20 overflow-visible">
         <div className="max-w-6xl mx-auto px-6 -mb-40">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
             <img
@@ -18,7 +21,7 @@ export default function WhyChooseUs() {
             />
 
             {/* Play Button */}
-            <button className="absolute inset-0 flex items-center justify-center">
+            {/* <button className="absolute inset-0 flex items-center justify-center">
               <span
                 onClick={() => setOpen(true)}
                 className="w-20 h-20 bg-yellow-400/90 rounded-full flex items-center justify-center text-black text-3xl hover:scale-110 transition cursor-pointer"
@@ -27,8 +30,8 @@ export default function WhyChooseUs() {
               </span>
             </button>
           </div>
-        </div>
-      </section>
+        </div> */}
+      {/* </section> */} 
 
       {/* Why Choose Us Section */}
       {/* <section className="relative bg-[#0b0b0b] text-white pt-56 pb-24 overflow-hidden" >
@@ -78,9 +81,10 @@ export default function WhyChooseUs() {
                   key={i}
                   className="bg-white text-black rounded-xl p-6 flex gap-4 shadow-lg w-full max-w-xl"
                 >
-                  <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
-                    🚕
-                  </div>
+                <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center shrink-0">
+  <CarTaxiFront className="w-6 h-6 text-black" strokeWidth={2.2} />
+</div>
+
 
                   <div>
                     <h4 className="font-semibold text-lg">{item.title}</h4>

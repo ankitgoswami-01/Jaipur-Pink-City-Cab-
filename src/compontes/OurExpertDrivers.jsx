@@ -17,7 +17,7 @@ const drivers = [
     image: "/images/driver03.jpg",
   },
   {
-    name: "Gertrude Barrow",
+    name: "Manoj Prajapat",
     role: "Expert Driver",
     image: "/images/driver04.jpg",
   },

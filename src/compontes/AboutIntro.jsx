@@ -39,17 +39,23 @@ const AboutIntro = () => {
             alt="Taxi"
             className="relative z-10 w-full max-w-md"
           /> */}
-           <Image
-              src="/images/jaipur-cab-booking-dzire.png"
-              alt="Jaipur Pink City Cab Booking – Comfortable Dzire Taxi Service in Jaipur"
-              width={300}
-              height={100}
-              priority
-            className="relative z-10 w-full max-w-md"
-            style={{
-              transform:'Scale(1.3)'
-            }}
-            />
+        <Image
+  src="/images/jaipur-cab-booking-dzire.png"
+  alt="Jaipur Pink City Cab Booking – Comfortable Dzire Taxi Service in Jaipur"
+  width={300}
+  height={100}
+  priority
+  className="
+    relative z-10
+    w-full
+    max-w-[420px]
+    sm:max-w-[280px]
+    md:max-w-[340px]
+    lg:max-w-[720px]
+    h-auto
+  "
+/>
+
         </div>
 
         {/* RIGHT CONTENT */}
@@ -97,7 +103,7 @@ const AboutIntro = () => {
           </button> */}
            <SpotlightButton
                   text="DISCOVER MORE →"
-                  // href="/book"
+                  href="/about"
                   bgColor="bg-[#EFA701]"
                   hoverBgColor="hover:bg-black"
                   textColor="text-black"

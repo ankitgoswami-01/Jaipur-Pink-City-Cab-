@@ -50,9 +50,9 @@ export default function FAQSection() {
             Here are some commonly asked questions about Jaipur Pink City Cab and our taxi services in Jaipur. These FAQs are designed to help you understand our booking process, pricing, service areas, and travel options. If you need any additional information, our support team is available 24/7 to assist you.
           </p>
 
-          <div className="mt-8 rounded-xl overflow-hidden">
+          <div className="mt-8 rounded-xl overflow-hidden h-[500]">
             <Image
-              src="/images/faq01.jpg"
+              src="/images/clintImg.png"
               alt="FAQ Taxi"
               width={600}
               height={400}

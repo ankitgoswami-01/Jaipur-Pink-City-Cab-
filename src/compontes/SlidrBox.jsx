@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import SpotlightButton from "./SpotlightButton";
+import { toast } from "react-toastify";
 
 const slides = [
   {
@@ -102,26 +103,86 @@ const [drop, setDrop] = useState("");
 const [passengers, setPassengers] = useState("");
 const [date, setDate] = useState("");
 const [time, setTime] = useState("");
-const [errors, setErrors] = useState({});
-const handleBookTaxi = () => {
+const [errors, setErrors] = useState({
+  pickup: "",
+  drop: "",
+  passengers: "",
+  cab: "",
+  date: "",
+  time: "",
+  name: "",
+  contact: "",
+});
+const [name, setName] = useState("");
+const [contact, setContact] = useState("");
+const [isSubmitting, setIsSubmitting] = useState(false);
+
+const handleBookTaxi = async () => {
   const newErrors = {};
 
-  if (!pickup) newErrors.pickup = "Pick up location is required";
-  if (!drop) newErrors.drop = "Drop off location is required";
-  if (!passengers) newErrors.passengers = "Passengers required";
-  if (selectedCab === "Choose Cab") newErrors.cab = "Please select cab type";
-  if (!date) newErrors.date = "Please select date";
-  if (!time) newErrors.time = "Please select time";
-  if (selectedAge === "Choose Age") newErrors.age = "Please select age group";
-  if (selectedModel === "Choose Model") newErrors.model = "Please select model";
+  if (!pickup) newErrors.pickup = true;
+  if (!drop) newErrors.drop = true;
+  if (!passengers) newErrors.passengers = true;
+  if (selectedCab === "Choose Cab") newErrors.cab = true;
+  if (!date) newErrors.date = true;
+  if (!time) newErrors.time = true;
+  if (!name) newErrors.name = true;
+  if (!contact) newErrors.contact = true;
 
   setErrors(newErrors);
+  if (Object.keys(newErrors).length > 0) return;
 
-  if (Object.keys(newErrors).length === 0) {
-    console.log("✅ Form Submitted");
-    // API call / next step here
+  setIsSubmitting(true);
+
+  try {
+    const res = await fetch("/api/book-taxi", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        pickup,
+        drop,
+        passengers,
+        cab: selectedCab,
+        date,
+        time,
+        name,
+        contact,
+      }),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      toast.success(
+        "🚕 Booking Confirmed! Jaipur Pink City Cab will contact you shortly."
+      );
+
+      // ✅ RESET FORM
+      setPickup("");
+      setDrop("");
+      setPassengers("");
+      setSelectedCab("Choose Cab");
+      setName("");
+      setContact("");
+
+      const now = new Date();
+      setDate(now.toISOString().split("T")[0]);
+      setTime(now.toTimeString().slice(0, 5));
+
+      setErrors({});
+    } else {
+      toast.error("❌ Booking failed. Please try again.");
+    }
+  } catch (error) {
+    toast.error("❌ Server error. Please try later.");
+  } finally {
+    setIsSubmitting(false);
   }
 };
+
+
+
+
 
 useEffect(() => {
   const now = new Date();
@@ -166,7 +227,7 @@ useEffect(() => {
      <SpotlightButton
   text="ABOUT MORE →"
   //  icon={Car}
-  href="/book"
+  href="/contact"
   bgColor="bg-[#EFA701]"
   hoverBgColor="hover:bg-black"
   textColor="text-black"
@@ -175,7 +236,7 @@ useEffect(() => {
      <SpotlightButton
   text="LEARN MORE →"
   //  icon={Car}
-  href="/book"
+  href="/contact"
   bgColor="bg-white"
   hoverBgColor="hover:bg-[#EFA701]"
   textColor="text-black"
@@ -217,71 +278,70 @@ useEffect(() => {
       ref={dropdownWrapperRef}
       className="grid grid-cols-1 md:grid-cols-4 gap-4"
     >
-<input
-  value={pickup}
-  onChange={(e) => {
-    setPickup(e.target.value);
-    setErrors({ ...errors, pickup: "" });
-  }}
-  placeholder="Pick Up Location"
-  className={`input ${
-    errors.pickup
-      ? "border-red-500 ring-1 ring-red-500"
-      : pickup
-      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
-      : ""
-  }`}
-/>
+      {/* PICKUP */}
+      <input
+        value={pickup}
+        onChange={(e) => {
+          setPickup(e.target.value);
+          setErrors({ ...errors, pickup: "" });
+        }}
+        placeholder="Pick Up Location"
+        className={`input ${
+          errors.pickup
+            ? "border-red-500 ring-1 ring-red-500"
+            : pickup
+            ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+            : ""
+        }`}
+      />
 
+      {/* DROP */}
+      <input
+        value={drop}
+        onChange={(e) => {
+          setDrop(e.target.value);
+          setErrors({ ...errors, drop: "" });
+        }}
+        placeholder="Drop Off Location"
+        className={`input ${
+          errors.drop
+            ? "border-red-500 ring-1 ring-red-500"
+            : drop
+            ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+            : ""
+        }`}
+      />
 
-<input
-  value={drop}
-  onChange={(e) => {
-    setDrop(e.target.value);
-    setErrors({ ...errors, drop: "" });
-  }}
-  placeholder="Drop Off Location"
-  className={`input ${
-    errors.drop
-      ? "border-red-500 ring-1 ring-red-500"
-      : drop
-      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
-      : ""
-  }`}
-/>
+      {/* PASSENGERS */}
+      <input
+        value={passengers}
+        onChange={(e) => {
+          setPassengers(e.target.value);
+          setErrors({ ...errors, passengers: "" });
+        }}
+        placeholder="Passengers"
+        className={`input ${
+          errors.passengers
+            ? "border-red-500 ring-1 ring-red-500"
+            : passengers
+            ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+            : ""
+        }`}
+      />
 
-
-<input
-  value={passengers}
-  onChange={(e) => {
-    setPassengers(e.target.value);
-    setErrors({ ...errors, passengers: "" });
-  }}
-  placeholder="Passengers"
-  className={`input ${
-    errors.passengers
-      ? "border-red-500 ring-1 ring-red-500"
-      : passengers
-      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
-      : ""
-  }`}
-/>
-
-
-
-      {/* ===== CHOOSE CAB ===== */}
+      {/* CHOOSE CAB */}
       <div className="relative">
         <button
           onClick={() =>
             setOpenDropdown(openDropdown === "cab" ? null : "cab")
           }
           className={`select-trigger ${
-    errors.cab
-      ? "border-red-500 ring-1 ring-red-500"
-      : selectedCab !== "Choose Cab"
-      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
-      : ""
-  }`}
+            errors.cab
+              ? "border-red-500 ring-1 ring-red-500"
+              : selectedCab !== "Choose Cab"
+              ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+              : ""
+          }`}
         >
           {selectedCab}
           <span className={`arrow ${openDropdown === "cab" ? "rotate" : ""}`}>
@@ -310,141 +370,93 @@ useEffect(() => {
         )}
       </div>
 
-<input
-  type="date"
-  value={date}
-  onChange={(e) => {
-    setDate(e.target.value);
-    setErrors({ ...errors, date: "" });
-  }}
-  className={`input ${
-    errors.date
-      ? "border-red-500 ring-1 ring-red-500"
-      : date
-      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
-      : ""
-  }`}
-/>
-
-
-
-
-<input
-  type="time"
-  value={time}
-  onChange={(e) => {
-    setTime(e.target.value);
-    setErrors({ ...errors, time: "" });
-  }}
-  className={`input ${
-    errors.time
-      ? "border-red-500 ring-1 ring-red-500"
-      : time
-      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
-      : ""
-  }`}
-/>
-
-
-
-
-      {/* ===== CHOOSE AGE ===== */}
-      <div className="relative">
-        <button
-          onClick={() =>
-            setOpenDropdown(openDropdown === "age" ? null : "age")
-          }
-           className={`select-trigger ${
-    errors.cab
-      ? "border-red-500 ring-1 ring-red-500"
-      :selectedAge !== "Choose Age" ? "selected" : "" 
-      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
-      : ""
-  }`}
-        >
-          {selectedAge}
-          <span className={`arrow ${openDropdown === "age" ? "rotate" : ""}`}>
-            ⌃
-          </span>
-        </button>
-
-        {openDropdown === "age" && (
-          <div className="glass-options open">
-            {["18–25", "26–40", "41–60", "60+"].map((item) => (
-              <div
-                key={item}
-                className={`glass-option ${
-                  selectedAge === item ? "active" : ""
-                }`}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedAge(item);
-                  setOpenDropdown(null);
-                }}
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-
-      {/* ===== CHOOSE MODEL ===== */}
-      <div className="relative">
-        <button
-          onClick={() =>
-            setOpenDropdown(openDropdown === "model" ? null : "model")
-          }
-           className={`select-trigger ${
-    errors.cab
-      ? "border-red-500 ring-1 ring-red-500"
-      : selectedModel !== "Choose Model" ? "selected" : ""
-      ? "border-[#EFA701] ring-1 ring-[#EFA701]"
-      : ""
-  }`}
-        >
-          {selectedModel}
-          <span className={`arrow ${openDropdown === "model" ? "rotate" : ""}`}>
-            ⌃
-          </span>
-        </button>
-
-        {openDropdown === "model" && (
-          <div className="glass-options open">
-            {["2021", "2022", "2023", "2024"].map((item) => (
-              <div
-                key={item}
-                className={`glass-option ${
-                  selectedModel === item ? "active" : ""
-                }`}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedModel(item);
-                  setOpenDropdown(null);
-                }}
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    </div>
-
-    <div className="flex justify-end mt-6">
-      <button onClick={handleBookTaxi}>
-      <SpotlightButton
-        text="BOOK TAXI →"
-        // href="/book"
-        bgColor="bg-[#EFA701]"
-        hoverBgColor="hover:bg-black"
-        textColor="text-black"
-        hoverTextColor="hover:text-white"
+      {/* DATE */}
+      <input
+        type="date"
+        value={date}
+        onChange={(e) => {
+          setDate(e.target.value);
+          setErrors({ ...errors, date: "" });
+        }}
+        className={`input ${
+          errors.date
+            ? "border-red-500 ring-1 ring-red-500"
+            : date
+            ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+            : ""
+        }`}
       />
-      </button>
+
+      {/* TIME */}
+      <input
+        type="time"
+        value={time}
+        onChange={(e) => {
+          setTime(e.target.value);
+          setErrors({ ...errors, time: "" });
+        }}
+        className={`input ${
+          errors.time
+            ? "border-red-500 ring-1 ring-red-500"
+            : time
+            ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+            : ""
+        }`}
+      />
+
+      {/* NAME */}
+      <input
+        value={name}
+        onChange={(e) => {
+          setName(e.target.value);
+          setErrors({ ...errors, name: "" });
+        }}
+        placeholder="Your Name"
+        className={`input ${
+          errors.name
+            ? "border-red-500 ring-1 ring-red-500"
+            : name
+            ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+            : ""
+        }`}
+      />
+
+      {/* CONTACT */}
+      <input
+        type="tel"
+        value={contact}
+        onChange={(e) => {
+          setContact(e.target.value);
+          setErrors({ ...errors, contact: "" });
+        }}
+        placeholder="Contact Number"
+        className={`input ${
+          errors.contact
+            ? "border-red-500 ring-1 ring-red-500"
+            : contact
+            ? "border-[#EFA701] ring-1 ring-[#EFA701]"
+            : ""
+        }`}
+      />
     </div>
+
+    {/* SUBMIT */}
+   <div className="flex justify-end mt-6">
+  <button onClick={handleBookTaxi} disabled={isSubmitting}>
+    <SpotlightButton
+      text={isSubmitting ? "BOOKING..." : "BOOK TAXI →"}
+      bgColor="bg-[#EFA701]"
+      hoverBgColor="hover:bg-black"
+      textColor="text-black"
+      hoverTextColor="hover:text-white"
+      className={isSubmitting ? "opacity-70 cursor-not-allowed" : ""}
+    />
+  </button>
+</div>
+
   </div>
 </div>
+
 
 
 

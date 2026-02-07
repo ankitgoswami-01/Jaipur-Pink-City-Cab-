@@ -2,34 +2,35 @@
 
 const testimonials = [
   {
-    name: "Heruli Nez",
+    name: "Rahul Sharma",
     role: "Customer",
     image: "/images/testmonial01.jpg",
     review:
-      "Amazing experience with Jaipur Pink City Cab in Jaipur. The driver was extremely polite, punctual, and well-mannered, making the entire journey smooth and comfortable. The cab was clean, well-maintained, and perfect for a relaxed ride through the city. From pickup to drop-off, the service was professional and well-organized. Jaipur Pink City Cab truly delivers reliable, safe, and hassle-free travel. I would highly recommend their cab service to anyone looking for a comfortable and trustworthy taxi service in Jaipur.",
+      "I had a great experience with Jaipur Pink City Cab. The driver was very polite, arrived on time, and knew all the local routes very well. The cab was clean and comfortable, which made our city tour smooth and enjoyable. Highly recommended for anyone visiting Jaipur.",
   },
   {
-    name: "Sylvia Green",
+    name: "Priya Verma",
     role: "Customer",
     image: "/images/testmonial02.jpg",
     review:
-      "I had a wonderful experience with Jaipur Pink City Cab. The booking process was easy, the cab arrived on time, and the driver was very courteous. The vehicle was clean and comfortable, making the journey stress-free. This is one of the most reliable cab services in Jaipur, and I would definitely use it again.",
+      "Jaipur Pink City Cab provided excellent service for our airport pickup. The booking process was simple, the cab arrived on time, and the driver was very helpful. The ride was comfortable and stress-free. I will definitely use their service again.",
   },
   {
-    name: "Gordo Novak",
+    name: "Amit Singh",
     role: "Customer",
     image: "/images/testmonial03.jpg",
     review:
-      "Jaipur Pink City Cab provided excellent service during my trip in Jaipur. The driver was professional, knowledgeable about local routes, and ensured a smooth ride throughout. The cab was well-maintained and comfortable. Overall, a safe, affordable, and dependable taxi service that I highly recommend.",
+      "Very professional and reliable cab service in Jaipur. The driver was friendly, well-behaved, and ensured a safe journey throughout. The car was neat and well-maintained. Jaipur Pink City Cab is a trustworthy option for local and outstation travel.",
   },
   {
-    name: "Reid Butt",
+    name: "Neha Gupta",
     role: "Customer",
     image: "/images/testmonial04.jpg",
     review:
-      "My experience with Jaipur Pink City Cab was outstanding. The driver was polite and punctual, and the entire journey was comfortable and well-managed. The service felt very professional from start to finish. If you are looking for a trustworthy and hassle-free cab service in Jaipur, Jaipur Pink City Cab is a great choice.",
+      "My experience with Jaipur Pink City Cab was excellent. The driver was punctual and cooperative, and the entire trip was very comfortable. The service was well-organized and reasonably priced. I would strongly recommend this cab service in Jaipur.",
   },
 ];
+
 
 export default function Testimonial() {
   return (

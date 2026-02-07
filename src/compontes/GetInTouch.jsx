@@ -1,6 +1,55 @@
-import SpotlightButton from "./SpotlightButton";
+"use client";
+
+import { useState } from "react";
+import { toast } from "react-toastify";
 
 const GetInTouch = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        toast.success("Message sent successfully 🚀");
+
+        // ✅ FORM RESET
+        setForm({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        toast.error("Failed to send message ❌");
+      }
+    } catch (error) {
+      toast.error("Something went wrong ❌");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
@@ -10,81 +59,75 @@ const GetInTouch = () => {
         >
           {/* LEFT IMAGE */}
           <div className="relative flex justify-center">
-            <div
-              className="relative w-[320px] h-80 sm:w-95 sm:h-95 lg:w-105 lg:h-105
-              rounded-full border-[6px] border-[#F7A600] overflow-hidden"
-            >
+        
               <img
                 src="/images/clintImgReview.jpg"
                 alt="Get in touch"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-2xl"
               />
-            </div>
+            {/* </div> */}
           </div>
 
           {/* RIGHT CONTENT */}
           <div>
             <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
             <p className="text-gray-600 mb-8 max-w-xl">
-             Contact Jaipur Pink City Cab for reliable taxi services in Jaipur.
-Whether you need a local cab, airport transfer, or outstation taxi,
-our team is here to help you with quick booking and transparent pricing.
-Get in touch today for a safe, comfortable, and affordable cab service.
+              Contact Jaipur Pink City Cab for reliable taxi services in Jaipur.
+              Whether you need a local cab, airport transfer, or outstation taxi,
+              our team is here to help you.
             </p>
 
-            <form className="space-y-6">
-              {/* ROW 1 */}
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <input
                   type="text"
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
                   placeholder="Your Name"
-                  className="w-full border border-gray-300 rounded-xl px-5 py-4
-                  focus:outline-none focus:border-[#F7A600]"
+                  required
+                  className="w-full border border-gray-300 rounded-xl px-5 py-4"
                 />
+
                 <input
                   type="email"
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
                   placeholder="Your Email"
-                  className="w-full border border-gray-300 rounded-xl px-5 py-4
-                  focus:outline-none focus:border-[#F7A600]"
+                  required
+                  className="w-full border border-gray-300 rounded-xl px-5 py-4"
                 />
               </div>
 
-              {/* SUBJECT */}
               <input
                 type="text"
+                name="subject"
+                value={form.subject}
+                onChange={handleChange}
                 placeholder="Your Subject"
-                className="w-full border border-gray-300 rounded-xl px-5 py-4
-                focus:outline-none focus:border-[#F7A600]"
+                className="w-full border border-gray-300 rounded-xl px-5 py-4"
               />
 
-              {/* MESSAGE */}
               <textarea
                 rows="5"
+                name="message"
+                value={form.message}
+                onChange={handleChange}
                 placeholder="Write Your Message"
-                className="w-full border border-gray-300 rounded-xl px-5 py-4
-                focus:outline-none focus:border-[#F7A600] resize-none"
+                required
+                className="w-full border border-gray-300 rounded-xl px-5 py-4 resize-none"
               />
 
-              {/* BUTTON */}
-              {/* <button
+              <button
                 type="submit"
-                className="inline-flex items-center gap-2
-                bg-[#F7A600] text-black font-semibold
-                px-8 py-4 rounded-full
-                hover:bg-black hover:text-white
-                transition-all duration-300"
+                disabled={loading}
+                className="px-10 py-4 rounded-xl font-semibold
+                bg-[#EFA701] text-black transition-all
+                hover:bg-black hover:text-white disabled:opacity-60 cursor-pointer"
               >
-                SEND MESSAGE
-                <span>➜</span>
-              </button> */}
-                    <SpotlightButton
-                                text=" SEND MESSAGE →"
-                                // href="/book"
-                                bgColor="bg-[#EFA701]"
-                                hoverBgColor="hover:bg-black"
-                                textColor="text-black"
-                                hoverTextColor="hover:text-white"
-                              />
+                {loading ? "SENDING..." : "SEND MESSAGE →"}
+              </button>
             </form>
           </div>
         </div>

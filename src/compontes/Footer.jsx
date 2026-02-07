@@ -22,14 +22,13 @@ const Footer = () => {
 
         {/* Logo + Info */}
         <div>
-          <div className="flex items-center gap-2 mb-5">
-            <div className="bg-yellow-400 p-2 rounded-full">
-              🚕
-            </div>
-            <h2 className="text-2xl font-bold">
-              Taxi<span className="text-yellow-400">ca</span>
-            </h2>
-          </div>
+          {/* <div className="absolute left-0 top-1/2 -translate-y-1/2 pl-4"> */}
+    <img
+      src="/images/jaipur-pink-city-cab-logo.png"
+      className="w-20 lg:w-24"
+      alt="logo"
+    />
+  {/* </div> */}
 
           <p className="text-gray-400 mb-6 text-sm">
             Jaipur Pink City Cab provides reliable and comfortable taxi services with
@@ -42,7 +41,15 @@ smooth and stress-free travel experience.
               <span className="bg-yellow-400 p-2 rounded-full text-black">
                 <Phone size={16} />
               </span>
-              +9660046627
+              <a
+  href="https://wa.me/919660046645"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-xl font-semibold tracking-wide cursor-pointer hover:text-green-500 transition-colors duration-200"
+>
+  +91 9660046645
+</a>
+
             </li>
 
             <li className="flex items-center gap-3">
@@ -152,7 +159,7 @@ smooth and stress-free travel experience.
 
            <SpotlightButton
                   text="SUBSCRIBE NOW ✈"
-                  // href="/book"
+                  href="/contect"
                   bgColor="bg-[#EFA701]"
                   hoverBgColor="hover:bg-white"
                   textColor="text-black"
