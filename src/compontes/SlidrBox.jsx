@@ -184,17 +184,15 @@ const SlidrBox = () => {
     <section className="relative w-full min-h-[90vh] ">
       {/* Background Images (LCP Optimized) */}
       {slides.map((slide, index) => (
-        <Image
-          key={slide.image}
-          src={slide.image}
-          alt={slide.title}
-          fill
-          sizes="100vw"
-          priority={index === 0}
-          className={`object-cover transition-opacity duration-700 ${
-            index === current ? "opacity-100" : "opacity-0"
-          }`}
-        />
+       <Image
+    key={slides[current].image}
+    src={slides[current].image}
+    alt={slides[current].title}
+    fill
+    priority
+    sizes="(max-width: 768px) 100vw, 1920px"
+    className="object-cover transition-opacity duration-700"
+  />
       ))}
 
       {/* Overlay */}
