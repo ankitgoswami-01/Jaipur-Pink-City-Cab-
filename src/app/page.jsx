@@ -1,26 +1,29 @@
-import AboutIntro from "@/compontes/AboutIntro";
-import OurTaxiIntro from "@/compontes/OurTaxiIntro";
-import ServiceIntro from "@/compontes/ServiceIntro";
+import dynamic from "next/dynamic";
+
+// ❌ NOT lazy (important for first load)
 import SlidrBox from "@/compontes/SlidrBox";
-import OurBlogIntro from "@/compontes/OurBlogIntro";
-import BookYourCabCTA from "@/compontes/BookYourCabCTA";
-import Testimonial from "@/compontes/Testimonial";
-import WhyChooseUs from "@/compontes/WhyChooseUs";
-import OurExpertDrivers from "@/compontes/OurExpertDrivers";
-import TaxiRate from "@/compontes/TaxiRate";
-import OurAwesomeFeature from "@/compontes/OurAwesomeFeature";
+import AboutIntro from "@/compontes/AboutIntro";
+
+// ✅ Lazy components (below the fold)
+const ServiceIntro = dynamic(() => import("@/compontes/ServiceIntro"));
+const OurTaxiIntro = dynamic(() => import("@/compontes/OurTaxiIntro"));
+const OurAwesomeFeature = dynamic(() => import("@/compontes/OurAwesomeFeature"));
+const TaxiRate = dynamic(() => import("@/compontes/TaxiRate"));
+const OurExpertDrivers = dynamic(() => import("@/compontes/OurExpertDrivers"));
+const WhyChooseUs = dynamic(() => import("@/compontes/WhyChooseUs"));
 
 export default function Home() {
   return (
     <main className="mt-18 contain-content">
-     <SlidrBox/>
-     <AboutIntro/>
-     <ServiceIntro/>
-     <OurTaxiIntro/>
-     <OurAwesomeFeature/>
-     <TaxiRate/>
-     <OurExpertDrivers/>
-     <WhyChooseUs/>
+      <SlidrBox />
+      <AboutIntro />
+
+      <ServiceIntro />
+      <OurTaxiIntro />
+      <OurAwesomeFeature />
+      <TaxiRate />
+      <OurExpertDrivers />
+      <WhyChooseUs />
     </main>
   );
 }

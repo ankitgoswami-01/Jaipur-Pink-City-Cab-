@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import gsap from "gsap";
 import SpotlightButton from "./SpotlightButton";
 import { toast } from "react-toastify";
@@ -9,7 +9,6 @@ const slides = [
     image: "/images/cabSlide01.png.webp",
     title: "Book Taxi for Your Ride in Jaipur – Jaipur Pink City Cab",
   },
-  
   {
     image: "/images/cabSlide02.png.webp",
     title: "Safe & Fast Taxi Service in Jaipur | Jaipur Pink City Cab",
@@ -22,187 +21,171 @@ const slides = [
 
 const SlidrBox = () => {
   const [current, setCurrent] = useState(0);
-  const [open, setOpen] = useState(false);
-const [openDropdown, setOpenDropdown] = useState(null);
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const [selectedCab, setSelectedCab] = useState("Choose Cab");
 
-const [selectedCab, setSelectedCab] = useState("Choose Cab");
-const [selectedAge, setSelectedAge] = useState("Choose Age");
-const [selectedModel, setSelectedModel] = useState("Choose Model");
+  const [pickup, setPickup] = useState("");
+  const [drop, setDrop] = useState("");
+  const [passengers, setPassengers] = useState("");
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
+  const [name, setName] = useState("");
+  const [contact, setContact] = useState("");
+  const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-const dropdownWrapperRef = useRef(null);
-
-
-useEffect(() => {
-  const handleClickOutside = (e) => {
-    if (
-      dropdownWrapperRef.current &&
-      !dropdownWrapperRef.current.contains(e.target)
-    ) {
-      setOpenDropdown(null);
-    }
-  };
-
-  document.addEventListener("mousedown", handleClickOutside);
-  return () => document.removeEventListener("mousedown", handleClickOutside);
-}, []);
-
-
-
+  const dropdownWrapperRef = useRef(null);
   const headingRef = useRef(null);
   const contentRef = useRef(null);
+  const typingRef = useRef(null);
+  const slideTimerRef = useRef(null);
 
-
-  // AUTO SLIDE
+  /* ------------------ Outside Click ------------------ */
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 6000);
-    return () => clearInterval(timer);
+    const handleClickOutside = (e) => {
+      if (
+        dropdownWrapperRef.current &&
+        !dropdownWrapperRef.current.contains(e.target)
+      ) {
+        setOpenDropdown(null);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // GSAP TEXT + CONTENT ANIMATION
+  /* ------------------ Auto Slide (stable) ------------------ */
   useEffect(() => {
-    // Reset
-    gsap.set(contentRef.current.children, { opacity: 0, y: 40 });
+    slideTimerRef.current = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 6000);
 
-    // POP animation
-    gsap.to(contentRef.current.children, {
-      opacity: 1,
-      y: 0,
-      duration: 0.9,
-      stagger: 0.15,
-      ease: "power3.out",
-    });
+    return () => clearInterval(slideTimerRef.current);
+  }, []);
 
-    // Typing Effect
+  /* ------------------ GSAP Animation (optimized) ------------------ */
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        contentRef.current.children,
+        { opacity: 0, y: 30 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.7,
+          stagger: 0.12,
+          ease: "power3.out",
+        }
+      );
+    }, contentRef);
+
+    return () => ctx.revert();
+  }, [current]);
+
+  /* ------------------ Typing Effect (no leaks) ------------------ */
+  useEffect(() => {
     const text = slides[current].title;
     let index = 0;
+
     headingRef.current.innerHTML = "";
 
-    const typing = setInterval(() => {
+    clearInterval(typingRef.current);
+    typingRef.current = setInterval(() => {
+      if (index >= text.length) {
+        clearInterval(typingRef.current);
+        return;
+      }
+
       headingRef.current.innerHTML +=
         text[index] === "T"
           ? `<span class="text-yellow-400">T</span>`
           : text[index];
-      index++;
-      if (index >= text.length) clearInterval(typing);
-    }, 70);
 
-    return () => clearInterval(typing);
+      index++;
+    }, 60);
+
+    return () => clearInterval(typingRef.current);
   }, [current]);
 
-  const nextSlide = () => {
+  /* ------------------ Initial Date & Time ------------------ */
+  useEffect(() => {
+    const now = new Date();
+    setDate(now.toISOString().split("T")[0]);
+    setTime(now.toTimeString().slice(0, 5));
+  }, []);
+
+  /* ------------------ Slide Controls ------------------ */
+  const nextSlide = useCallback(() => {
     setCurrent((prev) => (prev + 1) % slides.length);
-  };
+  }, []);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-  };
-const [pickup, setPickup] = useState("");
-const [drop, setDrop] = useState("");
-const [passengers, setPassengers] = useState("");
-const [date, setDate] = useState("");
-const [time, setTime] = useState("");
-const [errors, setErrors] = useState({
-  pickup: "",
-  drop: "",
-  passengers: "",
-  cab: "",
-  date: "",
-  time: "",
-  name: "",
-  contact: "",
-});
-const [name, setName] = useState("");
-const [contact, setContact] = useState("");
-const [isSubmitting, setIsSubmitting] = useState(false);
+  }, []);
 
-const handleBookTaxi = async () => {
-  const newErrors = {};
+  /* ------------------ Booking ------------------ */
+  const handleBookTaxi = async () => {
+    const newErrors = {};
 
-  if (!pickup) newErrors.pickup = true;
-  if (!drop) newErrors.drop = true;
-  if (!passengers) newErrors.passengers = true;
-  if (selectedCab === "Choose Cab") newErrors.cab = true;
-  if (!date) newErrors.date = true;
-  if (!time) newErrors.time = true;
-  if (!name) newErrors.name = true;
-  if (!contact) newErrors.contact = true;
+    if (!pickup) newErrors.pickup = true;
+    if (!drop) newErrors.drop = true;
+    if (!passengers) newErrors.passengers = true;
+    if (selectedCab === "Choose Cab") newErrors.cab = true;
+    if (!date) newErrors.date = true;
+    if (!time) newErrors.time = true;
+    if (!name) newErrors.name = true;
+    if (!contact) newErrors.contact = true;
 
-  setErrors(newErrors);
-  if (Object.keys(newErrors).length > 0) return;
+    setErrors(newErrors);
+    if (Object.keys(newErrors).length) return;
 
-  setIsSubmitting(true);
+    setIsSubmitting(true);
 
-  try {
-    const res = await fetch("/api/book-taxi", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        pickup,
-        drop,
-        passengers,
-        cab: selectedCab,
-        date,
-        time,
-        name,
-        contact,
-      }),
-    });
+    try {
+      const res = await fetch("/api/book-taxi", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          pickup,
+          drop,
+          passengers,
+          cab: selectedCab,
+          date,
+          time,
+          name,
+          contact,
+        }),
+      });
 
-    const data = await res.json();
+      const data = await res.json();
 
-    if (data.success) {
-      toast.success(
-        "🚕 Booking Confirmed! Jaipur Pink City Cab will contact you shortly."
-      );
+      if (data.success) {
+        toast.success("🚕 Booking Confirmed! We’ll contact you shortly.");
 
-      // ✅ RESET FORM
-      setPickup("");
-      setDrop("");
-      setPassengers("");
-      setSelectedCab("Choose Cab");
-      setName("");
-      setContact("");
-
-      const now = new Date();
-      setDate(now.toISOString().split("T")[0]);
-      setTime(now.toTimeString().slice(0, 5));
-
-      setErrors({});
-    } else {
-      toast.error("❌ Booking failed. Please try again.");
+        setPickup("");
+        setDrop("");
+        setPassengers("");
+        setSelectedCab("Choose Cab");
+        setName("");
+        setContact("");
+        setErrors({});
+      } else {
+        toast.error("❌ Booking failed. Try again.");
+      }
+    } catch {
+      toast.error("❌ Server error. Try later.");
+    } finally {
+      setIsSubmitting(false);
     }
-  } catch (error) {
-    toast.error("❌ Server error. Please try later.");
-  } finally {
-    setIsSubmitting(false);
-  }
-};
+  };
 
-
-
-
-
-useEffect(() => {
-  const now = new Date();
-
-  // YYYY-MM-DD
-  const today = now.toISOString().split("T")[0];
-
-  // HH:MM
-  const currentTime = now.toTimeString().slice(0, 5);
-
-  setDate(today);
-  setTime(currentTime);
-}, []);
-
+  /* ------------------ JSX ------------------ */
   return (
     <section
       className="relative w-full min-h-[90vh] bg-cover bg-center transition-all duration-700"
       style={{ backgroundImage: `url(${slides[current].image})` }}
     >
-      <div className="absolute inset-0 bg-black/70"></div>
+      <div className="absolute inset-0 bg-black/70" />
 
       {/* Content */}
       <div
@@ -210,62 +193,46 @@ useEffect(() => {
         className="relative z-10 max-w-7xl mx-auto px-4 pt-32 pb-24 text-center text-white"
       >
         <p className="text-yellow-400 tracking-widest font-semibold mb-4">
-          WELCOME TO  Jaipur Pink City Cab
+          WELCOME TO Jaipur Pink City Cab
         </p>
 
         <h1
           ref={headingRef}
           className="text-4xl md:text-6xl font-extrabold leading-tight min-h-20"
-        ></h1>
+        />
 
         <p className="max-w-3xl mx-auto text-gray-300 mt-6">
           Jaipur Pink City Cab | Premium Taxi Service in Jaipur – 24/7 Available
         </p>
 
-      <div className="flex justify-center gap-4 mt-10">
-
-     <SpotlightButton
-  text="ABOUT MORE →"
-  //  icon={Car}
-  href="/contact"
-  bgColor="bg-[#EFA701]"
-  hoverBgColor="hover:bg-black"
-  textColor="text-black"
-  hoverTextColor="hover:text-white"
-/>
-     <SpotlightButton
-  text="LEARN MORE →"
-  //  icon={Car}
-  href="/contact"
-  bgColor="bg-white"
-  hoverBgColor="hover:bg-[#EFA701]"
-  textColor="text-black"
-  hoverTextColor="hover:text-white"
-/>
-
-
-  {/* <button ref={btn2Ref} className="spotlight-btn gray">
-    <span className="spotlight"></span>
-    <span className="relative z-10 text-white">LEARN MORE →</span>
-  </button> */}
-</div>
-
+        <div className="flex justify-center gap-4 mt-10">
+          <SpotlightButton
+            text="ABOUT MORE →"
+            href="/contact"
+            bgColor="bg-[#EFA701]"
+            hoverBgColor="hover:bg-black"
+            textColor="text-black"
+            hoverTextColor="hover:text-white"
+          />
+          <SpotlightButton
+            text="LEARN MORE →"
+            href="/contact"
+            bgColor="bg-white"
+            hoverBgColor="hover:bg-[#EFA701]"
+            textColor="text-black"
+            hoverTextColor="hover:text-white"
+          />
+        </div>
       </div>
 
       {/* Arrows */}
-     <button
-  onClick={prevSlide}
-  className="slider-arrow left-6"
->
-  ←
-</button>
+      <button onClick={prevSlide} className="slider-arrow left-6">
+        ←
+      </button>
+      <button onClick={nextSlide} className="slider-arrow right-6">
+        →
+      </button>
 
-<button
-  onClick={nextSlide}
-  className="slider-arrow right-6"
->
-  →
-</button>
 
 
 {/* Booking Form */}
