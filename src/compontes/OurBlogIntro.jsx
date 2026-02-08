@@ -5,7 +5,7 @@ import SpotlightButton from "./SpotlightButton";
 const blogs = [
   {
     id: 1,
-    image: "/images/jaipur-pink-city-cab-service.jpg",
+    image: "/images/best-taxi-service-in-jaipur-optimized.webp",
     title: "Jaipur Pink City Cab Service – Affordable & Reliable Taxi in Jaipur",
     author: "Jaipur Pink City Cab",
     // date: "February 23, 2023",

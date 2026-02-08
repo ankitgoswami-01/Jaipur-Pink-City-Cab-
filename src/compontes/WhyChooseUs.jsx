@@ -4,7 +4,6 @@ import { CarTaxiFront } from "lucide-react";
 import { useState } from "react";
 // import { Taxi } from "lucide-react";
 
-
 export default function WhyChooseUs() {
   const [open, setOpen] = useState(false);
 
@@ -21,7 +20,7 @@ export default function WhyChooseUs() {
             />
 
             {/* Play Button */}
-            {/* <button className="absolute inset-0 flex items-center justify-center">
+      {/* <button className="absolute inset-0 flex items-center justify-center">
               <span
                 onClick={() => setOpen(true)}
                 className="w-20 h-20 bg-yellow-400/90 rounded-full flex items-center justify-center text-black text-3xl hover:scale-110 transition cursor-pointer"
@@ -31,7 +30,7 @@ export default function WhyChooseUs() {
             </button>
           </div>
         </div> */}
-      {/* </section> */} 
+      {/* </section> */}
 
       {/* Why Choose Us Section */}
       {/* <section className="relative bg-[#0b0b0b] text-white pt-56 pb-24 overflow-hidden" >
@@ -62,12 +61,12 @@ export default function WhyChooseUs() {
                 service, or outstation cab, we ensure a smooth and hassle-free
                 travel experience.
               </p>
+<img
+  src="/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp"
+  alt="Taxi"
+  className="mt-10 max-w-sm w-full block"
+/>
 
-              <img
-                src="/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp"
-                alt="Taxi"
-                className="mt-10 max-w-sm mx-auto lg:mx-0"
-              />
             </div>
 
             {/* Right Cards */}
@@ -81,10 +80,12 @@ export default function WhyChooseUs() {
                   key={i}
                   className="bg-white text-black rounded-xl p-6 flex gap-4 shadow-lg w-full max-w-xl"
                 >
-                <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center shrink-0">
-  <CarTaxiFront className="w-6 h-6 text-black" strokeWidth={2.2} />
-</div>
-
+                  <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center shrink-0">
+                    <CarTaxiFront
+                      className="w-6 h-6 text-black"
+                      strokeWidth={2.2}
+                    />
+                  </div>
 
                   <div>
                     <h4 className="font-semibold text-lg">{item.title}</h4>
