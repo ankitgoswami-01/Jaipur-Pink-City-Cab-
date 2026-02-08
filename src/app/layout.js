@@ -35,10 +35,14 @@ export const metadata = {
     "Airport taxi Jaipur",
     "Outstation cab Jaipur",
     "Tempo traveller Jaipur",
-    "Affordable taxi Jaipur"
+    "Affordable taxi Jaipur",
   ],
 
   authors: [{ name: "Pink City Cab Service" }],
+
+  alternates: {
+    canonical: "https://jaipurpinkcitycab.com/",
+  },
 
   openGraph: {
     title: "Pink City Cab Service | Reliable Taxi & Car Rental in Jaipur",
@@ -48,10 +52,10 @@ export const metadata = {
     siteName: "Pink City Cab Service",
     images: [
       {
-        url: "/favicon.ico",
+        url: "https://jaipurpinkcitycab.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Pink City Cab Service",
+        alt: "Pink City Cab Service – Taxi & Car Rental in Jaipur",
       },
     ],
     type: "website",
@@ -62,7 +66,7 @@ export const metadata = {
     title: "Pink City Cab Service | Taxi & Car Rental in Jaipur",
     description:
       "Affordable taxi booking in Jaipur. Local, airport & outstation cabs available.",
-    images: ["/favicon.ico"],
+    images: ["https://jaipurpinkcitycab.com/og-image.jpg"],
   },
 
   icons: {
@@ -71,7 +75,10 @@ export const metadata = {
     apple: "/favicon.ico",
   },
 
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 
