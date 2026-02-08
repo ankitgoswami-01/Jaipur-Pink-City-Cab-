@@ -44,7 +44,7 @@ export const metadata = {
     title: "Pink City Cab Service | Reliable Taxi & Car Rental in Jaipur",
     description:
       "Book trusted cabs in Jaipur for local rides, airport transfer & outstation trips. Affordable pricing & professional drivers.",
-    url: "https://pinkcitycab.netlify.app/",
+    url: "https://jaipurpinkcitycab.com/",
     siteName: "Pink City Cab Service",
     images: [
       {
