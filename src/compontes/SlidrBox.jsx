@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState, useCallback } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 import SpotlightButton from "./SpotlightButton";
 import { toast } from "react-toastify";
@@ -40,7 +41,7 @@ const SlidrBox = () => {
   const typingRef = useRef(null);
   const slideTimerRef = useRef(null);
 
-  /* ------------------ Outside Click ------------------ */
+  /* ---------------- Outside Click ---------------- */
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (
@@ -51,10 +52,11 @@ const SlidrBox = () => {
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    return () =>
+      document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  /* ------------------ Auto Slide (stable) ------------------ */
+  /* ---------------- Auto Slide ---------------- */
   useEffect(() => {
     slideTimerRef.current = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
@@ -63,7 +65,7 @@ const SlidrBox = () => {
     return () => clearInterval(slideTimerRef.current);
   }, []);
 
-  /* ------------------ GSAP Animation (optimized) ------------------ */
+  /* ---------------- GSAP Animation ---------------- */
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
@@ -82,14 +84,14 @@ const SlidrBox = () => {
     return () => ctx.revert();
   }, [current]);
 
-  /* ------------------ Typing Effect (no leaks) ------------------ */
+  /* ---------------- Typing Effect ---------------- */
   useEffect(() => {
     const text = slides[current].title;
     let index = 0;
 
     headingRef.current.innerHTML = "";
-
     clearInterval(typingRef.current);
+
     typingRef.current = setInterval(() => {
       if (index >= text.length) {
         clearInterval(typingRef.current);
@@ -107,14 +109,14 @@ const SlidrBox = () => {
     return () => clearInterval(typingRef.current);
   }, [current]);
 
-  /* ------------------ Initial Date & Time ------------------ */
+  /* ---------------- Initial Date & Time ---------------- */
   useEffect(() => {
     const now = new Date();
     setDate(now.toISOString().split("T")[0]);
     setTime(now.toTimeString().slice(0, 5));
   }, []);
 
-  /* ------------------ Slide Controls ------------------ */
+  /* ---------------- Slide Controls ---------------- */
   const nextSlide = useCallback(() => {
     setCurrent((prev) => (prev + 1) % slides.length);
   }, []);
@@ -123,10 +125,9 @@ const SlidrBox = () => {
     setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   }, []);
 
-  /* ------------------ Booking ------------------ */
+  /* ---------------- Booking ---------------- */
   const handleBookTaxi = async () => {
     const newErrors = {};
-
     if (!pickup) newErrors.pickup = true;
     if (!drop) newErrors.drop = true;
     if (!passengers) newErrors.passengers = true;
@@ -161,7 +162,6 @@ const SlidrBox = () => {
 
       if (data.success) {
         toast.success("🚕 Booking Confirmed! We’ll contact you shortly.");
-
         setPickup("");
         setDrop("");
         setPassengers("");
@@ -179,12 +179,25 @@ const SlidrBox = () => {
     }
   };
 
-  /* ------------------ JSX ------------------ */
+  /* ---------------- JSX ---------------- */
   return (
-    <section
-      className="relative w-full min-h-[90vh] bg-cover bg-center transition-all duration-700"
-      style={{ backgroundImage: `url(${slides[current].image})` }}
-    >
+    <section className="relative w-full min-h-[90vh] ">
+      {/* Background Images (LCP Optimized) */}
+      {slides.map((slide, index) => (
+        <Image
+          key={slide.image}
+          src={slide.image}
+          alt={slide.title}
+          fill
+          sizes="100vw"
+          priority={index === 0}
+          className={`object-cover transition-opacity duration-700 ${
+            index === current ? "opacity-100" : "opacity-0"
+          }`}
+        />
+      ))}
+
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/70" />
 
       {/* Content */}
