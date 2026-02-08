@@ -23,6 +23,7 @@ export async function POST(req) {
       },
     });
 
+    
     const mailOptions = {
       from: `"Jaipur Pink City Cab 🚕" <${process.env.EMAIL_USER}>`,
       to: process.env.RECEIVER_EMAIL,
