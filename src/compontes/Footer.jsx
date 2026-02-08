@@ -24,7 +24,7 @@ const Footer = () => {
         <div>
           {/* <div className="absolute left-0 top-1/2 -translate-y-1/2 pl-4"> */}
     <img
-      src="/images/jaipur-pink-city-cab-logo.png"
+      src="/images/jaipur-pink-city-cab-logo.png.webp"
       className="w-20 lg:w-24"
       alt="logo"
     />

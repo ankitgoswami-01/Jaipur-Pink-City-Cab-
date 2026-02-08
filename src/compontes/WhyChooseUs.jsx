@@ -64,7 +64,7 @@ export default function WhyChooseUs() {
               </p>
 
               <img
-                src="/images/jaipur-pink-city-cab-dzire-taxi-service.png"
+                src="/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp"
                 alt="Taxi"
                 className="mt-10 max-w-sm mx-auto lg:mx-0"
               />

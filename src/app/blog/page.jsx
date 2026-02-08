@@ -11,7 +11,7 @@ const BlogIntroHome = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/Abouttaxi01.jpg')", // replace with your image path
+          backgroundImage: "url('/images/Abouttaxi01-optimized.webp')", // replace with your image path
         }}
       />
 

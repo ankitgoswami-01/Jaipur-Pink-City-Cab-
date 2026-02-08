@@ -10,7 +10,7 @@ const ServiceIntroHome = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/Abouttaxi01.jpg')", 
+          backgroundImage: "url('/images/Abouttaxi01-optimized.webp')", 
         }}
       />
 

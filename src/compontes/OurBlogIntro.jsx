@@ -19,7 +19,7 @@ const blogs = [
   },
   {
     id: 3,
-    image: "/images/best-taxi-service-in-jaipur.jpg",
+    image: "/images/best-taxi-service-in-jaipur-optimized.webp",
     title: "Best Taxi Service in Jaipur – 24/7 Safe & Comfortable Rides",
       author: "Jaipur Pink City Cab",
     // date: "February 23, 2023",

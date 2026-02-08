@@ -4,28 +4,28 @@ const testimonials = [
   {
     name: "Rahul Sharma",
     role: "Customer",
-    image: "/images/testmonial01.jpg",
+    image: "/images/testmonial02-optimized.webp",
     review:
       "I had a great experience with Jaipur Pink City Cab. The driver was very polite, arrived on time, and knew all the local routes very well. The cab was clean and comfortable, which made our city tour smooth and enjoyable. Highly recommended for anyone visiting Jaipur.",
   },
   {
     name: "Priya Verma",
     role: "Customer",
-    image: "/images/testmonial02.jpg",
+    image: "/images/testmonial02-optimized.webp",
     review:
       "Jaipur Pink City Cab provided excellent service for our airport pickup. The booking process was simple, the cab arrived on time, and the driver was very helpful. The ride was comfortable and stress-free. I will definitely use their service again.",
   },
   {
     name: "Amit Singh",
     role: "Customer",
-    image: "/images/testmonial03.jpg",
+    image: "/images/testmonial03-optimized.webp",
     review:
       "Very professional and reliable cab service in Jaipur. The driver was friendly, well-behaved, and ensured a safe journey throughout. The car was neat and well-maintained. Jaipur Pink City Cab is a trustworthy option for local and outstation travel.",
   },
   {
     name: "Neha Gupta",
     role: "Customer",
-    image: "/images/testmonial04.jpg",
+    image: "/images/testmonial04-optimized.webp",
     review:
       "My experience with Jaipur Pink City Cab was excellent. The driver was punctual and cooperative, and the entire trip was very comfortable. The service was well-organized and reasonably priced. I would strongly recommend this cab service in Jaipur.",
   },
@@ -37,7 +37,7 @@ export default function Testimonial() {
     <section
       className="relative py-24 bg-center bg-cover"
       style={{
-        backgroundImage: "url('/images/testmonialbg.jpg')",
+        backgroundImage: "url('/images/testmonialbg-optimized.webp')",
         backgroundAttachment: "fixed",
       }}
     >

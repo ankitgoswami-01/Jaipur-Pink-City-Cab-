@@ -15,7 +15,7 @@ const services = [
   {
     title: "Jaipur to Delhi One Way Taxi Service",
     desc: "There are many variations of Jaipur Pink City Cab services available, but our service stands out for its comfort, reliability, and professional drivers.",
-    img: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    img: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
      imgAlt: "Jaipur to Delhi One Way Taxi Service by Jaipur Pink City Cab",
     iconImg: "/images/taxi-booking-1.svg",
      iconAlt: "Jaipur to Delhi One Way Taxi Booking Icon",
@@ -23,7 +23,7 @@ const services = [
   {
     title: "Taxi Service in Jaipur",
     desc: "Jaipur Pink City Cab provides a trusted and affordable Taxi Service in Jaipur for travelers looking for comfort, safety, and reliable transportation. ",
-    img: "/images/jaipur-pink-city-cab-innova.png",
+    img: "/images/jaipur-pink-city-cab-innova.png.webp",
     imgAlt: "Taxi Service in Jaipur by Jaipur Pink City Cab with Innova Car",
     iconImg: "/images/taxi-booking-2.svg",
     iconAlt: "Taxi Booking Service Icon",
@@ -32,7 +32,7 @@ const services = [
   {
     title: "Cab Service in Jaipur",
     desc: "Our Cab Service in Jaipur is perfect for local travel, sightseeing tours, airport and railway station transfers, corporate travel, and outstation trips.",
-    img: "/images/cab-service-in-jaipur.png",
+    img: "/images/cab-service-in-jaipur.png.webp",
     imgAlt: "Cab Service in Jaipur by Jaipur Pink City Cab for local and outstation travel",
     iconImg: "/images/taxi-booking-3.svg",
     iconAlt: "Cab Booking Service Icon",
@@ -40,7 +40,7 @@ const services = [
   {
     title: "Car Rental in Jaipur",
     desc: "Jaipur Pink City Cab provides a reliable and affordable Car Rental in Jaipur for travelers seeking comfort, flexibility, and convenience. ",
-    img: "/images/taxi-service-in-jaipur-toyota-innova.png",
+    img: "/images/taxi-service-in-jaipur-toyota-innova-optimized.webp",
     imgAlt: "Car Rental in Jaipur by Jaipur Pink City Cab with Innova for comfortable travel",
     iconImg: "/images/taxi-booking-4.svg",
     iconAlt: "Car Rental Booking Icon",
@@ -48,7 +48,7 @@ const services = [
   {
     title: "Jaipur To Khatu Shyam Ji Taxi Service",
     desc: "Our Jaipur to Khatu Shyam Ji Taxi Service is ideal for one-day trips, religious visits, family travel, and group journeys.",
-    img: "/images/jaipur-pink-city-cab-tempo-traveller-taxi.png",
+    img: "/images/jaipur-pink-city-cab-tempo-traveller-taxi-optimized.webp",
       imgAlt: "Jaipur to Khatu Shyam Ji Taxi Service by Jaipur Pink City Cab with Tempo Traveller",
     iconImg: "/images/taxi-booking-5.svg",
      iconAlt: "Khatu Shyam Ji Taxi Booking Icon",
@@ -56,13 +56,13 @@ const services = [
   {
     title: "Jaipur To Jodhpur Taxi Service",
     desc: "Jaipur Pink City Cab provides a safe, comfortable, and affordable Jaipur To Jodhpur Taxi Service for travelers who want a smooth long-distance journey. ",
-    img: "/images/hyundai-venue-taxi-jaipur-pink-city-cab.png",
+    img: "/images/hyundai-venue-taxi-jaipur-pink-city-cab.png.webp",
     iconImg: "/images/taxi-booking-6.svg",
   },
    {
     title: "Jaipur To Udaipur And Mount Abu Taxi Service",
     desc: "Our Jaipur To Udaipur And Mount Abu Taxi Service is ideal for tourists, family vacations, honeymoon trips, and corporate travel.",
-    img: "/images/tempo-traveller-taxi-service-jaipur.png",
+    img: "/images/tempo-traveller-taxi-service-jaipur-optimized.webp",
      imgAlt: "Jaipur to Jodhpur Taxi Service by Jaipur Pink City Cab with Hyundai Venue",
     iconImg: "/images/taxi-booking-6.svg",
       iconAlt: "Jaipur to Jodhpur Taxi Booking Icon",
@@ -71,7 +71,7 @@ const services = [
    {
     title: "Jaipur To Jaisalmer Taxi Service",
     desc: "Jaipur Pink City Cab offers a safe, comfortable, and reliable Jaipur To Jaisalmer Taxi Service for travelers planning a memorable journey to  Golden City.",
-    img: "/images/jaipur-ertiga-taxi.png",
+    img: "/images/jaipur-ertiga-taxi.png.webp",
     imgAlt: "Jaipur to Jaisalmer Taxi Service by Jaipur Pink City Cab with Ertiga",
     iconImg: "/images/taxi-booking-6.svg",
      iconAlt: "Jaipur to Jaisalmer Taxi Booking Icon",
@@ -79,7 +79,7 @@ const services = [
     {
     title: "Jaipur To Sawai Madhopur Taxi Service",
     desc: "Our Jaipur To Sawai Madhopur Taxi Service is ideal for tourists, wildlife enthusiasts, family trips, and business travel.",
-    img: "/images/tourImg.webp",
+    img: "/images/tourImg-optimized.webp",
      imgAlt: "Jaipur to Sawai Madhopur Taxi Service by Jaipur Pink City Cab for Ranthambore travel",
     iconImg: "/images/taxi-booking-6.svg",
      iconAlt: "Jaipur to Sawai Madhopur Taxi Booking Icon",
@@ -87,7 +87,7 @@ const services = [
     {
     title: "Tempo Traveller Service in Jaipur",
     desc: "Jaipur Pink City Cab offers a reliable and comfortable Tempo Traveller Service in Jaipur for group travel, family tours,  and wedding transportation.",
-    img: "/images/tempo-traveller-taxi-service-jaipur.png",
+    img: "/images/tempo-traveller-taxi-service-jaipur-optimized.webp",
      imgAlt: "Tempo Traveller Service in Jaipur by Jaipur Pink City Cab for group and wedding travel",
     iconImg: "/images/taxi-booking-6.svg",
     iconAlt: "Tempo Traveller Booking Service Icon",
@@ -95,7 +95,7 @@ const services = [
     {
     title: "Jaipur To Agra One Way Cab Service",
     desc: "Our Jaipur To Agra One Way Cab Service is ideal for tourists, families, business travelers, and same-day travel plans.",
-    img: "/images/tourImg.webp",
+    img: "/images/tourImg-optimized.webp",
       imgAlt: "Jaipur to Agra One Way Cab Service by Jaipur Pink City Cab for Taj Mahal travel",
     iconImg: "/images/taxi-booking-6.svg",
       iconAlt: "Jaipur to Agra One Way Cab Booking Icon",
@@ -103,7 +103,7 @@ const services = [
     {
     title: "Golden Triangle Tours Package",
     desc: "Our Golden Triangle Tours Package is ideal for tourists, families, honeymoon couples, and international visitors.",
-    img: "/images/tempo-traveller-taxi-service-jaipur.png",
+    img: "/images/tempo-traveller-taxi-service-jaipur-optimized.webp",
      imgAlt: "Golden Triangle Tours Package covering Delhi Jaipur Agra by Jaipur Pink City Cab",
     iconImg: "/images/taxi-booking-6.svg",
       iconAlt: "Golden Triangle Tour Booking Icon",
@@ -111,7 +111,7 @@ const services = [
      {
     title: "Jaipur to Ayodhya Taxi Service",
     desc: "Jaipur Pink City Cab offers a safe, comfortable, reliable Jaipur to Ayodhya Taxi Service for pilgrims and travelers seeking a peaceful long-distance journey.",
-    img: "/images/jaipur-cab-booking-dzire.png",
+    img: "/images/jaipur-cab-booking-dzire.png.webp",
     imgAlt: "Jaipur to Ayodhya Taxi Service by Jaipur Pink City Cab for Ram Mandir pilgrimage",
     iconImg: "/images/taxi-booking-6.svg",
       iconAlt: "Jaipur to Ayodhya Taxi Booking Icon",
@@ -119,7 +119,7 @@ const services = [
      {
     title: "Jaipur Airport Taxi Service",
     desc: "Jaipur Pink City Cab offers a reliable and timely Jaipur Airport Taxi Service for travelers who need stress-free airport transfers.",
-    img: "/images/tourImg.webp",
+    img: "/images/tourImg-optimized.webp",
      imgAlt: "Jaipur Airport Taxi Service by Jaipur Pink City Cab for pickup and drop",
     iconImg: "/images/taxi-booking-6.svg",
      iconAlt: "Jaipur Airport Taxi Booking Icon",

@@ -52,7 +52,7 @@ export default function FAQSection() {
 
           <div className="mt-8 rounded-xl overflow-hidden h-[500]">
             <Image
-              src="/images/clintImg.png"
+              src="/images/clintImg.png.webp"
               alt="FAQ Taxi"
               width={600}
               height={400}

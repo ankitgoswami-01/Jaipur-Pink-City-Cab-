@@ -15,7 +15,7 @@ const taxisData = [
     type: "Hybrid Taxi",
     name: "Dzire Taxi",
     price: "₹10/km",
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
     imageAlt: "Dzire Taxi Service in Jaipur by Jaipur Pink City Cab with affordable per km pricing",
     specs: [
       { label: "Taxi Doors", value: "4" },
@@ -30,7 +30,7 @@ const taxisData = [
     type: "Town Taxi",
     name: "Innova Taxi",
     price: "₹16/km",
-    image: "/images/taxi-service-in-jaipur-toyota-innova.png",
+    image: "/images/taxi-service-in-jaipur-toyota-innova-optimized.webp",
     imageAlt: "Innova Taxi Service in Jaipur by Jaipur Pink City Cab for comfortable family and outstation travel",
     specs: [
       { label: "Taxi Doors", value: "4" },
@@ -45,7 +45,7 @@ const taxisData = [
     type: "SUV Taxi",
     name: "Tempo Traveller Taxi",
     price: "₹24/km",
-    image: "/images/tempo-traveller-taxi-service-jaipur.png",
+    image: "/images/tempo-traveller-taxi-service-jaipur-optimized.webp",
      imageAlt: "Tempo Traveller Taxi Service in Jaipur by Jaipur Pink City Cab for group travel and tours",
     specs: [
       { label: "Passengers", value: "12–17" },
@@ -61,7 +61,7 @@ const taxisData = [
     type: "Limousine Taxi",
     name: "Urbania Tempo Traveller ",
     price: "₹30/km",
-    image: "/images/jaipur-pink-city-cab-tempo-traveller-taxi.png",
+    image: "/images/jaipur-pink-city-cab-tempo-traveller-taxi-optimized.webp",
      imageAlt: "Urbania Tempo Traveller Luxury Taxi Service in Jaipur by Jaipur Pink City Cab for VIP travel",
     specs: [
       { label: "Passengers", value: "10–14" },
@@ -74,7 +74,7 @@ const taxisData = [
     type: "Hybrid Taxi",
     name: "Innova Crasta Taxi ",
     price: "₹18/km",
-    image: "/images/jaipur-pink-city-cab-innova.png",
+    image: "/images/jaipur-pink-city-cab-innova.png.webp",
     imageAlt: "Innova Crysta Taxi Service in Jaipur by Jaipur Pink City Cab with comfortable hybrid travel",
     specs: [
       { label: "Taxi Doors", value: "4" },
@@ -87,7 +87,7 @@ const taxisData = [
     type: "SUV Taxi",
     name: "Hyundai Aura Taxi",
     price: "₹18/km", 
-    image: "/images/jaipur-cab-booking-dzire.png",
+    image: "/images/jaipur-cab-booking-dzire.png.webp",
      imageAlt: "Hyundai Aura Taxi Service in Jaipur by Jaipur Pink City Cab for comfortable city and outstation travel",
     specs: [
       { label: "Passengers", value: "6–7" },

@@ -86,7 +86,7 @@ const MainHeader = () => {
           {/* LOGO */}
           <div className="flex items-center">
             <img
-              src="/images/jaipur-pink-city-cab-logo.png"
+              src="/images/jaipur-pink-city-cab-logo.png.webp"
               className="w-20 sm:w-24"
               alt="logo"
             />

@@ -132,13 +132,13 @@ const services = {
   "taxi-service-in-jaipur": {
     title: "Taxi Service in Jaipur",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
     intro: (
       <>
         <h1 className="text-3xl font-bold mt-5 mb-5">
           Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
-          Hassle-Free Travel
+          Hassle-Free Travel 
         </h1>
 
         <p className="mb-4">
@@ -251,7 +251,7 @@ const services = {
   "cab-service-in-jaipur": {
     title: "Cab Service in Jaipur",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
     intro: (
       <>
@@ -270,7 +270,7 @@ const services = {
           packages. Whether you want a break for shopping or refreshment, we
           offer customization for a comfortable travel. Families travelling with
           elderly people and children would find our cab services more reliable
-          and comfortable.
+          and comfortable.  
         </p>
 
         <p className="font-semibold mb-5">
@@ -369,7 +369,7 @@ const services = {
   "car-rental-in-jaipur": {
     title: "Car Rental in Jaipur",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
     intro: (
       <>
@@ -487,7 +487,7 @@ const services = {
   "jaipur-to-khatu-shyam-ji-taxi-service": {
     title: "Jaipur To Khatu Shyam Ji Taxi Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
     intro: (
       <>
@@ -605,7 +605,7 @@ const services = {
   "jaipur-to-jodhpur-taxi-service": {
     title: "Jaipur To Jodhpur Taxi Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
     intro: (
       <>
@@ -723,7 +723,7 @@ const services = {
   "jaipur-to-udaipur-and-mount-abu-taxi-service": {
     title: "Jaipur To Udaipur And Mount Abu Taxi Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
     intro: (
       <>
@@ -841,7 +841,7 @@ const services = {
   "jaipur-to-jaisalmer-taxi-service": {
     title: "Jaipur To Jaisalmer Taxi Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
     intro: (
       <>
@@ -959,7 +959,7 @@ const services = {
   "jaipur-to-sawai-madhopur-taxi-service": {
     title: "Jaipur To Sawai Madhopur Taxi Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
     intro: (
       <>
@@ -1077,7 +1077,7 @@ const services = {
   "tempo-traveller-service-in-jaipur": {
     title: "Tempo Traveller Service in Jaipur",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
     intro: (
       <>
@@ -1195,7 +1195,7 @@ const services = {
   "jaipur-to-agra-one-way-cab-service": {
     title: "Jaipur To Agra One Way Cab Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
     intro: (
       <>
@@ -1313,7 +1313,7 @@ const services = {
   "golden-triangle-tours-package": {
     title: "Golden Triangle Tours Package",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
     intro: (
       <>
@@ -1431,7 +1431,7 @@ const services = {
   "jaipur-to-ayodhya-taxi-service": {
     title: "Jaipur to Ayodhya Taxi Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
     intro: (
       <>
@@ -1549,7 +1549,7 @@ const services = {
   "jaipur-airport-taxi-service": {
     title: "Jaipur Airport Taxi Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png",
+    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
     intro: (
       <>

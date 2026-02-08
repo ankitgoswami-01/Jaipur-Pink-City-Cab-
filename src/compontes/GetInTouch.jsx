@@ -61,7 +61,7 @@ const GetInTouch = () => {
           <div className="relative flex justify-center">
         
               <img
-                src="/images/clintImgReview.jpg"
+                src="/images/clintImgReview.jpg.webp"
                 alt="Get in touch"
                 className="w-full h-full object-cover rounded-2xl"
               />

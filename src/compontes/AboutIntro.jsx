@@ -35,12 +35,12 @@ const AboutIntro = () => {
 
           {/* Car Image */}
           {/* <img
-            src="/imags/imageTexi01.png"
+            src="/imags/imageTexi01.png.webp"
             alt="Taxi"
             className="relative z-10 w-full max-w-md"
           /> */}
         <Image
-  src="/images/jaipur-cab-booking-dzire.png"
+  src="/images/jaipur-cab-booking-dzire.png.webp"
   alt="Jaipur Pink City Cab Booking – Comfortable Dzire Taxi Service in Jaipur"
   width={300}
   height={100}

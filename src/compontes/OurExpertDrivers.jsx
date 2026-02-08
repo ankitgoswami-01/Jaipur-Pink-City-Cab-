@@ -4,22 +4,22 @@ const drivers = [
   {
     name: "Ashok Prajapat",
     role: "Expert Driver",
-    image: "/images/jaipur-pink-city-cab-driver.png",
+    image: "/images/jaipur-pink-city-cab-driver.png.webp",
   },
   {
     name: "Mahendra Prajapat",
     role: "Expert Driver",
-    image: "/images/taxi-driver-jaipur-uniform.png",
+    image: "/images/taxi-driver-jaipur-uniform-optimized.webp",
   },
   {
     name: "Raju Prajapat",
     role: "Expert Driver",
-    image: "/images/driver03.jpg",
+    image: "/images/driver03.jpg.webp",
   },
   {
     name: "Manoj Prajapat",
     role: "Expert Driver",
-    image: "/images/driver04.jpg",
+    image: "/images/driver04.jpg.webp",
   },
 ];
 

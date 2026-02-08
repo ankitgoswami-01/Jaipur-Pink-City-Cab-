@@ -6,16 +6,16 @@ import { toast } from "react-toastify";
 
 const slides = [
   {
-    image: "/images/cabSlide01.png",
+    image: "/images/cabSlide01.png.webp",
     title: "Book Taxi for Your Ride in Jaipur – Jaipur Pink City Cab",
   },
   
   {
-    image: "/images/cabSlide02.png",
+    image: "/images/cabSlide02.png.webp",
     title: "Safe & Fast Taxi Service in Jaipur | Jaipur Pink City Cab",
   },
   {
-    image: "/images/cabSlide03.png",
+    image: "/images/cabSlide03.png.webp",
     title: "24/7 Taxi Available in Jaipur | Jaipur Pink City Cab",
   },
 ];

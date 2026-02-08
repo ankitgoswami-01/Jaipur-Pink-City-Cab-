@@ -6,7 +6,7 @@ const plans = [
   {
     title: "Basic Package (Creta)",
     price: "₹180",
-    image: "/images/hyundai-venue-taxi-jaipur-pink-city-cab.png",
+    image: "/images/hyundai-venue-taxi-jaipur-pink-city-cab.png.webp",
     details: [
       { label: "Base Charge", value: "₹180" },
       { label: "Distance Allowance", value: "3 km" },
@@ -30,7 +30,7 @@ const plans = [
   {
     title: "Premium Package (Ertiga)",
     price: "₹350",
-    image: "/images/jaipur-ertiga-taxi.png",
+    image: "/images/jaipur-ertiga-taxi.png.webp",
     details: [
       { label: "Base Charge", value: "₹350" },
       { label: "Distance Allowance", value: "8 km" },

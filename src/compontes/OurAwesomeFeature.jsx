@@ -52,7 +52,7 @@ export default function OurAwesomeFeature() {
       ref={ref}
       className="relative py-36 text-white bg-center bg-cover"
       style={{
-        backgroundImage: "url('/images/testmonialbg.jpg')",
+        backgroundImage: "url('/images/testmonialbg-optimized.webp')",
         backgroundAttachment: "fixed",
       }}
     >
