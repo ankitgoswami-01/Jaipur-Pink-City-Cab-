@@ -12,7 +12,7 @@ const blogs = [
   },
   {
     id: 2,
-    image: "/images/jaipur-to-delhi-taxi-service.jpg.jpg",
+    image: "/images/jaipur-to-delhi-taxi-service.jpg",
     title: "Jaipur to Delhi Taxi Service – One Way & Round Trip Cabs",
    author: "Jaipur Pink City Cab",
     // date: "February 23, 2023",

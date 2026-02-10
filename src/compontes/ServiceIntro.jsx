@@ -166,7 +166,6 @@ const ServiceIntro = () => {
                 </div>
               </div> */}
               <div className="relative h-52 w-full overflow-hidden">
-  {/* Main Image */}
   <Image
     src={item.img}
     alt={item.imgAlt || item.title}
