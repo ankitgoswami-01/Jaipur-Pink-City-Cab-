@@ -349,6 +349,9 @@ const SlidrBox = () => {
       </div>
 
       {/* DATE */}
+      <label htmlFor="pickup-date" className="sr-only">
+       Pickup Date
+      </label>
       <input
         type="date"
         value={date}
@@ -366,6 +369,9 @@ const SlidrBox = () => {
       />
 
       {/* TIME */}
+      <label htmlFor="pickup-time" className="sr-only">
+      Pickup Time
+    </label>
       <input
         type="time"
         value={time}

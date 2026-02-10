@@ -128,12 +128,12 @@ const services = [
 
 const ServiceIntro = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Heading */}
         <div className="text-center mb-14">
-          <p className="text-yellow-400 tracking-widest font-semibold mb-2">
+          <p className="inline-block bg-black/10 px-3 py-1 rounded text-yellow-400 tracking-widest font-semibold mb-2">
             SERVICES
           </p>
           <h2 className="text-3xl md:text-4xl font-extrabold">

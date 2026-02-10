@@ -17,7 +17,6 @@ export default function Home() {
     <main className="mt-18 contain-content">
       <SlidrBox />
       <AboutIntro />
-
       <ServiceIntro />
       <OurTaxiIntro />
       <OurAwesomeFeature />
