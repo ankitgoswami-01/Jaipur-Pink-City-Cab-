@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import SpotlightButton from "./SpotlightButton";
 
 /* slug generator */
@@ -150,21 +150,45 @@ const ServiceIntro = () => {
               className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
             >
               {/* Image */}
-              <div className="relative overflow-hidden">
-                <img
+              {/* <div className="relative overflow-hidden">
+                <Image
                   src={item.img}
                   alt={item.title}
                   className="h-52 w-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                 />
 
-                {/* Dark overlay */}
+         
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500"></div>
 
-                {/* Icon */}
+              
                 <div className="absolute bottom-2 right-6 w-14 h-14 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110">
-                  <img src={item.iconImg} alt="icon" width={30} />
+                  <Image src={item.iconImg} alt="icon" width={30} />
                 </div>
-              </div>
+              </div> */}
+              <div className="relative h-52 w-full overflow-hidden">
+  {/* Main Image */}
+  <Image
+    src={item.img}
+    alt={item.imgAlt || item.title}
+    fill
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+    className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+  />
+
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500"></div>
+
+  {/* Icon */}
+  <div className="absolute bottom-2 right-6 w-14 h-14 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110">
+    <Image
+      src={item.iconImg}
+      alt={item.iconAlt || "Service icon"}
+      width={30}
+      height={30}
+    />
+  </div>
+</div>
+
 
               {/* Content */}
               <div className="p-6 pt-10">
@@ -177,6 +201,7 @@ const ServiceIntro = () => {
 
                 <SpotlightButton
                   text="READ MORE →"
+                  ariaLabel={`Read more about ${item.title}`}
                   bgColor="bg-[#EFA701]"
                   hoverBgColor="hover:bg-black"
                   textColor="text-black"
@@ -188,7 +213,7 @@ const ServiceIntro = () => {
           ))}
         </div>
 
-      </div>
+      </div>  
     </section>
   );
 };

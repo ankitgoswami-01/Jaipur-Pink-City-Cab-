@@ -184,7 +184,7 @@ const SlidrBox = () => {
     <section className="relative w-full min-h-[90vh] ">
       {/* Background Images (LCP Optimized) */}
       {slides.map((slide, index) => (
-       <Image
+   <Image
     key={slides[current].image}
     src={slides[current].image}
     alt={slides[current].title}
