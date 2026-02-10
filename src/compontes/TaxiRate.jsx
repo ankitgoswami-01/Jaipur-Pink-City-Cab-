@@ -83,9 +83,9 @@ export default function TaxiRate() {
                 className="mx-auto h-24 sm:h-28 object-contain"
               />
 
-              <h4 className="mt-4 font-bold text-base sm:text-lg uppercase">
+              <h3 className="mt-4 font-bold text-base sm:text-lg uppercase">
                 {plan.title}
-              </h4>
+              </h3>
               <p className="text-xs sm:text-sm text-yellow-500">
                 One Time Payment
               </p>

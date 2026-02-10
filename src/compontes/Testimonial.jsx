@@ -71,9 +71,9 @@ export default function Testimonial() {
                 className="w-16 h-16 mx-auto rounded-full border-4 border-yellow-400 object-cover"
               />
 
-              <h4 className="font-semibold text-lg mt-4">
+              <h3 className="font-semibold text-lg mt-4">
                 {item.name}
-              </h4>
+              </h3>
               <span className="text-sm text-yellow-500">
                 {item.role}
               </span>

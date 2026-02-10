@@ -88,7 +88,7 @@ export default function WhyChooseUs() {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-lg">{item.title}</h4>
+                    <h3 className="font-semibold text-lg">{item.title}</h3>
                     <p className="text-sm text-gray-600 mt-1">
                       Jaipur Pink City Cab offers best quality taxi service in
                       Jaipur with clean, comfortable, and well-maintained cars

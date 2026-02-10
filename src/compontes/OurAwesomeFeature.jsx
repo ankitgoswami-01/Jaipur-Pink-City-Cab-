@@ -121,9 +121,9 @@ export default function OurAwesomeFeature() {
       <div className="w-14 h-14 mx-auto bg-yellow-500 rounded-full flex items-center justify-center text-xl mb-4">
         {item.icon}
       </div>
-      <h4 className="font-semibold text-lg mb-3">
+      <h3 className="font-semibold text-lg mb-3">
         {item.title}
-      </h4>
+      </h3>
       <p className="text-sm text-gray-600">
         {item.desc}
       </p>

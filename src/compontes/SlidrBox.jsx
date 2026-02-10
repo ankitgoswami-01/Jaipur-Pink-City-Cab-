@@ -250,7 +250,7 @@ const SlidrBox = () => {
 {/* Booking Form */}
 <div className="relative z-20 max-w-6xl mx-auto -mt-20 px-4 top-40">
   <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8">
-    <h3 className="text-xl font-bold mb-6">Book Your Ride</h3>
+    <h2 className="text-xl font-bold mb-6">Book Your Ride</h2>
 
     <div
       ref={dropdownWrapperRef}
@@ -353,6 +353,7 @@ const SlidrBox = () => {
        Pickup Date
       </label>
       <input
+        id="pickup-date"
         type="date"
         value={date}
         onChange={(e) => {
@@ -369,10 +370,11 @@ const SlidrBox = () => {
       />
 
       {/* TIME */}
-      <label htmlFor="pickup-time" className="sr-only">
+     <label htmlFor="pickup-time" className="sr-only">
       Pickup Time
     </label>
       <input
+      id="pickup-time"
         type="time"
         value={time}
         onChange={(e) => {

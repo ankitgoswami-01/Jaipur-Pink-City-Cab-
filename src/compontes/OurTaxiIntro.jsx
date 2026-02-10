@@ -122,7 +122,7 @@ const OurTaxiIntro = () => {
         </div>
 
         {/* Mobile Select */}
-        <div className="block md:hidden mb-6">
+        {/* <div className="block md:hidden mb-6">
           <select
             value={activeTab}
             onChange={(e) => setActiveTab(e.target.value)}
@@ -134,7 +134,25 @@ const OurTaxiIntro = () => {
               </option>
             ))}
           </select>
-        </div>
+        </div> */}
+        <div className="block md:hidden mb-6">
+  <label htmlFor="taxi-type" className="sr-only">
+    Select Taxi Type
+  </label>
+
+  <select
+    id="taxi-type"
+    value={activeTab}
+    onChange={(e) => setActiveTab(e.target.value)}
+    className="w-full border-2 border-yellow-400 rounded-full px-4 py-3 font-semibold"
+  >
+    {taxiTabs.map((tab, i) => (
+      <option key={i} value={tab}>
+        {tab}
+      </option>
+    ))}
+  </select>
+</div>
 
         {/* Tabs */}
         <div className="hidden md:flex flex-wrap justify-center gap-3 mb-12">

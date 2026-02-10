@@ -71,9 +71,9 @@ export default function OurExpertDrivers() {
               </div>
 
               {/* Info */}
-              <h4 className="mt-5 font-semibold text-lg">
+              <h3 className="mt-5 font-semibold text-lg">
                 {driver.name}
-              </h4>
+              </h3>
               <p className="text-sm text-yellow-500">
                 {driver.role}
               </p>
