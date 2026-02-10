@@ -6,6 +6,7 @@ import SpotlightButton from "./SpotlightButton";
 import { Car, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
+
 const MainHeader = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);

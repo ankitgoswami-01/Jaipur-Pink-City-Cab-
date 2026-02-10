@@ -129,1537 +129,1537 @@ const services = {
   //   Jaipur to Delhi One Way Taxi Service end
   //  Taxi Service in Jaipur start
 
-  "taxi-service-in-jaipur": {
-    title: "Taxi Service in Jaipur",
+  // "taxi-service-in-jaipur": {
+  //   title: "Taxi Service in Jaipur",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
+  //   image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
-    intro: (
-      <>
-        <h1 className="text-3xl font-bold mt-5 mb-5">
-          Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
-          Hassle-Free Travel 
-        </h1>
+  //   intro: (
+  //     <>
+  //       <h1 className="text-3xl font-bold mt-5 mb-5">
+  //         Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
+  //         Hassle-Free Travel 
+  //       </h1>
 
-        <p className="mb-4">
-          Our team is dedicated to providing the
-          <strong>best taxi service in Jaipur</strong>. Business travellers and
-          tourists always prefer us as we provide on-time
-          <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
-          easier and avoid last-minute surprises. Tourists need flexibility
-          while travelling, and we provide customisation even in one-way tour
-          packages. Whether you want a break for shopping or refreshment, we
-          offer customization for a comfortable travel. Families travelling with
-          elderly people and children would find our cab services more reliable
-          and comfortable.
-        </p>
+  //       <p className="mb-4">
+  //         Our team is dedicated to providing the
+  //         <strong>best taxi service in Jaipur</strong>. Business travellers and
+  //         tourists always prefer us as we provide on-time
+  //         <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
+  //         easier and avoid last-minute surprises. Tourists need flexibility
+  //         while travelling, and we provide customisation even in one-way tour
+  //         packages. Whether you want a break for shopping or refreshment, we
+  //         offer customization for a comfortable travel. Families travelling with
+  //         elderly people and children would find our cab services more reliable
+  //         and comfortable.
+  //       </p>
 
-        <p className="font-semibold mb-5">
-          With our company, you do not need to pay for a return journey.
-        </p>
-      </>
-    ),
+  //       <p className="font-semibold mb-5">
+  //         With our company, you do not need to pay for a return journey.
+  //       </p>
+  //     </>
+  //   ),
 
-    why: {
-      title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
-      intro:
-        "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
-      points: [
-        "Pay only for one-sided travel",
-        "No return fare or hidden costs",
-        "Door-to-door pickup and drop-off",
-        "Flexible travel time",
-        "More comfortable than buses or trains",
-      ],
-    },
+  //   why: {
+  //     title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
+  //     intro:
+  //       "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
+  //     points: [
+  //       "Pay only for one-sided travel",
+  //       "No return fare or hidden costs",
+  //       "Door-to-door pickup and drop-off",
+  //       "Flexible travel time",
+  //       "More comfortable than buses or trains",
+  //     ],
+  //   },
 
-    distance: [
-      <>
-        <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
-      </>,
-      <>
-        <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
-        hours (depending on traffic and route)
-      </>,
-    ],
+  //   distance: [
+  //     <>
+  //       <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
+  //     </>,
+  //     <>
+  //       <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
+  //       hours (depending on traffic and route)
+  //     </>,
+  //   ],
 
-    cabTypes: {
-      intro:
-        "We provide multiple cab options to our clients according to their budget and group size:",
-      list: [
-        "Hatchback: Swift, WagonR – Budget friendly",
-        "Sedan: Dzire, Etios – Comfortable for small families",
-        "SUV: Ertiga, Innova – Ideal for group travel",
-        "Luxury Cars – For a premium travel experience",
-      ],
-    },
+  //   cabTypes: {
+  //     intro:
+  //       "We provide multiple cab options to our clients according to their budget and group size:",
+  //     list: [
+  //       "Hatchback: Swift, WagonR – Budget friendly",
+  //       "Sedan: Dzire, Etios – Comfortable for small families",
+  //       "SUV: Ertiga, Innova – Ideal for group travel",
+  //       "Luxury Cars – For a premium travel experience",
+  //     ],
+  //   },
 
-    benefits: [
-      <strong>Affordable pricing</strong>,
-      <strong>24/7 availability</strong>,
-      <strong>Professional and verified drivers</strong>,
-      <strong>No luggage limit</strong>,
-      <strong>Easy booking process</strong>,
-    ],
+  //   benefits: [
+  //     <strong>Affordable pricing</strong>,
+  //     <strong>24/7 availability</strong>,
+  //     <strong>Professional and verified drivers</strong>,
+  //     <strong>No luggage limit</strong>,
+  //     <strong>Easy booking process</strong>,
+  //   ],
 
-    idealFor: [
-      "Airport pickup and drop",
-      "Office and business trips",
-      "Students shifting to hostels",
-      "Tourists exploring Delhi",
-      "Emergency and late-night travel",
-    ],
+  //   idealFor: [
+  //     "Airport pickup and drop",
+  //     "Office and business trips",
+  //     "Students shifting to hostels",
+  //     "Tourists exploring Delhi",
+  //     "Emergency and late-night travel",
+  //   ],
 
-    safety: (
-      <>
-        Passengers' safety is our top priority. We sanitize our cabs, enable
-        GPS, and verify drivers.Another major benefit of the one-way Jaipur to
-        Delhi Cab service is transparent pricing. Our company offers a Jaipur to
-        Delhi taxi service with clear fare structures and no hidden charges. We
-        also include Toll taxes, driver allowance, and fuel costs, so our
-        passengers travel with peace of mind.
-      </>
-    ),
+  //   safety: (
+  //     <>
+  //       Passengers' safety is our top priority. We sanitize our cabs, enable
+  //       GPS, and verify drivers.Another major benefit of the one-way Jaipur to
+  //       Delhi Cab service is transparent pricing. Our company offers a Jaipur to
+  //       Delhi taxi service with clear fare structures and no hidden charges. We
+  //       also include Toll taxes, driver allowance, and fuel costs, so our
+  //       passengers travel with peace of mind.
+  //     </>
+  //   ),
 
-    bookingSteps: {
-      introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
-      introText: "With our taxi in Jaipur, booking is quick and simple:",
-      steps: [
-        "Choose your pickup point in Jaipur",
-        "Select drop location in Delhi / NCR",
-        "Pick your preferred vehicle",
-        "Click confirm and travel stress-free",
-      ],
-    },
+  //   bookingSteps: {
+  //     introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
+  //     introText: "With our taxi in Jaipur, booking is quick and simple:",
+  //     steps: [
+  //       "Choose your pickup point in Jaipur",
+  //       "Select drop location in Delhi / NCR",
+  //       "Pick your preferred vehicle",
+  //       "Click confirm and travel stress-free",
+  //     ],
+  //   },
 
-    finalText: (
-      <>
-        If you are planning for a unique yet reliable taxi service in Delhi,
-        book our taxi service for your next trip. Our company provides a perfect
-        travel experience and a smooth journey. We make your journey economical.
-        One-way cab service is helpful for late-night travellers. Book our cabs
-        to avoid worrying about train availability or bus timings. Book our{" "}
-        <strong>cab service in Jaipur</strong> today and enjoy a great journey.
-      </>
-    ),
-  },
+  //   finalText: (
+  //     <>
+  //       If you are planning for a unique yet reliable taxi service in Delhi,
+  //       book our taxi service for your next trip. Our company provides a perfect
+  //       travel experience and a smooth journey. We make your journey economical.
+  //       One-way cab service is helpful for late-night travellers. Book our cabs
+  //       to avoid worrying about train availability or bus timings. Book our{" "}
+  //       <strong>cab service in Jaipur</strong> today and enjoy a great journey.
+  //     </>
+  //   ),
+  // },
 
   // Taxi Service in Jaipur end
 
   // Cab Service in Jaipur  start
 
-  "cab-service-in-jaipur": {
-    title: "Cab Service in Jaipur",
+  // "cab-service-in-jaipur": {
+  //   title: "Cab Service in Jaipur",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
+  //   image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
-    intro: (
-      <>
-        <h1 className="text-3xl font-bold mt-5 mb-5">
-          Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
-          Hassle-Free Travel
-        </h1>
+  //   intro: (
+  //     <>
+  //       <h1 className="text-3xl font-bold mt-5 mb-5">
+  //         Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
+  //         Hassle-Free Travel
+  //       </h1>
 
-        <p className="mb-4">
-          Our team is dedicated to providing the
-          <strong>best taxi service in Jaipur</strong>. Business travellers and
-          tourists always prefer us as we provide on-time
-          <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
-          easier and avoid last-minute surprises. Tourists need flexibility
-          while travelling, and we provide customisation even in one-way tour
-          packages. Whether you want a break for shopping or refreshment, we
-          offer customization for a comfortable travel. Families travelling with
-          elderly people and children would find our cab services more reliable
-          and comfortable.  
-        </p>
+  //       <p className="mb-4">
+  //         Our team is dedicated to providing the
+  //         <strong>best taxi service in Jaipur</strong>. Business travellers and
+  //         tourists always prefer us as we provide on-time
+  //         <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
+  //         easier and avoid last-minute surprises. Tourists need flexibility
+  //         while travelling, and we provide customisation even in one-way tour
+  //         packages. Whether you want a break for shopping or refreshment, we
+  //         offer customization for a comfortable travel. Families travelling with
+  //         elderly people and children would find our cab services more reliable
+  //         and comfortable.  
+  //       </p>
 
-        <p className="font-semibold mb-5">
-          With our company, you do not need to pay for a return journey.
-        </p>
-      </>
-    ),
+  //       <p className="font-semibold mb-5">
+  //         With our company, you do not need to pay for a return journey.
+  //       </p>
+  //     </>
+  //   ),
 
-    why: {
-      title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
-      intro:
-        "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
-      points: [
-        "Pay only for one-sided travel",
-        "No return fare or hidden costs",
-        "Door-to-door pickup and drop-off",
-        "Flexible travel time",
-        "More comfortable than buses or trains",
-      ],
-    },
+  //   why: {
+  //     title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
+  //     intro:
+  //       "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
+  //     points: [
+  //       "Pay only for one-sided travel",
+  //       "No return fare or hidden costs",
+  //       "Door-to-door pickup and drop-off",
+  //       "Flexible travel time",
+  //       "More comfortable than buses or trains",
+  //     ],
+  //   },
 
-    distance: [
-      <>
-        <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
-      </>,
-      <>
-        <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
-        hours (depending on traffic and route)
-      </>,
-    ],
+  //   distance: [
+  //     <>
+  //       <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
+  //     </>,
+  //     <>
+  //       <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
+  //       hours (depending on traffic and route)
+  //     </>,
+  //   ],
 
-    cabTypes: {
-      intro:
-        "We provide multiple cab options to our clients according to their budget and group size:",
-      list: [
-        "Hatchback: Swift, WagonR – Budget friendly",
-        "Sedan: Dzire, Etios – Comfortable for small families",
-        "SUV: Ertiga, Innova – Ideal for group travel",
-        "Luxury Cars – For a premium travel experience",
-      ],
-    },
+  //   cabTypes: {
+  //     intro:
+  //       "We provide multiple cab options to our clients according to their budget and group size:",
+  //     list: [
+  //       "Hatchback: Swift, WagonR – Budget friendly",
+  //       "Sedan: Dzire, Etios – Comfortable for small families",
+  //       "SUV: Ertiga, Innova – Ideal for group travel",
+  //       "Luxury Cars – For a premium travel experience",
+  //     ],
+  //   },
 
-    benefits: [
-      <strong>Affordable pricing</strong>,
-      <strong>24/7 availability</strong>,
-      <strong>Professional and verified drivers</strong>,
-      <strong>No luggage limit</strong>,
-      <strong>Easy booking process</strong>,
-    ],
+  //   benefits: [
+  //     <strong>Affordable pricing</strong>,
+  //     <strong>24/7 availability</strong>,
+  //     <strong>Professional and verified drivers</strong>,
+  //     <strong>No luggage limit</strong>,
+  //     <strong>Easy booking process</strong>,
+  //   ],
 
-    idealFor: [
-      "Airport pickup and drop",
-      "Office and business trips",
-      "Students shifting to hostels",
-      "Tourists exploring Delhi",
-      "Emergency and late-night travel",
-    ],
+  //   idealFor: [
+  //     "Airport pickup and drop",
+  //     "Office and business trips",
+  //     "Students shifting to hostels",
+  //     "Tourists exploring Delhi",
+  //     "Emergency and late-night travel",
+  //   ],
 
-    safety: (
-      <>
-        Passengers' safety is our top priority. We sanitize our cabs, enable
-        GPS, and verify drivers.Another major benefit of the one-way Jaipur to
-        Delhi Cab service is transparent pricing. Our company offers a Jaipur to
-        Delhi taxi service with clear fare structures and no hidden charges. We
-        also include Toll taxes, driver allowance, and fuel costs, so our
-        passengers travel with peace of mind.
-      </>
-    ),
+  //   safety: (
+  //     <>
+  //       Passengers' safety is our top priority. We sanitize our cabs, enable
+  //       GPS, and verify drivers.Another major benefit of the one-way Jaipur to
+  //       Delhi Cab service is transparent pricing. Our company offers a Jaipur to
+  //       Delhi taxi service with clear fare structures and no hidden charges. We
+  //       also include Toll taxes, driver allowance, and fuel costs, so our
+  //       passengers travel with peace of mind.
+  //     </>
+  //   ),
 
-    bookingSteps: {
-      introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
-      introText: "With our taxi in Jaipur, booking is quick and simple:",
-      steps: [
-        "Choose your pickup point in Jaipur",
-        "Select drop location in Delhi / NCR",
-        "Pick your preferred vehicle",
-        "Click confirm and travel stress-free",
-      ],
-    },
+  //   bookingSteps: {
+  //     introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
+  //     introText: "With our taxi in Jaipur, booking is quick and simple:",
+  //     steps: [
+  //       "Choose your pickup point in Jaipur",
+  //       "Select drop location in Delhi / NCR",
+  //       "Pick your preferred vehicle",
+  //       "Click confirm and travel stress-free",
+  //     ],
+  //   },
 
-    finalText: (
-      <>
-        If you are planning for a unique yet reliable taxi service in Delhi,
-        book our taxi service for your next trip. Our company provides a perfect
-        travel experience and a smooth journey. We make your journey economical.
-        One-way cab service is helpful for late-night travellers. Book our cabs
-        to avoid worrying about train availability or bus timings. Book our{" "}
-        <strong>cab service in Jaipur</strong> today and enjoy a great journey.
-      </>
-    ),
-  },
+  //   finalText: (
+  //     <>
+  //       If you are planning for a unique yet reliable taxi service in Delhi,
+  //       book our taxi service for your next trip. Our company provides a perfect
+  //       travel experience and a smooth journey. We make your journey economical.
+  //       One-way cab service is helpful for late-night travellers. Book our cabs
+  //       to avoid worrying about train availability or bus timings. Book our{" "}
+  //       <strong>cab service in Jaipur</strong> today and enjoy a great journey.
+  //     </>
+  //   ),
+  // },
   // Cab Service in Jaipur  end
 
   // Car Rental in Jaipur  start
 
-  "car-rental-in-jaipur": {
-    title: "Car Rental in Jaipur",
+  // "car-rental-in-jaipur": {
+  //   title: "Car Rental in Jaipur",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
+  //   image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
-    intro: (
-      <>
-        <h1 className="text-3xl font-bold mt-5 mb-5">
-          Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
-          Hassle-Free Travel
-        </h1>
+  //   intro: (
+  //     <>
+  //       <h1 className="text-3xl font-bold mt-5 mb-5">
+  //         Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
+  //         Hassle-Free Travel
+  //       </h1>
 
-        <p className="mb-4">
-          Our team is dedicated to providing the
-          <strong>best taxi service in Jaipur</strong>. Business travellers and
-          tourists always prefer us as we provide on-time
-          <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
-          easier and avoid last-minute surprises. Tourists need flexibility
-          while travelling, and we provide customisation even in one-way tour
-          packages. Whether you want a break for shopping or refreshment, we
-          offer customization for a comfortable travel. Families travelling with
-          elderly people and children would find our cab services more reliable
-          and comfortable.
-        </p>
+  //       <p className="mb-4">
+  //         Our team is dedicated to providing the
+  //         <strong>best taxi service in Jaipur</strong>. Business travellers and
+  //         tourists always prefer us as we provide on-time
+  //         <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
+  //         easier and avoid last-minute surprises. Tourists need flexibility
+  //         while travelling, and we provide customisation even in one-way tour
+  //         packages. Whether you want a break for shopping or refreshment, we
+  //         offer customization for a comfortable travel. Families travelling with
+  //         elderly people and children would find our cab services more reliable
+  //         and comfortable.
+  //       </p>
 
-        <p className="font-semibold mb-5">
-          With our company, you do not need to pay for a return journey.
-        </p>
-      </>
-    ),
+  //       <p className="font-semibold mb-5">
+  //         With our company, you do not need to pay for a return journey.
+  //       </p>
+  //     </>
+  //   ),
 
-    why: {
-      title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
-      intro:
-        "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
-      points: [
-        "Pay only for one-sided travel",
-        "No return fare or hidden costs",
-        "Door-to-door pickup and drop-off",
-        "Flexible travel time",
-        "More comfortable than buses or trains",
-      ],
-    },
+  //   why: {
+  //     title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
+  //     intro:
+  //       "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
+  //     points: [
+  //       "Pay only for one-sided travel",
+  //       "No return fare or hidden costs",
+  //       "Door-to-door pickup and drop-off",
+  //       "Flexible travel time",
+  //       "More comfortable than buses or trains",
+  //     ],
+  //   },
 
-    distance: [
-      <>
-        <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
-      </>,
-      <>
-        <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
-        hours (depending on traffic and route)
-      </>,
-    ],
+  //   distance: [
+  //     <>
+  //       <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
+  //     </>,
+  //     <>
+  //       <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
+  //       hours (depending on traffic and route)
+  //     </>,
+  //   ],
 
-    cabTypes: {
-      intro:
-        "We provide multiple cab options to our clients according to their budget and group size:",
-      list: [
-        "Hatchback: Swift, WagonR – Budget friendly",
-        "Sedan: Dzire, Etios – Comfortable for small families",
-        "SUV: Ertiga, Innova – Ideal for group travel",
-        "Luxury Cars – For a premium travel experience",
-      ],
-    },
+  //   cabTypes: {
+  //     intro:
+  //       "We provide multiple cab options to our clients according to their budget and group size:",
+  //     list: [
+  //       "Hatchback: Swift, WagonR – Budget friendly",
+  //       "Sedan: Dzire, Etios – Comfortable for small families",
+  //       "SUV: Ertiga, Innova – Ideal for group travel",
+  //       "Luxury Cars – For a premium travel experience",
+  //     ],
+  //   },
 
-    benefits: [
-      <strong>Affordable pricing</strong>,
-      <strong>24/7 availability</strong>,
-      <strong>Professional and verified drivers</strong>,
-      <strong>No luggage limit</strong>,
-      <strong>Easy booking process</strong>,
-    ],
+  //   benefits: [
+  //     <strong>Affordable pricing</strong>,
+  //     <strong>24/7 availability</strong>,
+  //     <strong>Professional and verified drivers</strong>,
+  //     <strong>No luggage limit</strong>,
+  //     <strong>Easy booking process</strong>,
+  //   ],
 
-    idealFor: [
-      "Airport pickup and drop",
-      "Office and business trips",
-      "Students shifting to hostels",
-      "Tourists exploring Delhi",
-      "Emergency and late-night travel",
-    ],
+  //   idealFor: [
+  //     "Airport pickup and drop",
+  //     "Office and business trips",
+  //     "Students shifting to hostels",
+  //     "Tourists exploring Delhi",
+  //     "Emergency and late-night travel",
+  //   ],
 
-    safety: (
-      <>
-        Passengers' safety is our top priority. We sanitize our cabs, enable
-        GPS, and verify drivers.Another major benefit of the one-way Jaipur to
-        Delhi Cab service is transparent pricing. Our company offers a Jaipur to
-        Delhi taxi service with clear fare structures and no hidden charges. We
-        also include Toll taxes, driver allowance, and fuel costs, so our
-        passengers travel with peace of mind.
-      </>
-    ),
+  //   safety: (
+  //     <>
+  //       Passengers' safety is our top priority. We sanitize our cabs, enable
+  //       GPS, and verify drivers.Another major benefit of the one-way Jaipur to
+  //       Delhi Cab service is transparent pricing. Our company offers a Jaipur to
+  //       Delhi taxi service with clear fare structures and no hidden charges. We
+  //       also include Toll taxes, driver allowance, and fuel costs, so our
+  //       passengers travel with peace of mind.
+  //     </>
+  //   ),
 
-    bookingSteps: {
-      introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
-      introText: "With our taxi in Jaipur, booking is quick and simple:",
-      steps: [
-        "Choose your pickup point in Jaipur",
-        "Select drop location in Delhi / NCR",
-        "Pick your preferred vehicle",
-        "Click confirm and travel stress-free",
-      ],
-    },
+  //   bookingSteps: {
+  //     introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
+  //     introText: "With our taxi in Jaipur, booking is quick and simple:",
+  //     steps: [
+  //       "Choose your pickup point in Jaipur",
+  //       "Select drop location in Delhi / NCR",
+  //       "Pick your preferred vehicle",
+  //       "Click confirm and travel stress-free",
+  //     ],
+  //   },
 
-    finalText: (
-      <>
-        If you are planning for a unique yet reliable taxi service in Delhi,
-        book our taxi service for your next trip. Our company provides a perfect
-        travel experience and a smooth journey. We make your journey economical.
-        One-way cab service is helpful for late-night travellers. Book our cabs
-        to avoid worrying about train availability or bus timings. Book our{" "}
-        <strong>cab service in Jaipur</strong> today and enjoy a great journey.
-      </>
-    ),
-  },
+  //   finalText: (
+  //     <>
+  //       If you are planning for a unique yet reliable taxi service in Delhi,
+  //       book our taxi service for your next trip. Our company provides a perfect
+  //       travel experience and a smooth journey. We make your journey economical.
+  //       One-way cab service is helpful for late-night travellers. Book our cabs
+  //       to avoid worrying about train availability or bus timings. Book our{" "}
+  //       <strong>cab service in Jaipur</strong> today and enjoy a great journey.
+  //     </>
+  //   ),
+  // },
   // Car Rental in Jaipur  end
 
   // Jaipur To Khatu Shyam Ji Taxi Service   start
 
-  "jaipur-to-khatu-shyam-ji-taxi-service": {
-    title: "Jaipur To Khatu Shyam Ji Taxi Service",
+  // "jaipur-to-khatu-shyam-ji-taxi-service": {
+  //   title: "Jaipur To Khatu Shyam Ji Taxi Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
+  //   image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
-    intro: (
-      <>
-        <h1 className="text-3xl font-bold mt-5 mb-5">
-          Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
-          Hassle-Free Travel
-        </h1>
+  //   intro: (
+  //     <>
+  //       <h1 className="text-3xl font-bold mt-5 mb-5">
+  //         Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
+  //         Hassle-Free Travel
+  //       </h1>
 
-        <p className="mb-4">
-          Our team is dedicated to providing the
-          <strong>best taxi service in Jaipur</strong>. Business travellers and
-          tourists always prefer us as we provide on-time
-          <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
-          easier and avoid last-minute surprises. Tourists need flexibility
-          while travelling, and we provide customisation even in one-way tour
-          packages. Whether you want a break for shopping or refreshment, we
-          offer customization for a comfortable travel. Families travelling with
-          elderly people and children would find our cab services more reliable
-          and comfortable.
-        </p>
+  //       <p className="mb-4">
+  //         Our team is dedicated to providing the
+  //         <strong>best taxi service in Jaipur</strong>. Business travellers and
+  //         tourists always prefer us as we provide on-time
+  //         <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
+  //         easier and avoid last-minute surprises. Tourists need flexibility
+  //         while travelling, and we provide customisation even in one-way tour
+  //         packages. Whether you want a break for shopping or refreshment, we
+  //         offer customization for a comfortable travel. Families travelling with
+  //         elderly people and children would find our cab services more reliable
+  //         and comfortable.
+  //       </p>
 
-        <p className="font-semibold mb-5">
-          With our company, you do not need to pay for a return journey.
-        </p>
-      </>
-    ),
+  //       <p className="font-semibold mb-5">
+  //         With our company, you do not need to pay for a return journey.
+  //       </p>
+  //     </>
+  //   ),
 
-    why: {
-      title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
-      intro:
-        "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
-      points: [
-        "Pay only for one-sided travel",
-        "No return fare or hidden costs",
-        "Door-to-door pickup and drop-off",
-        "Flexible travel time",
-        "More comfortable than buses or trains",
-      ],
-    },
+  //   why: {
+  //     title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
+  //     intro:
+  //       "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
+  //     points: [
+  //       "Pay only for one-sided travel",
+  //       "No return fare or hidden costs",
+  //       "Door-to-door pickup and drop-off",
+  //       "Flexible travel time",
+  //       "More comfortable than buses or trains",
+  //     ],
+  //   },
 
-    distance: [
-      <>
-        <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
-      </>,
-      <>
-        <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
-        hours (depending on traffic and route)
-      </>,
-    ],
+  //   distance: [
+  //     <>
+  //       <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
+  //     </>,
+  //     <>
+  //       <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
+  //       hours (depending on traffic and route)
+  //     </>,
+  //   ],
 
-    cabTypes: {
-      intro:
-        "We provide multiple cab options to our clients according to their budget and group size:",
-      list: [
-        "Hatchback: Swift, WagonR – Budget friendly",
-        "Sedan: Dzire, Etios – Comfortable for small families",
-        "SUV: Ertiga, Innova – Ideal for group travel",
-        "Luxury Cars – For a premium travel experience",
-      ],
-    },
+  //   cabTypes: {
+  //     intro:
+  //       "We provide multiple cab options to our clients according to their budget and group size:",
+  //     list: [
+  //       "Hatchback: Swift, WagonR – Budget friendly",
+  //       "Sedan: Dzire, Etios – Comfortable for small families",
+  //       "SUV: Ertiga, Innova – Ideal for group travel",
+  //       "Luxury Cars – For a premium travel experience",
+  //     ],
+  //   },
 
-    benefits: [
-      <strong>Affordable pricing</strong>,
-      <strong>24/7 availability</strong>,
-      <strong>Professional and verified drivers</strong>,
-      <strong>No luggage limit</strong>,
-      <strong>Easy booking process</strong>,
-    ],
+  //   benefits: [
+  //     <strong>Affordable pricing</strong>,
+  //     <strong>24/7 availability</strong>,
+  //     <strong>Professional and verified drivers</strong>,
+  //     <strong>No luggage limit</strong>,
+  //     <strong>Easy booking process</strong>,
+  //   ],
 
-    idealFor: [
-      "Airport pickup and drop",
-      "Office and business trips",
-      "Students shifting to hostels",
-      "Tourists exploring Delhi",
-      "Emergency and late-night travel",
-    ],
+  //   idealFor: [
+  //     "Airport pickup and drop",
+  //     "Office and business trips",
+  //     "Students shifting to hostels",
+  //     "Tourists exploring Delhi",
+  //     "Emergency and late-night travel",
+  //   ],
 
-    safety: (
-      <>
-        Passengers' safety is our top priority. We sanitize our cabs, enable
-        GPS, and verify drivers.Another major benefit of the one-way Jaipur to
-        Delhi Cab service is transparent pricing. Our company offers a Jaipur to
-        Delhi taxi service with clear fare structures and no hidden charges. We
-        also include Toll taxes, driver allowance, and fuel costs, so our
-        passengers travel with peace of mind.
-      </>
-    ),
+  //   safety: (
+  //     <>
+  //       Passengers' safety is our top priority. We sanitize our cabs, enable
+  //       GPS, and verify drivers.Another major benefit of the one-way Jaipur to
+  //       Delhi Cab service is transparent pricing. Our company offers a Jaipur to
+  //       Delhi taxi service with clear fare structures and no hidden charges. We
+  //       also include Toll taxes, driver allowance, and fuel costs, so our
+  //       passengers travel with peace of mind.
+  //     </>
+  //   ),
 
-    bookingSteps: {
-      introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
-      introText: "With our taxi in Jaipur, booking is quick and simple:",
-      steps: [
-        "Choose your pickup point in Jaipur",
-        "Select drop location in Delhi / NCR",
-        "Pick your preferred vehicle",
-        "Click confirm and travel stress-free",
-      ],
-    },
+  //   bookingSteps: {
+  //     introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
+  //     introText: "With our taxi in Jaipur, booking is quick and simple:",
+  //     steps: [
+  //       "Choose your pickup point in Jaipur",
+  //       "Select drop location in Delhi / NCR",
+  //       "Pick your preferred vehicle",
+  //       "Click confirm and travel stress-free",
+  //     ],
+  //   },
 
-    finalText: (
-      <>
-        If you are planning for a unique yet reliable taxi service in Delhi,
-        book our taxi service for your next trip. Our company provides a perfect
-        travel experience and a smooth journey. We make your journey economical.
-        One-way cab service is helpful for late-night travellers. Book our cabs
-        to avoid worrying about train availability or bus timings. Book our{" "}
-        <strong>cab service in Jaipur</strong> today and enjoy a great journey.
-      </>
-    ),
-  },
+  //   finalText: (
+  //     <>
+  //       If you are planning for a unique yet reliable taxi service in Delhi,
+  //       book our taxi service for your next trip. Our company provides a perfect
+  //       travel experience and a smooth journey. We make your journey economical.
+  //       One-way cab service is helpful for late-night travellers. Book our cabs
+  //       to avoid worrying about train availability or bus timings. Book our{" "}
+  //       <strong>cab service in Jaipur</strong> today and enjoy a great journey.
+  //     </>
+  //   ),
+  // },
   // Jaipur To Khatu Shyam Ji Taxi Service  end
 
   // Jaipur To Jodhpur Taxi Service  start
 
-  "jaipur-to-jodhpur-taxi-service": {
-    title: "Jaipur To Jodhpur Taxi Service",
+  // "jaipur-to-jodhpur-taxi-service": {
+  //   title: "Jaipur To Jodhpur Taxi Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
+  //   image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
-    intro: (
-      <>
-        <h1 className="text-3xl font-bold mt-5 mb-5">
-          Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
-          Hassle-Free Travel
-        </h1>
+  //   intro: (
+  //     <>
+  //       <h1 className="text-3xl font-bold mt-5 mb-5">
+  //         Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
+  //         Hassle-Free Travel
+  //       </h1>
 
-        <p className="mb-4">
-          Our team is dedicated to providing the
-          <strong>best taxi service in Jaipur</strong>. Business travellers and
-          tourists always prefer us as we provide on-time
-          <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
-          easier and avoid last-minute surprises. Tourists need flexibility
-          while travelling, and we provide customisation even in one-way tour
-          packages. Whether you want a break for shopping or refreshment, we
-          offer customization for a comfortable travel. Families travelling with
-          elderly people and children would find our cab services more reliable
-          and comfortable.
-        </p>
+  //       <p className="mb-4">
+  //         Our team is dedicated to providing the
+  //         <strong>best taxi service in Jaipur</strong>. Business travellers and
+  //         tourists always prefer us as we provide on-time
+  //         <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
+  //         easier and avoid last-minute surprises. Tourists need flexibility
+  //         while travelling, and we provide customisation even in one-way tour
+  //         packages. Whether you want a break for shopping or refreshment, we
+  //         offer customization for a comfortable travel. Families travelling with
+  //         elderly people and children would find our cab services more reliable
+  //         and comfortable.
+  //       </p>
 
-        <p className="font-semibold mb-5">
-          With our company, you do not need to pay for a return journey.
-        </p>
-      </>
-    ),
+  //       <p className="font-semibold mb-5">
+  //         With our company, you do not need to pay for a return journey.
+  //       </p>
+  //     </>
+  //   ),
 
-    why: {
-      title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
-      intro:
-        "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
-      points: [
-        "Pay only for one-sided travel",
-        "No return fare or hidden costs",
-        "Door-to-door pickup and drop-off",
-        "Flexible travel time",
-        "More comfortable than buses or trains",
-      ],
-    },
+  //   why: {
+  //     title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
+  //     intro:
+  //       "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
+  //     points: [
+  //       "Pay only for one-sided travel",
+  //       "No return fare or hidden costs",
+  //       "Door-to-door pickup and drop-off",
+  //       "Flexible travel time",
+  //       "More comfortable than buses or trains",
+  //     ],
+  //   },
 
-    distance: [
-      <>
-        <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
-      </>,
-      <>
-        <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
-        hours (depending on traffic and route)
-      </>,
-    ],
+  //   distance: [
+  //     <>
+  //       <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
+  //     </>,
+  //     <>
+  //       <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
+  //       hours (depending on traffic and route)
+  //     </>,
+  //   ],
 
-    cabTypes: {
-      intro:
-        "We provide multiple cab options to our clients according to their budget and group size:",
-      list: [
-        "Hatchback: Swift, WagonR – Budget friendly",
-        "Sedan: Dzire, Etios – Comfortable for small families",
-        "SUV: Ertiga, Innova – Ideal for group travel",
-        "Luxury Cars – For a premium travel experience",
-      ],
-    },
+  //   cabTypes: {
+  //     intro:
+  //       "We provide multiple cab options to our clients according to their budget and group size:",
+  //     list: [
+  //       "Hatchback: Swift, WagonR – Budget friendly",
+  //       "Sedan: Dzire, Etios – Comfortable for small families",
+  //       "SUV: Ertiga, Innova – Ideal for group travel",
+  //       "Luxury Cars – For a premium travel experience",
+  //     ],
+  //   },
 
-    benefits: [
-      <strong>Affordable pricing</strong>,
-      <strong>24/7 availability</strong>,
-      <strong>Professional and verified drivers</strong>,
-      <strong>No luggage limit</strong>,
-      <strong>Easy booking process</strong>,
-    ],
+  //   benefits: [
+  //     <strong>Affordable pricing</strong>,
+  //     <strong>24/7 availability</strong>,
+  //     <strong>Professional and verified drivers</strong>,
+  //     <strong>No luggage limit</strong>,
+  //     <strong>Easy booking process</strong>,
+  //   ],
 
-    idealFor: [
-      "Airport pickup and drop",
-      "Office and business trips",
-      "Students shifting to hostels",
-      "Tourists exploring Delhi",
-      "Emergency and late-night travel",
-    ],
+  //   idealFor: [
+  //     "Airport pickup and drop",
+  //     "Office and business trips",
+  //     "Students shifting to hostels",
+  //     "Tourists exploring Delhi",
+  //     "Emergency and late-night travel",
+  //   ],
 
-    safety: (
-      <>
-        Passengers' safety is our top priority. We sanitize our cabs, enable
-        GPS, and verify drivers.Another major benefit of the one-way Jaipur to
-        Delhi Cab service is transparent pricing. Our company offers a Jaipur to
-        Delhi taxi service with clear fare structures and no hidden charges. We
-        also include Toll taxes, driver allowance, and fuel costs, so our
-        passengers travel with peace of mind.
-      </>
-    ),
+  //   safety: (
+  //     <>
+  //       Passengers' safety is our top priority. We sanitize our cabs, enable
+  //       GPS, and verify drivers.Another major benefit of the one-way Jaipur to
+  //       Delhi Cab service is transparent pricing. Our company offers a Jaipur to
+  //       Delhi taxi service with clear fare structures and no hidden charges. We
+  //       also include Toll taxes, driver allowance, and fuel costs, so our
+  //       passengers travel with peace of mind.
+  //     </>
+  //   ),
 
-    bookingSteps: {
-      introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
-      introText: "With our taxi in Jaipur, booking is quick and simple:",
-      steps: [
-        "Choose your pickup point in Jaipur",
-        "Select drop location in Delhi / NCR",
-        "Pick your preferred vehicle",
-        "Click confirm and travel stress-free",
-      ],
-    },
+  //   bookingSteps: {
+  //     introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
+  //     introText: "With our taxi in Jaipur, booking is quick and simple:",
+  //     steps: [
+  //       "Choose your pickup point in Jaipur",
+  //       "Select drop location in Delhi / NCR",
+  //       "Pick your preferred vehicle",
+  //       "Click confirm and travel stress-free",
+  //     ],
+  //   },
 
-    finalText: (
-      <>
-        If you are planning for a unique yet reliable taxi service in Delhi,
-        book our taxi service for your next trip. Our company provides a perfect
-        travel experience and a smooth journey. We make your journey economical.
-        One-way cab service is helpful for late-night travellers. Book our cabs
-        to avoid worrying about train availability or bus timings. Book our{" "}
-        <strong>cab service in Jaipur</strong> today and enjoy a great journey.
-      </>
-    ),
-  },
+  //   finalText: (
+  //     <>
+  //       If you are planning for a unique yet reliable taxi service in Delhi,
+  //       book our taxi service for your next trip. Our company provides a perfect
+  //       travel experience and a smooth journey. We make your journey economical.
+  //       One-way cab service is helpful for late-night travellers. Book our cabs
+  //       to avoid worrying about train availability or bus timings. Book our{" "}
+  //       <strong>cab service in Jaipur</strong> today and enjoy a great journey.
+  //     </>
+  //   ),
+  // },
   // Jaipur To Jodhpur Taxi Service  end
 
   // Jaipur To Udaipur And Mount Abu Taxi Service  start
 
-  "jaipur-to-udaipur-and-mount-abu-taxi-service": {
-    title: "Jaipur To Udaipur And Mount Abu Taxi Service",
+  // "jaipur-to-udaipur-and-mount-abu-taxi-service": {
+  //   title: "Jaipur To Udaipur And Mount Abu Taxi Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
+  //   image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
-    intro: (
-      <>
-        <h1 className="text-3xl font-bold mt-5 mb-5">
-          Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
-          Hassle-Free Travel
-        </h1>
+  //   intro: (
+  //     <>
+  //       <h1 className="text-3xl font-bold mt-5 mb-5">
+  //         Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
+  //         Hassle-Free Travel
+  //       </h1>
 
-        <p className="mb-4">
-          Our team is dedicated to providing the
-          <strong>best taxi service in Jaipur</strong>. Business travellers and
-          tourists always prefer us as we provide on-time
-          <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
-          easier and avoid last-minute surprises. Tourists need flexibility
-          while travelling, and we provide customisation even in one-way tour
-          packages. Whether you want a break for shopping or refreshment, we
-          offer customization for a comfortable travel. Families travelling with
-          elderly people and children would find our cab services more reliable
-          and comfortable.
-        </p>
+  //       <p className="mb-4">
+  //         Our team is dedicated to providing the
+  //         <strong>best taxi service in Jaipur</strong>. Business travellers and
+  //         tourists always prefer us as we provide on-time
+  //         <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
+  //         easier and avoid last-minute surprises. Tourists need flexibility
+  //         while travelling, and we provide customisation even in one-way tour
+  //         packages. Whether you want a break for shopping or refreshment, we
+  //         offer customization for a comfortable travel. Families travelling with
+  //         elderly people and children would find our cab services more reliable
+  //         and comfortable.
+  //       </p>
 
-        <p className="font-semibold mb-5">
-          With our company, you do not need to pay for a return journey.
-        </p>
-      </>
-    ),
+  //       <p className="font-semibold mb-5">
+  //         With our company, you do not need to pay for a return journey.
+  //       </p>
+  //     </>
+  //   ),
 
-    why: {
-      title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
-      intro:
-        "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
-      points: [
-        "Pay only for one-sided travel",
-        "No return fare or hidden costs",
-        "Door-to-door pickup and drop-off",
-        "Flexible travel time",
-        "More comfortable than buses or trains",
-      ],
-    },
+  //   why: {
+  //     title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
+  //     intro:
+  //       "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
+  //     points: [
+  //       "Pay only for one-sided travel",
+  //       "No return fare or hidden costs",
+  //       "Door-to-door pickup and drop-off",
+  //       "Flexible travel time",
+  //       "More comfortable than buses or trains",
+  //     ],
+  //   },
 
-    distance: [
-      <>
-        <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
-      </>,
-      <>
-        <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
-        hours (depending on traffic and route)
-      </>,
-    ],
+  //   distance: [
+  //     <>
+  //       <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
+  //     </>,
+  //     <>
+  //       <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
+  //       hours (depending on traffic and route)
+  //     </>,
+  //   ],
 
-    cabTypes: {
-      intro:
-        "We provide multiple cab options to our clients according to their budget and group size:",
-      list: [
-        "Hatchback: Swift, WagonR – Budget friendly",
-        "Sedan: Dzire, Etios – Comfortable for small families",
-        "SUV: Ertiga, Innova – Ideal for group travel",
-        "Luxury Cars – For a premium travel experience",
-      ],
-    },
+  //   cabTypes: {
+  //     intro:
+  //       "We provide multiple cab options to our clients according to their budget and group size:",
+  //     list: [
+  //       "Hatchback: Swift, WagonR – Budget friendly",
+  //       "Sedan: Dzire, Etios – Comfortable for small families",
+  //       "SUV: Ertiga, Innova – Ideal for group travel",
+  //       "Luxury Cars – For a premium travel experience",
+  //     ],
+  //   },
 
-    benefits: [
-      <strong>Affordable pricing</strong>,
-      <strong>24/7 availability</strong>,
-      <strong>Professional and verified drivers</strong>,
-      <strong>No luggage limit</strong>,
-      <strong>Easy booking process</strong>,
-    ],
+  //   benefits: [
+  //     <strong>Affordable pricing</strong>,
+  //     <strong>24/7 availability</strong>,
+  //     <strong>Professional and verified drivers</strong>,
+  //     <strong>No luggage limit</strong>,
+  //     <strong>Easy booking process</strong>,
+  //   ],
 
-    idealFor: [
-      "Airport pickup and drop",
-      "Office and business trips",
-      "Students shifting to hostels",
-      "Tourists exploring Delhi",
-      "Emergency and late-night travel",
-    ],
+  //   idealFor: [
+  //     "Airport pickup and drop",
+  //     "Office and business trips",
+  //     "Students shifting to hostels",
+  //     "Tourists exploring Delhi",
+  //     "Emergency and late-night travel",
+  //   ],
 
-    safety: (
-      <>
-        Passengers' safety is our top priority. We sanitize our cabs, enable
-        GPS, and verify drivers.Another major benefit of the one-way Jaipur to
-        Delhi Cab service is transparent pricing. Our company offers a Jaipur to
-        Delhi taxi service with clear fare structures and no hidden charges. We
-        also include Toll taxes, driver allowance, and fuel costs, so our
-        passengers travel with peace of mind.
-      </>
-    ),
+  //   safety: (
+  //     <>
+  //       Passengers' safety is our top priority. We sanitize our cabs, enable
+  //       GPS, and verify drivers.Another major benefit of the one-way Jaipur to
+  //       Delhi Cab service is transparent pricing. Our company offers a Jaipur to
+  //       Delhi taxi service with clear fare structures and no hidden charges. We
+  //       also include Toll taxes, driver allowance, and fuel costs, so our
+  //       passengers travel with peace of mind.
+  //     </>
+  //   ),
 
-    bookingSteps: {
-      introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
-      introText: "With our taxi in Jaipur, booking is quick and simple:",
-      steps: [
-        "Choose your pickup point in Jaipur",
-        "Select drop location in Delhi / NCR",
-        "Pick your preferred vehicle",
-        "Click confirm and travel stress-free",
-      ],
-    },
+  //   bookingSteps: {
+  //     introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
+  //     introText: "With our taxi in Jaipur, booking is quick and simple:",
+  //     steps: [
+  //       "Choose your pickup point in Jaipur",
+  //       "Select drop location in Delhi / NCR",
+  //       "Pick your preferred vehicle",
+  //       "Click confirm and travel stress-free",
+  //     ],
+  //   },
 
-    finalText: (
-      <>
-        If you are planning for a unique yet reliable taxi service in Delhi,
-        book our taxi service for your next trip. Our company provides a perfect
-        travel experience and a smooth journey. We make your journey economical.
-        One-way cab service is helpful for late-night travellers. Book our cabs
-        to avoid worrying about train availability or bus timings. Book our{" "}
-        <strong>cab service in Jaipur</strong> today and enjoy a great journey.
-      </>
-    ),
-  },
+  //   finalText: (
+  //     <>
+  //       If you are planning for a unique yet reliable taxi service in Delhi,
+  //       book our taxi service for your next trip. Our company provides a perfect
+  //       travel experience and a smooth journey. We make your journey economical.
+  //       One-way cab service is helpful for late-night travellers. Book our cabs
+  //       to avoid worrying about train availability or bus timings. Book our{" "}
+  //       <strong>cab service in Jaipur</strong> today and enjoy a great journey.
+  //     </>
+  //   ),
+  // },
   //  Jaipur To Udaipur And Mount Abu Taxi Service end
 
   // Jaipur To Jaisalmer Taxi Service start
 
-  "jaipur-to-jaisalmer-taxi-service": {
-    title: "Jaipur To Jaisalmer Taxi Service",
+  // "jaipur-to-jaisalmer-taxi-service": {
+  //   title: "Jaipur To Jaisalmer Taxi Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
+  //   image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
-    intro: (
-      <>
-        <h1 className="text-3xl font-bold mt-5 mb-5">
-          Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
-          Hassle-Free Travel
-        </h1>
+  //   intro: (
+  //     <>
+  //       <h1 className="text-3xl font-bold mt-5 mb-5">
+  //         Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
+  //         Hassle-Free Travel
+  //       </h1>
 
-        <p className="mb-4">
-          Our team is dedicated to providing the
-          <strong>best taxi service in Jaipur</strong>. Business travellers and
-          tourists always prefer us as we provide on-time
-          <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
-          easier and avoid last-minute surprises. Tourists need flexibility
-          while travelling, and we provide customisation even in one-way tour
-          packages. Whether you want a break for shopping or refreshment, we
-          offer customization for a comfortable travel. Families travelling with
-          elderly people and children would find our cab services more reliable
-          and comfortable.
-        </p>
+  //       <p className="mb-4">
+  //         Our team is dedicated to providing the
+  //         <strong>best taxi service in Jaipur</strong>. Business travellers and
+  //         tourists always prefer us as we provide on-time
+  //         <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
+  //         easier and avoid last-minute surprises. Tourists need flexibility
+  //         while travelling, and we provide customisation even in one-way tour
+  //         packages. Whether you want a break for shopping or refreshment, we
+  //         offer customization for a comfortable travel. Families travelling with
+  //         elderly people and children would find our cab services more reliable
+  //         and comfortable.
+  //       </p>
 
-        <p className="font-semibold mb-5">
-          With our company, you do not need to pay for a return journey.
-        </p>
-      </>
-    ),
+  //       <p className="font-semibold mb-5">
+  //         With our company, you do not need to pay for a return journey.
+  //       </p>
+  //     </>
+  //   ),
 
-    why: {
-      title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
-      intro:
-        "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
-      points: [
-        "Pay only for one-sided travel",
-        "No return fare or hidden costs",
-        "Door-to-door pickup and drop-off",
-        "Flexible travel time",
-        "More comfortable than buses or trains",
-      ],
-    },
+  //   why: {
+  //     title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
+  //     intro:
+  //       "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
+  //     points: [
+  //       "Pay only for one-sided travel",
+  //       "No return fare or hidden costs",
+  //       "Door-to-door pickup and drop-off",
+  //       "Flexible travel time",
+  //       "More comfortable than buses or trains",
+  //     ],
+  //   },
 
-    distance: [
-      <>
-        <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
-      </>,
-      <>
-        <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
-        hours (depending on traffic and route)
-      </>,
-    ],
+  //   distance: [
+  //     <>
+  //       <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
+  //     </>,
+  //     <>
+  //       <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
+  //       hours (depending on traffic and route)
+  //     </>,
+  //   ],
 
-    cabTypes: {
-      intro:
-        "We provide multiple cab options to our clients according to their budget and group size:",
-      list: [
-        "Hatchback: Swift, WagonR – Budget friendly",
-        "Sedan: Dzire, Etios – Comfortable for small families",
-        "SUV: Ertiga, Innova – Ideal for group travel",
-        "Luxury Cars – For a premium travel experience",
-      ],
-    },
+  //   cabTypes: {
+  //     intro:
+  //       "We provide multiple cab options to our clients according to their budget and group size:",
+  //     list: [
+  //       "Hatchback: Swift, WagonR – Budget friendly",
+  //       "Sedan: Dzire, Etios – Comfortable for small families",
+  //       "SUV: Ertiga, Innova – Ideal for group travel",
+  //       "Luxury Cars – For a premium travel experience",
+  //     ],
+  //   },
 
-    benefits: [
-      <strong>Affordable pricing</strong>,
-      <strong>24/7 availability</strong>,
-      <strong>Professional and verified drivers</strong>,
-      <strong>No luggage limit</strong>,
-      <strong>Easy booking process</strong>,
-    ],
+  //   benefits: [
+  //     <strong>Affordable pricing</strong>,
+  //     <strong>24/7 availability</strong>,
+  //     <strong>Professional and verified drivers</strong>,
+  //     <strong>No luggage limit</strong>,
+  //     <strong>Easy booking process</strong>,
+  //   ],
 
-    idealFor: [
-      "Airport pickup and drop",
-      "Office and business trips",
-      "Students shifting to hostels",
-      "Tourists exploring Delhi",
-      "Emergency and late-night travel",
-    ],
+  //   idealFor: [
+  //     "Airport pickup and drop",
+  //     "Office and business trips",
+  //     "Students shifting to hostels",
+  //     "Tourists exploring Delhi",
+  //     "Emergency and late-night travel",
+  //   ],
 
-    safety: (
-      <>
-        Passengers' safety is our top priority. We sanitize our cabs, enable
-        GPS, and verify drivers.Another major benefit of the one-way Jaipur to
-        Delhi Cab service is transparent pricing. Our company offers a Jaipur to
-        Delhi taxi service with clear fare structures and no hidden charges. We
-        also include Toll taxes, driver allowance, and fuel costs, so our
-        passengers travel with peace of mind.
-      </>
-    ),
+  //   safety: (
+  //     <>
+  //       Passengers' safety is our top priority. We sanitize our cabs, enable
+  //       GPS, and verify drivers.Another major benefit of the one-way Jaipur to
+  //       Delhi Cab service is transparent pricing. Our company offers a Jaipur to
+  //       Delhi taxi service with clear fare structures and no hidden charges. We
+  //       also include Toll taxes, driver allowance, and fuel costs, so our
+  //       passengers travel with peace of mind.
+  //     </>
+  //   ),
 
-    bookingSteps: {
-      introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
-      introText: "With our taxi in Jaipur, booking is quick and simple:",
-      steps: [
-        "Choose your pickup point in Jaipur",
-        "Select drop location in Delhi / NCR",
-        "Pick your preferred vehicle",
-        "Click confirm and travel stress-free",
-      ],
-    },
+  //   bookingSteps: {
+  //     introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
+  //     introText: "With our taxi in Jaipur, booking is quick and simple:",
+  //     steps: [
+  //       "Choose your pickup point in Jaipur",
+  //       "Select drop location in Delhi / NCR",
+  //       "Pick your preferred vehicle",
+  //       "Click confirm and travel stress-free",
+  //     ],
+  //   },
 
-    finalText: (
-      <>
-        If you are planning for a unique yet reliable taxi service in Delhi,
-        book our taxi service for your next trip. Our company provides a perfect
-        travel experience and a smooth journey. We make your journey economical.
-        One-way cab service is helpful for late-night travellers. Book our cabs
-        to avoid worrying about train availability or bus timings. Book our{" "}
-        <strong>cab service in Jaipur</strong> today and enjoy a great journey.
-      </>
-    ),
-  },
+  //   finalText: (
+  //     <>
+  //       If you are planning for a unique yet reliable taxi service in Delhi,
+  //       book our taxi service for your next trip. Our company provides a perfect
+  //       travel experience and a smooth journey. We make your journey economical.
+  //       One-way cab service is helpful for late-night travellers. Book our cabs
+  //       to avoid worrying about train availability or bus timings. Book our{" "}
+  //       <strong>cab service in Jaipur</strong> today and enjoy a great journey.
+  //     </>
+  //   ),
+  // },
   // Jaipur To Jaisalmer Taxi Service end
 
   //Jaipur To Sawai Madhopur Taxi Service start
 
-  "jaipur-to-sawai-madhopur-taxi-service": {
-    title: "Jaipur To Sawai Madhopur Taxi Service",
+  // "jaipur-to-sawai-madhopur-taxi-service": {
+  //   title: "Jaipur To Sawai Madhopur Taxi Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
+  //   image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
-    intro: (
-      <>
-        <h1 className="text-3xl font-bold mt-5 mb-5">
-          Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
-          Hassle-Free Travel
-        </h1>
+  //   intro: (
+  //     <>
+  //       <h1 className="text-3xl font-bold mt-5 mb-5">
+  //         Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
+  //         Hassle-Free Travel
+  //       </h1>
 
-        <p className="mb-4">
-          Our team is dedicated to providing the
-          <strong>best taxi service in Jaipur</strong>. Business travellers and
-          tourists always prefer us as we provide on-time
-          <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
-          easier and avoid last-minute surprises. Tourists need flexibility
-          while travelling, and we provide customisation even in one-way tour
-          packages. Whether you want a break for shopping or refreshment, we
-          offer customization for a comfortable travel. Families travelling with
-          elderly people and children would find our cab services more reliable
-          and comfortable.
-        </p>
+  //       <p className="mb-4">
+  //         Our team is dedicated to providing the
+  //         <strong>best taxi service in Jaipur</strong>. Business travellers and
+  //         tourists always prefer us as we provide on-time
+  //         <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
+  //         easier and avoid last-minute surprises. Tourists need flexibility
+  //         while travelling, and we provide customisation even in one-way tour
+  //         packages. Whether you want a break for shopping or refreshment, we
+  //         offer customization for a comfortable travel. Families travelling with
+  //         elderly people and children would find our cab services more reliable
+  //         and comfortable.
+  //       </p>
 
-        <p className="font-semibold mb-5">
-          With our company, you do not need to pay for a return journey.
-        </p>
-      </>
-    ),
+  //       <p className="font-semibold mb-5">
+  //         With our company, you do not need to pay for a return journey.
+  //       </p>
+  //     </>
+  //   ),
 
-    why: {
-      title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
-      intro:
-        "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
-      points: [
-        "Pay only for one-sided travel",
-        "No return fare or hidden costs",
-        "Door-to-door pickup and drop-off",
-        "Flexible travel time",
-        "More comfortable than buses or trains",
-      ],
-    },
+  //   why: {
+  //     title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
+  //     intro:
+  //       "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
+  //     points: [
+  //       "Pay only for one-sided travel",
+  //       "No return fare or hidden costs",
+  //       "Door-to-door pickup and drop-off",
+  //       "Flexible travel time",
+  //       "More comfortable than buses or trains",
+  //     ],
+  //   },
 
-    distance: [
-      <>
-        <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
-      </>,
-      <>
-        <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
-        hours (depending on traffic and route)
-      </>,
-    ],
+  //   distance: [
+  //     <>
+  //       <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
+  //     </>,
+  //     <>
+  //       <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
+  //       hours (depending on traffic and route)
+  //     </>,
+  //   ],
 
-    cabTypes: {
-      intro:
-        "We provide multiple cab options to our clients according to their budget and group size:",
-      list: [
-        "Hatchback: Swift, WagonR – Budget friendly",
-        "Sedan: Dzire, Etios – Comfortable for small families",
-        "SUV: Ertiga, Innova – Ideal for group travel",
-        "Luxury Cars – For a premium travel experience",
-      ],
-    },
+  //   cabTypes: {
+  //     intro:
+  //       "We provide multiple cab options to our clients according to their budget and group size:",
+  //     list: [
+  //       "Hatchback: Swift, WagonR – Budget friendly",
+  //       "Sedan: Dzire, Etios – Comfortable for small families",
+  //       "SUV: Ertiga, Innova – Ideal for group travel",
+  //       "Luxury Cars – For a premium travel experience",
+  //     ],
+  //   },
 
-    benefits: [
-      <strong>Affordable pricing</strong>,
-      <strong>24/7 availability</strong>,
-      <strong>Professional and verified drivers</strong>,
-      <strong>No luggage limit</strong>,
-      <strong>Easy booking process</strong>,
-    ],
+  //   benefits: [
+  //     <strong>Affordable pricing</strong>,
+  //     <strong>24/7 availability</strong>,
+  //     <strong>Professional and verified drivers</strong>,
+  //     <strong>No luggage limit</strong>,
+  //     <strong>Easy booking process</strong>,
+  //   ],
 
-    idealFor: [
-      "Airport pickup and drop",
-      "Office and business trips",
-      "Students shifting to hostels",
-      "Tourists exploring Delhi",
-      "Emergency and late-night travel",
-    ],
+  //   idealFor: [
+  //     "Airport pickup and drop",
+  //     "Office and business trips",
+  //     "Students shifting to hostels",
+  //     "Tourists exploring Delhi",
+  //     "Emergency and late-night travel",
+  //   ],
 
-    safety: (
-      <>
-        Passengers' safety is our top priority. We sanitize our cabs, enable
-        GPS, and verify drivers.Another major benefit of the one-way Jaipur to
-        Delhi Cab service is transparent pricing. Our company offers a Jaipur to
-        Delhi taxi service with clear fare structures and no hidden charges. We
-        also include Toll taxes, driver allowance, and fuel costs, so our
-        passengers travel with peace of mind.
-      </>
-    ),
+  //   safety: (
+  //     <>
+  //       Passengers' safety is our top priority. We sanitize our cabs, enable
+  //       GPS, and verify drivers.Another major benefit of the one-way Jaipur to
+  //       Delhi Cab service is transparent pricing. Our company offers a Jaipur to
+  //       Delhi taxi service with clear fare structures and no hidden charges. We
+  //       also include Toll taxes, driver allowance, and fuel costs, so our
+  //       passengers travel with peace of mind.
+  //     </>
+  //   ),
 
-    bookingSteps: {
-      introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
-      introText: "With our taxi in Jaipur, booking is quick and simple:",
-      steps: [
-        "Choose your pickup point in Jaipur",
-        "Select drop location in Delhi / NCR",
-        "Pick your preferred vehicle",
-        "Click confirm and travel stress-free",
-      ],
-    },
+  //   bookingSteps: {
+  //     introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
+  //     introText: "With our taxi in Jaipur, booking is quick and simple:",
+  //     steps: [
+  //       "Choose your pickup point in Jaipur",
+  //       "Select drop location in Delhi / NCR",
+  //       "Pick your preferred vehicle",
+  //       "Click confirm and travel stress-free",
+  //     ],
+  //   },
 
-    finalText: (
-      <>
-        If you are planning for a unique yet reliable taxi service in Delhi,
-        book our taxi service for your next trip. Our company provides a perfect
-        travel experience and a smooth journey. We make your journey economical.
-        One-way cab service is helpful for late-night travellers. Book our cabs
-        to avoid worrying about train availability or bus timings. Book our{" "}
-        <strong>cab service in Jaipur</strong> today and enjoy a great journey.
-      </>
-    ),
-  },
+  //   finalText: (
+  //     <>
+  //       If you are planning for a unique yet reliable taxi service in Delhi,
+  //       book our taxi service for your next trip. Our company provides a perfect
+  //       travel experience and a smooth journey. We make your journey economical.
+  //       One-way cab service is helpful for late-night travellers. Book our cabs
+  //       to avoid worrying about train availability or bus timings. Book our{" "}
+  //       <strong>cab service in Jaipur</strong> today and enjoy a great journey.
+  //     </>
+  //   ),
+  // },
   // Jaipur To Sawai Madhopur Taxi Service end
 
   //Tempo Traveller Service in Jaipur start
 
-  "tempo-traveller-service-in-jaipur": {
-    title: "Tempo Traveller Service in Jaipur",
+  // "tempo-traveller-service-in-jaipur": {
+  //   title: "Tempo Traveller Service in Jaipur",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
+  //   image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
-    intro: (
-      <>
-        <h1 className="text-3xl font-bold mt-5 mb-5">
-          Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
-          Hassle-Free Travel
-        </h1>
+  //   intro: (
+  //     <>
+  //       <h1 className="text-3xl font-bold mt-5 mb-5">
+  //         Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
+  //         Hassle-Free Travel
+  //       </h1>
 
-        <p className="mb-4">
-          Our team is dedicated to providing the
-          <strong>best taxi service in Jaipur</strong>. Business travellers and
-          tourists always prefer us as we provide on-time
-          <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
-          easier and avoid last-minute surprises. Tourists need flexibility
-          while travelling, and we provide customisation even in one-way tour
-          packages. Whether you want a break for shopping or refreshment, we
-          offer customization for a comfortable travel. Families travelling with
-          elderly people and children would find our cab services more reliable
-          and comfortable.
-        </p>
+  //       <p className="mb-4">
+  //         Our team is dedicated to providing the
+  //         <strong>best taxi service in Jaipur</strong>. Business travellers and
+  //         tourists always prefer us as we provide on-time
+  //         <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
+  //         easier and avoid last-minute surprises. Tourists need flexibility
+  //         while travelling, and we provide customisation even in one-way tour
+  //         packages. Whether you want a break for shopping or refreshment, we
+  //         offer customization for a comfortable travel. Families travelling with
+  //         elderly people and children would find our cab services more reliable
+  //         and comfortable.
+  //       </p>
 
-        <p className="font-semibold mb-5">
-          With our company, you do not need to pay for a return journey.
-        </p>
-      </>
-    ),
+  //       <p className="font-semibold mb-5">
+  //         With our company, you do not need to pay for a return journey.
+  //       </p>
+  //     </>
+  //   ),
 
-    why: {
-      title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
-      intro:
-        "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
-      points: [
-        "Pay only for one-sided travel",
-        "No return fare or hidden costs",
-        "Door-to-door pickup and drop-off",
-        "Flexible travel time",
-        "More comfortable than buses or trains",
-      ],
-    },
+  //   why: {
+  //     title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
+  //     intro:
+  //       "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
+  //     points: [
+  //       "Pay only for one-sided travel",
+  //       "No return fare or hidden costs",
+  //       "Door-to-door pickup and drop-off",
+  //       "Flexible travel time",
+  //       "More comfortable than buses or trains",
+  //     ],
+  //   },
 
-    distance: [
-      <>
-        <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
-      </>,
-      <>
-        <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
-        hours (depending on traffic and route)
-      </>,
-    ],
+  //   distance: [
+  //     <>
+  //       <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
+  //     </>,
+  //     <>
+  //       <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
+  //       hours (depending on traffic and route)
+  //     </>,
+  //   ],
 
-    cabTypes: {
-      intro:
-        "We provide multiple cab options to our clients according to their budget and group size:",
-      list: [
-        "Hatchback: Swift, WagonR – Budget friendly",
-        "Sedan: Dzire, Etios – Comfortable for small families",
-        "SUV: Ertiga, Innova – Ideal for group travel",
-        "Luxury Cars – For a premium travel experience",
-      ],
-    },
+  //   cabTypes: {
+  //     intro:
+  //       "We provide multiple cab options to our clients according to their budget and group size:",
+  //     list: [
+  //       "Hatchback: Swift, WagonR – Budget friendly",
+  //       "Sedan: Dzire, Etios – Comfortable for small families",
+  //       "SUV: Ertiga, Innova – Ideal for group travel",
+  //       "Luxury Cars – For a premium travel experience",
+  //     ],
+  //   },
 
-    benefits: [
-      <strong>Affordable pricing</strong>,
-      <strong>24/7 availability</strong>,
-      <strong>Professional and verified drivers</strong>,
-      <strong>No luggage limit</strong>,
-      <strong>Easy booking process</strong>,
-    ],
+  //   benefits: [
+  //     <strong>Affordable pricing</strong>,
+  //     <strong>24/7 availability</strong>,
+  //     <strong>Professional and verified drivers</strong>,
+  //     <strong>No luggage limit</strong>,
+  //     <strong>Easy booking process</strong>,
+  //   ],
 
-    idealFor: [
-      "Airport pickup and drop",
-      "Office and business trips",
-      "Students shifting to hostels",
-      "Tourists exploring Delhi",
-      "Emergency and late-night travel",
-    ],
+  //   idealFor: [
+  //     "Airport pickup and drop",
+  //     "Office and business trips",
+  //     "Students shifting to hostels",
+  //     "Tourists exploring Delhi",
+  //     "Emergency and late-night travel",
+  //   ],
 
-    safety: (
-      <>
-        Passengers' safety is our top priority. We sanitize our cabs, enable
-        GPS, and verify drivers.Another major benefit of the one-way Jaipur to
-        Delhi Cab service is transparent pricing. Our company offers a Jaipur to
-        Delhi taxi service with clear fare structures and no hidden charges. We
-        also include Toll taxes, driver allowance, and fuel costs, so our
-        passengers travel with peace of mind.
-      </>
-    ),
+  //   safety: (
+  //     <>
+  //       Passengers' safety is our top priority. We sanitize our cabs, enable
+  //       GPS, and verify drivers.Another major benefit of the one-way Jaipur to
+  //       Delhi Cab service is transparent pricing. Our company offers a Jaipur to
+  //       Delhi taxi service with clear fare structures and no hidden charges. We
+  //       also include Toll taxes, driver allowance, and fuel costs, so our
+  //       passengers travel with peace of mind.
+  //     </>
+  //   ),
 
-    bookingSteps: {
-      introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
-      introText: "With our taxi in Jaipur, booking is quick and simple:",
-      steps: [
-        "Choose your pickup point in Jaipur",
-        "Select drop location in Delhi / NCR",
-        "Pick your preferred vehicle",
-        "Click confirm and travel stress-free",
-      ],
-    },
+  //   bookingSteps: {
+  //     introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
+  //     introText: "With our taxi in Jaipur, booking is quick and simple:",
+  //     steps: [
+  //       "Choose your pickup point in Jaipur",
+  //       "Select drop location in Delhi / NCR",
+  //       "Pick your preferred vehicle",
+  //       "Click confirm and travel stress-free",
+  //     ],
+  //   },
 
-    finalText: (
-      <>
-        If you are planning for a unique yet reliable taxi service in Delhi,
-        book our taxi service for your next trip. Our company provides a perfect
-        travel experience and a smooth journey. We make your journey economical.
-        One-way cab service is helpful for late-night travellers. Book our cabs
-        to avoid worrying about train availability or bus timings. Book our{" "}
-        <strong>cab service in Jaipur</strong> today and enjoy a great journey.
-      </>
-    ),
-  },
+  //   finalText: (
+  //     <>
+  //       If you are planning for a unique yet reliable taxi service in Delhi,
+  //       book our taxi service for your next trip. Our company provides a perfect
+  //       travel experience and a smooth journey. We make your journey economical.
+  //       One-way cab service is helpful for late-night travellers. Book our cabs
+  //       to avoid worrying about train availability or bus timings. Book our{" "}
+  //       <strong>cab service in Jaipur</strong> today and enjoy a great journey.
+  //     </>
+  //   ),
+  // },
   // Tempo Traveller Service in Jaipur end
 
   //Jaipur To Agra One Way Cab Service start
 
-  "jaipur-to-agra-one-way-cab-service": {
-    title: "Jaipur To Agra One Way Cab Service",
+  // "jaipur-to-agra-one-way-cab-service": {
+  //   title: "Jaipur To Agra One Way Cab Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
+  //   image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
-    intro: (
-      <>
-        <h1 className="text-3xl font-bold mt-5 mb-5">
-          Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
-          Hassle-Free Travel
-        </h1>
+  //   intro: (
+  //     <>
+  //       <h1 className="text-3xl font-bold mt-5 mb-5">
+  //         Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
+  //         Hassle-Free Travel
+  //       </h1>
 
-        <p className="mb-4">
-          Our team is dedicated to providing the
-          <strong>best taxi service in Jaipur</strong>. Business travellers and
-          tourists always prefer us as we provide on-time
-          <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
-          easier and avoid last-minute surprises. Tourists need flexibility
-          while travelling, and we provide customisation even in one-way tour
-          packages. Whether you want a break for shopping or refreshment, we
-          offer customization for a comfortable travel. Families travelling with
-          elderly people and children would find our cab services more reliable
-          and comfortable.
-        </p>
+  //       <p className="mb-4">
+  //         Our team is dedicated to providing the
+  //         <strong>best taxi service in Jaipur</strong>. Business travellers and
+  //         tourists always prefer us as we provide on-time
+  //         <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
+  //         easier and avoid last-minute surprises. Tourists need flexibility
+  //         while travelling, and we provide customisation even in one-way tour
+  //         packages. Whether you want a break for shopping or refreshment, we
+  //         offer customization for a comfortable travel. Families travelling with
+  //         elderly people and children would find our cab services more reliable
+  //         and comfortable.
+  //       </p>
 
-        <p className="font-semibold mb-5">
-          With our company, you do not need to pay for a return journey.
-        </p>
-      </>
-    ),
+  //       <p className="font-semibold mb-5">
+  //         With our company, you do not need to pay for a return journey.
+  //       </p>
+  //     </>
+  //   ),
 
-    why: {
-      title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
-      intro:
-        "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
-      points: [
-        "Pay only for one-sided travel",
-        "No return fare or hidden costs",
-        "Door-to-door pickup and drop-off",
-        "Flexible travel time",
-        "More comfortable than buses or trains",
-      ],
-    },
+  //   why: {
+  //     title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
+  //     intro:
+  //       "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
+  //     points: [
+  //       "Pay only for one-sided travel",
+  //       "No return fare or hidden costs",
+  //       "Door-to-door pickup and drop-off",
+  //       "Flexible travel time",
+  //       "More comfortable than buses or trains",
+  //     ],
+  //   },
 
-    distance: [
-      <>
-        <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
-      </>,
-      <>
-        <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
-        hours (depending on traffic and route)
-      </>,
-    ],
+  //   distance: [
+  //     <>
+  //       <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
+  //     </>,
+  //     <>
+  //       <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
+  //       hours (depending on traffic and route)
+  //     </>,
+  //   ],
 
-    cabTypes: {
-      intro:
-        "We provide multiple cab options to our clients according to their budget and group size:",
-      list: [
-        "Hatchback: Swift, WagonR – Budget friendly",
-        "Sedan: Dzire, Etios – Comfortable for small families",
-        "SUV: Ertiga, Innova – Ideal for group travel",
-        "Luxury Cars – For a premium travel experience",
-      ],
-    },
+  //   cabTypes: {
+  //     intro:
+  //       "We provide multiple cab options to our clients according to their budget and group size:",
+  //     list: [
+  //       "Hatchback: Swift, WagonR – Budget friendly",
+  //       "Sedan: Dzire, Etios – Comfortable for small families",
+  //       "SUV: Ertiga, Innova – Ideal for group travel",
+  //       "Luxury Cars – For a premium travel experience",
+  //     ],
+  //   },
 
-    benefits: [
-      <strong>Affordable pricing</strong>,
-      <strong>24/7 availability</strong>,
-      <strong>Professional and verified drivers</strong>,
-      <strong>No luggage limit</strong>,
-      <strong>Easy booking process</strong>,
-    ],
+  //   benefits: [
+  //     <strong>Affordable pricing</strong>,
+  //     <strong>24/7 availability</strong>,
+  //     <strong>Professional and verified drivers</strong>,
+  //     <strong>No luggage limit</strong>,
+  //     <strong>Easy booking process</strong>,
+  //   ],
 
-    idealFor: [
-      "Airport pickup and drop",
-      "Office and business trips",
-      "Students shifting to hostels",
-      "Tourists exploring Delhi",
-      "Emergency and late-night travel",
-    ],
+  //   idealFor: [
+  //     "Airport pickup and drop",
+  //     "Office and business trips",
+  //     "Students shifting to hostels",
+  //     "Tourists exploring Delhi",
+  //     "Emergency and late-night travel",
+  //   ],
 
-    safety: (
-      <>
-        Passengers' safety is our top priority. We sanitize our cabs, enable
-        GPS, and verify drivers.Another major benefit of the one-way Jaipur to
-        Delhi Cab service is transparent pricing. Our company offers a Jaipur to
-        Delhi taxi service with clear fare structures and no hidden charges. We
-        also include Toll taxes, driver allowance, and fuel costs, so our
-        passengers travel with peace of mind.
-      </>
-    ),
+  //   safety: (
+  //     <>
+  //       Passengers' safety is our top priority. We sanitize our cabs, enable
+  //       GPS, and verify drivers.Another major benefit of the one-way Jaipur to
+  //       Delhi Cab service is transparent pricing. Our company offers a Jaipur to
+  //       Delhi taxi service with clear fare structures and no hidden charges. We
+  //       also include Toll taxes, driver allowance, and fuel costs, so our
+  //       passengers travel with peace of mind.
+  //     </>
+  //   ),
 
-    bookingSteps: {
-      introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
-      introText: "With our taxi in Jaipur, booking is quick and simple:",
-      steps: [
-        "Choose your pickup point in Jaipur",
-        "Select drop location in Delhi / NCR",
-        "Pick your preferred vehicle",
-        "Click confirm and travel stress-free",
-      ],
-    },
+  //   bookingSteps: {
+  //     introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
+  //     introText: "With our taxi in Jaipur, booking is quick and simple:",
+  //     steps: [
+  //       "Choose your pickup point in Jaipur",
+  //       "Select drop location in Delhi / NCR",
+  //       "Pick your preferred vehicle",
+  //       "Click confirm and travel stress-free",
+  //     ],
+  //   },
 
-    finalText: (
-      <>
-        If you are planning for a unique yet reliable taxi service in Delhi,
-        book our taxi service for your next trip. Our company provides a perfect
-        travel experience and a smooth journey. We make your journey economical.
-        One-way cab service is helpful for late-night travellers. Book our cabs
-        to avoid worrying about train availability or bus timings. Book our{" "}
-        <strong>cab service in Jaipur</strong> today and enjoy a great journey.
-      </>
-    ),
-  },
+  //   finalText: (
+  //     <>
+  //       If you are planning for a unique yet reliable taxi service in Delhi,
+  //       book our taxi service for your next trip. Our company provides a perfect
+  //       travel experience and a smooth journey. We make your journey economical.
+  //       One-way cab service is helpful for late-night travellers. Book our cabs
+  //       to avoid worrying about train availability or bus timings. Book our{" "}
+  //       <strong>cab service in Jaipur</strong> today and enjoy a great journey.
+  //     </>
+  //   ),
+  // },
   // Jaipur To Agra One Way Cab Service end
 
   //Golden Triangle Tours Package  start
 
-  "golden-triangle-tours-package": {
-    title: "Golden Triangle Tours Package",
+  // "golden-triangle-tours-package": {
+  //   title: "Golden Triangle Tours Package",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
+  //   image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
-    intro: (
-      <>
-        <h1 className="text-3xl font-bold mt-5 mb-5">
-          Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
-          Hassle-Free Travel
-        </h1>
+  //   intro: (
+  //     <>
+  //       <h1 className="text-3xl font-bold mt-5 mb-5">
+  //         Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
+  //         Hassle-Free Travel
+  //       </h1>
 
-        <p className="mb-4">
-          Our team is dedicated to providing the
-          <strong>best taxi service in Jaipur</strong>. Business travellers and
-          tourists always prefer us as we provide on-time
-          <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
-          easier and avoid last-minute surprises. Tourists need flexibility
-          while travelling, and we provide customisation even in one-way tour
-          packages. Whether you want a break for shopping or refreshment, we
-          offer customization for a comfortable travel. Families travelling with
-          elderly people and children would find our cab services more reliable
-          and comfortable.
-        </p>
+  //       <p className="mb-4">
+  //         Our team is dedicated to providing the
+  //         <strong>best taxi service in Jaipur</strong>. Business travellers and
+  //         tourists always prefer us as we provide on-time
+  //         <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
+  //         easier and avoid last-minute surprises. Tourists need flexibility
+  //         while travelling, and we provide customisation even in one-way tour
+  //         packages. Whether you want a break for shopping or refreshment, we
+  //         offer customization for a comfortable travel. Families travelling with
+  //         elderly people and children would find our cab services more reliable
+  //         and comfortable.
+  //       </p>
 
-        <p className="font-semibold mb-5">
-          With our company, you do not need to pay for a return journey.
-        </p>
-      </>
-    ),
+  //       <p className="font-semibold mb-5">
+  //         With our company, you do not need to pay for a return journey.
+  //       </p>
+  //     </>
+  //   ),
 
-    why: {
-      title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
-      intro:
-        "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
-      points: [
-        "Pay only for one-sided travel",
-        "No return fare or hidden costs",
-        "Door-to-door pickup and drop-off",
-        "Flexible travel time",
-        "More comfortable than buses or trains",
-      ],
-    },
+  //   why: {
+  //     title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
+  //     intro:
+  //       "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
+  //     points: [
+  //       "Pay only for one-sided travel",
+  //       "No return fare or hidden costs",
+  //       "Door-to-door pickup and drop-off",
+  //       "Flexible travel time",
+  //       "More comfortable than buses or trains",
+  //     ],
+  //   },
 
-    distance: [
-      <>
-        <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
-      </>,
-      <>
-        <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
-        hours (depending on traffic and route)
-      </>,
-    ],
+  //   distance: [
+  //     <>
+  //       <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
+  //     </>,
+  //     <>
+  //       <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
+  //       hours (depending on traffic and route)
+  //     </>,
+  //   ],
 
-    cabTypes: {
-      intro:
-        "We provide multiple cab options to our clients according to their budget and group size:",
-      list: [
-        "Hatchback: Swift, WagonR – Budget friendly",
-        "Sedan: Dzire, Etios – Comfortable for small families",
-        "SUV: Ertiga, Innova – Ideal for group travel",
-        "Luxury Cars – For a premium travel experience",
-      ],
-    },
+  //   cabTypes: {
+  //     intro:
+  //       "We provide multiple cab options to our clients according to their budget and group size:",
+  //     list: [
+  //       "Hatchback: Swift, WagonR – Budget friendly",
+  //       "Sedan: Dzire, Etios – Comfortable for small families",
+  //       "SUV: Ertiga, Innova – Ideal for group travel",
+  //       "Luxury Cars – For a premium travel experience",
+  //     ],
+  //   },
 
-    benefits: [
-      <strong>Affordable pricing</strong>,
-      <strong>24/7 availability</strong>,
-      <strong>Professional and verified drivers</strong>,
-      <strong>No luggage limit</strong>,
-      <strong>Easy booking process</strong>,
-    ],
+  //   benefits: [
+  //     <strong>Affordable pricing</strong>,
+  //     <strong>24/7 availability</strong>,
+  //     <strong>Professional and verified drivers</strong>,
+  //     <strong>No luggage limit</strong>,
+  //     <strong>Easy booking process</strong>,
+  //   ],
 
-    idealFor: [
-      "Airport pickup and drop",
-      "Office and business trips",
-      "Students shifting to hostels",
-      "Tourists exploring Delhi",
-      "Emergency and late-night travel",
-    ],
+  //   idealFor: [
+  //     "Airport pickup and drop",
+  //     "Office and business trips",
+  //     "Students shifting to hostels",
+  //     "Tourists exploring Delhi",
+  //     "Emergency and late-night travel",
+  //   ],
 
-    safety: (
-      <>
-        Passengers' safety is our top priority. We sanitize our cabs, enable
-        GPS, and verify drivers.Another major benefit of the one-way Jaipur to
-        Delhi Cab service is transparent pricing. Our company offers a Jaipur to
-        Delhi taxi service with clear fare structures and no hidden charges. We
-        also include Toll taxes, driver allowance, and fuel costs, so our
-        passengers travel with peace of mind.
-      </>
-    ),
+  //   safety: (
+  //     <>
+  //       Passengers' safety is our top priority. We sanitize our cabs, enable
+  //       GPS, and verify drivers.Another major benefit of the one-way Jaipur to
+  //       Delhi Cab service is transparent pricing. Our company offers a Jaipur to
+  //       Delhi taxi service with clear fare structures and no hidden charges. We
+  //       also include Toll taxes, driver allowance, and fuel costs, so our
+  //       passengers travel with peace of mind.
+  //     </>
+  //   ),
 
-    bookingSteps: {
-      introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
-      introText: "With our taxi in Jaipur, booking is quick and simple:",
-      steps: [
-        "Choose your pickup point in Jaipur",
-        "Select drop location in Delhi / NCR",
-        "Pick your preferred vehicle",
-        "Click confirm and travel stress-free",
-      ],
-    },
+  //   bookingSteps: {
+  //     introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
+  //     introText: "With our taxi in Jaipur, booking is quick and simple:",
+  //     steps: [
+  //       "Choose your pickup point in Jaipur",
+  //       "Select drop location in Delhi / NCR",
+  //       "Pick your preferred vehicle",
+  //       "Click confirm and travel stress-free",
+  //     ],
+  //   },
 
-    finalText: (
-      <>
-        If you are planning for a unique yet reliable taxi service in Delhi,
-        book our taxi service for your next trip. Our company provides a perfect
-        travel experience and a smooth journey. We make your journey economical.
-        One-way cab service is helpful for late-night travellers. Book our cabs
-        to avoid worrying about train availability or bus timings. Book our{" "}
-        <strong>cab service in Jaipur</strong> today and enjoy a great journey.
-      </>
-    ),
-  },
+  //   finalText: (
+  //     <>
+  //       If you are planning for a unique yet reliable taxi service in Delhi,
+  //       book our taxi service for your next trip. Our company provides a perfect
+  //       travel experience and a smooth journey. We make your journey economical.
+  //       One-way cab service is helpful for late-night travellers. Book our cabs
+  //       to avoid worrying about train availability or bus timings. Book our{" "}
+  //       <strong>cab service in Jaipur</strong> today and enjoy a great journey.
+  //     </>
+  //   ),
+  // },
   // Golden Triangle Tours Package  end
 
   // Jaipur to Ayodhya Taxi Service   start
 
-  "jaipur-to-ayodhya-taxi-service": {
-    title: "Jaipur to Ayodhya Taxi Service",
+  // "jaipur-to-ayodhya-taxi-service": {
+  //   title: "Jaipur to Ayodhya Taxi Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
+  //   image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
-    intro: (
-      <>
-        <h1 className="text-3xl font-bold mt-5 mb-5">
-          Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
-          Hassle-Free Travel
-        </h1>
+  //   intro: (
+  //     <>
+  //       <h1 className="text-3xl font-bold mt-5 mb-5">
+  //         Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
+  //         Hassle-Free Travel
+  //       </h1>
 
-        <p className="mb-4">
-          Our team is dedicated to providing the
-          <strong>best taxi service in Jaipur</strong>. Business travellers and
-          tourists always prefer us as we provide on-time
-          <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
-          easier and avoid last-minute surprises. Tourists need flexibility
-          while travelling, and we provide customisation even in one-way tour
-          packages. Whether you want a break for shopping or refreshment, we
-          offer customization for a comfortable travel. Families travelling with
-          elderly people and children would find our cab services more reliable
-          and comfortable.
-        </p>
+  //       <p className="mb-4">
+  //         Our team is dedicated to providing the
+  //         <strong>best taxi service in Jaipur</strong>. Business travellers and
+  //         tourists always prefer us as we provide on-time
+  //         <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
+  //         easier and avoid last-minute surprises. Tourists need flexibility
+  //         while travelling, and we provide customisation even in one-way tour
+  //         packages. Whether you want a break for shopping or refreshment, we
+  //         offer customization for a comfortable travel. Families travelling with
+  //         elderly people and children would find our cab services more reliable
+  //         and comfortable.
+  //       </p>
 
-        <p className="font-semibold mb-5">
-          With our company, you do not need to pay for a return journey.
-        </p>
-      </>
-    ),
+  //       <p className="font-semibold mb-5">
+  //         With our company, you do not need to pay for a return journey.
+  //       </p>
+  //     </>
+  //   ),
 
-    why: {
-      title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
-      intro:
-        "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
-      points: [
-        "Pay only for one-sided travel",
-        "No return fare or hidden costs",
-        "Door-to-door pickup and drop-off",
-        "Flexible travel time",
-        "More comfortable than buses or trains",
-      ],
-    },
+  //   why: {
+  //     title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
+  //     intro:
+  //       "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
+  //     points: [
+  //       "Pay only for one-sided travel",
+  //       "No return fare or hidden costs",
+  //       "Door-to-door pickup and drop-off",
+  //       "Flexible travel time",
+  //       "More comfortable than buses or trains",
+  //     ],
+  //   },
 
-    distance: [
-      <>
-        <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
-      </>,
-      <>
-        <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
-        hours (depending on traffic and route)
-      </>,
-    ],
+  //   distance: [
+  //     <>
+  //       <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
+  //     </>,
+  //     <>
+  //       <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
+  //       hours (depending on traffic and route)
+  //     </>,
+  //   ],
 
-    cabTypes: {
-      intro:
-        "We provide multiple cab options to our clients according to their budget and group size:",
-      list: [
-        "Hatchback: Swift, WagonR – Budget friendly",
-        "Sedan: Dzire, Etios – Comfortable for small families",
-        "SUV: Ertiga, Innova – Ideal for group travel",
-        "Luxury Cars – For a premium travel experience",
-      ],
-    },
+  //   cabTypes: {
+  //     intro:
+  //       "We provide multiple cab options to our clients according to their budget and group size:",
+  //     list: [
+  //       "Hatchback: Swift, WagonR – Budget friendly",
+  //       "Sedan: Dzire, Etios – Comfortable for small families",
+  //       "SUV: Ertiga, Innova – Ideal for group travel",
+  //       "Luxury Cars – For a premium travel experience",
+  //     ],
+  //   },
 
-    benefits: [
-      <strong>Affordable pricing</strong>,
-      <strong>24/7 availability</strong>,
-      <strong>Professional and verified drivers</strong>,
-      <strong>No luggage limit</strong>,
-      <strong>Easy booking process</strong>,
-    ],
+  //   benefits: [
+  //     <strong>Affordable pricing</strong>,
+  //     <strong>24/7 availability</strong>,
+  //     <strong>Professional and verified drivers</strong>,
+  //     <strong>No luggage limit</strong>,
+  //     <strong>Easy booking process</strong>,
+  //   ],
 
-    idealFor: [
-      "Airport pickup and drop",
-      "Office and business trips",
-      "Students shifting to hostels",
-      "Tourists exploring Delhi",
-      "Emergency and late-night travel",
-    ],
+  //   idealFor: [
+  //     "Airport pickup and drop",
+  //     "Office and business trips",
+  //     "Students shifting to hostels",
+  //     "Tourists exploring Delhi",
+  //     "Emergency and late-night travel",
+  //   ],
 
-    safety: (
-      <>
-        Passengers' safety is our top priority. We sanitize our cabs, enable
-        GPS, and verify drivers.Another major benefit of the one-way Jaipur to
-        Delhi Cab service is transparent pricing. Our company offers a Jaipur to
-        Delhi taxi service with clear fare structures and no hidden charges. We
-        also include Toll taxes, driver allowance, and fuel costs, so our
-        passengers travel with peace of mind.
-      </>
-    ),
+  //   safety: (
+  //     <>
+  //       Passengers' safety is our top priority. We sanitize our cabs, enable
+  //       GPS, and verify drivers.Another major benefit of the one-way Jaipur to
+  //       Delhi Cab service is transparent pricing. Our company offers a Jaipur to
+  //       Delhi taxi service with clear fare structures and no hidden charges. We
+  //       also include Toll taxes, driver allowance, and fuel costs, so our
+  //       passengers travel with peace of mind.
+  //     </>
+  //   ),
 
-    bookingSteps: {
-      introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
-      introText: "With our taxi in Jaipur, booking is quick and simple:",
-      steps: [
-        "Choose your pickup point in Jaipur",
-        "Select drop location in Delhi / NCR",
-        "Pick your preferred vehicle",
-        "Click confirm and travel stress-free",
-      ],
-    },
+  //   bookingSteps: {
+  //     introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
+  //     introText: "With our taxi in Jaipur, booking is quick and simple:",
+  //     steps: [
+  //       "Choose your pickup point in Jaipur",
+  //       "Select drop location in Delhi / NCR",
+  //       "Pick your preferred vehicle",
+  //       "Click confirm and travel stress-free",
+  //     ],
+  //   },
 
-    finalText: (
-      <>
-        If you are planning for a unique yet reliable taxi service in Delhi,
-        book our taxi service for your next trip. Our company provides a perfect
-        travel experience and a smooth journey. We make your journey economical.
-        One-way cab service is helpful for late-night travellers. Book our cabs
-        to avoid worrying about train availability or bus timings. Book our{" "}
-        <strong>cab service in Jaipur</strong> today and enjoy a great journey.
-      </>
-    ),
-  },
+  //   finalText: (
+  //     <>
+  //       If you are planning for a unique yet reliable taxi service in Delhi,
+  //       book our taxi service for your next trip. Our company provides a perfect
+  //       travel experience and a smooth journey. We make your journey economical.
+  //       One-way cab service is helpful for late-night travellers. Book our cabs
+  //       to avoid worrying about train availability or bus timings. Book our{" "}
+  //       <strong>cab service in Jaipur</strong> today and enjoy a great journey.
+  //     </>
+  //   ),
+  // },
   // Jaipur to Ayodhya Taxi Service  end
 
   // Jaipur Airport Taxi Service  start
 
-  "jaipur-airport-taxi-service": {
-    title: "Jaipur Airport Taxi Service",
+  // "jaipur-airport-taxi-service": {
+  //   title: "Jaipur Airport Taxi Service",
 
-    image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
+  //   image: "/images/jaipur-pink-city-cab-dzire-taxi-service.png.webp",
 
-    intro: (
-      <>
-        <h1 className="text-3xl font-bold mt-5 mb-5">
-          Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
-          Hassle-Free Travel
-        </h1>
+  //   intro: (
+  //     <>
+  //       <h1 className="text-3xl font-bold mt-5 mb-5">
+  //         Jaipur to Delhi One Way Taxi Service – Comfortable, Affordable &
+  //         Hassle-Free Travel
+  //       </h1>
 
-        <p className="mb-4">
-          Our team is dedicated to providing the
-          <strong>best taxi service in Jaipur</strong>. Business travellers and
-          tourists always prefer us as we provide on-time
-          <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
-          easier and avoid last-minute surprises. Tourists need flexibility
-          while travelling, and we provide customisation even in one-way tour
-          packages. Whether you want a break for shopping or refreshment, we
-          offer customization for a comfortable travel. Families travelling with
-          elderly people and children would find our cab services more reliable
-          and comfortable.
-        </p>
+  //       <p className="mb-4">
+  //         Our team is dedicated to providing the
+  //         <strong>best taxi service in Jaipur</strong>. Business travellers and
+  //         tourists always prefer us as we provide on-time
+  //         <strong> one-way cabs in Jaipur</strong>. Our agents make budgeting
+  //         easier and avoid last-minute surprises. Tourists need flexibility
+  //         while travelling, and we provide customisation even in one-way tour
+  //         packages. Whether you want a break for shopping or refreshment, we
+  //         offer customization for a comfortable travel. Families travelling with
+  //         elderly people and children would find our cab services more reliable
+  //         and comfortable.
+  //       </p>
 
-        <p className="font-semibold mb-5">
-          With our company, you do not need to pay for a return journey.
-        </p>
-      </>
-    ),
+  //       <p className="font-semibold mb-5">
+  //         With our company, you do not need to pay for a return journey.
+  //       </p>
+  //     </>
+  //   ),
 
-    why: {
-      title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
-      intro:
-        "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
-      points: [
-        "Pay only for one-sided travel",
-        "No return fare or hidden costs",
-        "Door-to-door pickup and drop-off",
-        "Flexible travel time",
-        "More comfortable than buses or trains",
-      ],
-    },
+  //   why: {
+  //     title: "Why Choose Jaipur to Delhi One Way Taxi Service?",
+  //     intro:
+  //       "Smart travellers choose a one-way taxi and comfort without unnecessary charges. Here’s why passengers prefer one-way cabs:",
+  //     points: [
+  //       "Pay only for one-sided travel",
+  //       "No return fare or hidden costs",
+  //       "Door-to-door pickup and drop-off",
+  //       "Flexible travel time",
+  //       "More comfortable than buses or trains",
+  //     ],
+  //   },
 
-    distance: [
-      <>
-        <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
-      </>,
-      <>
-        <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
-        hours (depending on traffic and route)
-      </>,
-    ],
+  //   distance: [
+  //     <>
+  //       <strong>Distance: </strong>Jaipur to Delhi tour covers approx 280 km
+  //     </>,
+  //     <>
+  //       <strong>Travel Time: </strong> Jaipur to Delhi tour takes approx 5 to 6
+  //       hours (depending on traffic and route)
+  //     </>,
+  //   ],
 
-    cabTypes: {
-      intro:
-        "We provide multiple cab options to our clients according to their budget and group size:",
-      list: [
-        "Hatchback: Swift, WagonR – Budget friendly",
-        "Sedan: Dzire, Etios – Comfortable for small families",
-        "SUV: Ertiga, Innova – Ideal for group travel",
-        "Luxury Cars – For a premium travel experience",
-      ],
-    },
+  //   cabTypes: {
+  //     intro:
+  //       "We provide multiple cab options to our clients according to their budget and group size:",
+  //     list: [
+  //       "Hatchback: Swift, WagonR – Budget friendly",
+  //       "Sedan: Dzire, Etios – Comfortable for small families",
+  //       "SUV: Ertiga, Innova – Ideal for group travel",
+  //       "Luxury Cars – For a premium travel experience",
+  //     ],
+  //   },
 
-    benefits: [
-      <strong>Affordable pricing</strong>,
-      <strong>24/7 availability</strong>,
-      <strong>Professional and verified drivers</strong>,
-      <strong>No luggage limit</strong>,
-      <strong>Easy booking process</strong>,
-    ],
+  //   benefits: [
+  //     <strong>Affordable pricing</strong>,
+  //     <strong>24/7 availability</strong>,
+  //     <strong>Professional and verified drivers</strong>,
+  //     <strong>No luggage limit</strong>,
+  //     <strong>Easy booking process</strong>,
+  //   ],
 
-    idealFor: [
-      "Airport pickup and drop",
-      "Office and business trips",
-      "Students shifting to hostels",
-      "Tourists exploring Delhi",
-      "Emergency and late-night travel",
-    ],
+  //   idealFor: [
+  //     "Airport pickup and drop",
+  //     "Office and business trips",
+  //     "Students shifting to hostels",
+  //     "Tourists exploring Delhi",
+  //     "Emergency and late-night travel",
+  //   ],
 
-    safety: (
-      <>
-        Passengers' safety is our top priority. We sanitize our cabs, enable
-        GPS, and verify drivers.Another major benefit of the one-way Jaipur to
-        Delhi Cab service is transparent pricing. Our company offers a Jaipur to
-        Delhi taxi service with clear fare structures and no hidden charges. We
-        also include Toll taxes, driver allowance, and fuel costs, so our
-        passengers travel with peace of mind.
-      </>
-    ),
+  //   safety: (
+  //     <>
+  //       Passengers' safety is our top priority. We sanitize our cabs, enable
+  //       GPS, and verify drivers.Another major benefit of the one-way Jaipur to
+  //       Delhi Cab service is transparent pricing. Our company offers a Jaipur to
+  //       Delhi taxi service with clear fare structures and no hidden charges. We
+  //       also include Toll taxes, driver allowance, and fuel costs, so our
+  //       passengers travel with peace of mind.
+  //     </>
+  //   ),
 
-    bookingSteps: {
-      introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
-      introText: "With our taxi in Jaipur, booking is quick and simple:",
-      steps: [
-        "Choose your pickup point in Jaipur",
-        "Select drop location in Delhi / NCR",
-        "Pick your preferred vehicle",
-        "Click confirm and travel stress-free",
-      ],
-    },
+  //   bookingSteps: {
+  //     introTitle: "How to Book a Jaipur to Delhi One-Way Taxi?",
+  //     introText: "With our taxi in Jaipur, booking is quick and simple:",
+  //     steps: [
+  //       "Choose your pickup point in Jaipur",
+  //       "Select drop location in Delhi / NCR",
+  //       "Pick your preferred vehicle",
+  //       "Click confirm and travel stress-free",
+  //     ],
+  //   },
 
-    finalText: (
-      <>
-        If you are planning for a unique yet reliable taxi service in Delhi,
-        book our taxi service for your next trip. Our company provides a perfect
-        travel experience and a smooth journey. We make your journey economical.
-        One-way cab service is helpful for late-night travellers. Book our cabs
-        to avoid worrying about train availability or bus timings. Book our{" "}
-        <strong>cab service in Jaipur</strong> today and enjoy a great journey.
-      </>
-    ),
-  },
+  //   finalText: (
+  //     <>
+  //       If you are planning for a unique yet reliable taxi service in Delhi,
+  //       book our taxi service for your next trip. Our company provides a perfect
+  //       travel experience and a smooth journey. We make your journey economical.
+  //       One-way cab service is helpful for late-night travellers. Book our cabs
+  //       to avoid worrying about train availability or bus timings. Book our{" "}
+  //       <strong>cab service in Jaipur</strong> today and enjoy a great journey.
+  //     </>
+  //   ),
+  // },
   // Jaipur Airport Taxi Service   end
 };
 
